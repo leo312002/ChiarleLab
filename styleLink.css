@@ -1,0 +1,178 @@
+/* CSS STRUTTURA LINK (presa da internet: https://codepen.io/MarkBoots/pen/XWVMWZw) */
+    @import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    #ul-link{
+    width: min(100%, 60rem);
+    overflow: hidden;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 5vw, 4rem);
+    list-style: none;
+    perspective: 1000px;
+    display: grid;
+    row-gap: 0.5rem;
+    }
+    ul li.card{
+    position: relative;
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
+    background-color: var(--bg-color);
+    background-image: linear-gradient(to right, rgb(0 0 0 / .15), transparent);
+    transform-style: preserve-3d;
+    color: var(--color);
+    display: grid;
+    grid-template: 'icon' 'title' 'content';
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+    }
+    ul li.card::before, ul li.card::after {
+    --side-rotate: 60deg;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: calc(50% - (50% * var(--ry))) 50%  ;
+    transform: rotateY(calc(var(--side-rotate) * var(--ry)));
+    background-color: inherit;
+    background-image: linear-gradient(calc(90deg * var(--ry)), rgb(0 0 0 / .25), rgb(0 0 0 / .5));  
+    }
+    ul li.card::before {--ry: -1; right: 100% }
+    ul li.card::after {--ry: 1; left: 100% }
+
+    .card{
+        --color:#ececec;
+        --bg-color: #0a48a4;
+    }
+
+    ul li.card .icon {
+    grid-area: icon;
+    display: grid;
+    place-items: center;
+    }
+    ul li.card .icon i {
+    font-size: 2rem;
+    }
+    ul li.card .title{
+    grid-area: title;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    }
+    ul li.card .content{
+    grid-area: content;
+    }
+
+    @media (min-width: 30rem){
+    ul li.card {
+    /*  grid-template: 'icon title' 'icon content';  */
+        text-align: center;
+    }
+    ul li.card .title { text-align: center; }
+    }
+
+/* CSS STRUTTURA LINK (presa da internet: https://codepen.io/MarkBoots/pen/ZEXaEBX) */
+
+.olcards,
+.olcards * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.olcards {
+list-style: none;
+counter-reset: cardCount;
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+--cardsGap: 1rem;
+gap: var(--cardsGap);
+padding-bottom: var(--cardsGap);
+}
+.olcards li {
+counter-increment: cardCount;
+display: flex;
+color: white;
+--labelOffset: 1rem;
+--arrowClipSize: 1.5rem;
+margin-top: var(--labelOffset);
+}
+
+.olcards li::before {
+content: counter(cardCount, decimal-leading-zero);
+background: white;
+color: var(--cardColor);
+font-size: 2em;
+font-weight: 700;
+transform: translateY(calc(-1 * var(--labelOffset)));
+margin-right: calc(-1 * var(--labelOffset));
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-inline: 0.5em;
+}
+
+.olcards li .content {
+background-color: var(--cardColor);
+--inlinePadding: 1em;
+--boxPadding: 1.2em;
+display: grid;
+padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+grid-template-areas:
+"icon title"
+"icon text";
+gap: 0.25em 1em;
+clip-path: polygon(
+0 0,
+calc(100% - var(--arrowClipSize)) 0,
+100% 50%,
+calc(100% - var(--arrowClipSize)) 100%,
+calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+0 calc(100% + var(--cardsGap))
+);
+position: relative;
+}
+.olcards li .content::before {
+content: "";
+position: absolute;
+width: var(--labelOffset);
+height: var(--labelOffset);
+background: var(--cardColor);
+left: 0;
+bottom: 0;
+clip-path: polygon(0 0, 100% 0, 0 100%);
+filter: brightness(0.75);
+}
+.olcards li .content::after {
+content: "";
+position: absolute;
+height: var(--cardsGap);
+width: var(--cardsGap);
+background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent 50%);
+left: 0;
+top: 100%;
+}
+.olcards li .icon {
+grid-area: icon;
+align-self: center;
+font-size: 2em;
+}
+.olcards li .content .title {
+grid-area: title;
+font-size: 1.25em;
+/* font-weight: 700; */
+}
+
+@media (max-width: 991.9px){
+.olcards li .content .title {
+    grid-area: title;
+    font-size: 1em;
+  }
+}
+
+.olcards li .content .text {
+grid-area: text;
+}
