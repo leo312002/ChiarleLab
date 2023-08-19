@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home BOSTON -</title>
-    <link rel="icon" href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png"
+      sizes="32x32"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <link href="styleNews.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="styleNews.css" rel="stylesheet" />
 
-  <!-- Da fare: quando schiacci il bottone "see more news" la scritta cambia e diventa "see less news"  -->
+    <!-- Da fare: quando schiacci il bottone "see more news" la scritta cambia e diventa "see less news"  -->
+  </head>
 
-</head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png" /></a>
 
-<body>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container">
-            
-    <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png"></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#team">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#album">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Link.html">Link</a>
+            </li>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#team">Members</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#album">Album</a></li>
-        <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-        <li class="nav-item"><a class="nav-link" href="Link.html">Link</a></li>
-
-        <!-- DROPDOWN BUTTON
+            <!-- DROPDOWN BUTTON
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Publications - News - Link
@@ -47,13 +75,45 @@
             <li><a class="dropdown-item nav-link" href="Link.html">Link</a></li>
           </ul>
         </li> -->
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <!-- DROPDOWN BUTTON -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chiarle's Lab
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item nav-link js-scroll-trigger"
+                    href="index.html"
+                    >Chiarle's Lab in Boston</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="LabTorino.html"
+                    >Chiarle's Lab in Torino</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- STRUTTURA NEWS 
+    <!-- STRUTTURA NEWS 
   <div class="first-row text-center" style="background-color: #4ea1b3;">
     <div class="row h-70"></div>
 
@@ -110,14 +170,13 @@
   </div>
 -->
 
-<!-- STRUTTURA NEWS (presa da internet: https://www.bootdey.com/snippets/view/bs4-my-experience-timeline#html)-->
-  <div class="first-row container">
-    <div class="row" style="height: 10px;"></div>
-    <div class="main-timeline">
-    
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+    <!-- STRUTTURA NEWS (presa da internet: https://www.bootdey.com/snippets/view/bs4-my-experience-timeline#html)-->
+    <div class="first-row container">
+      <div class="row" style="height: 10px"></div>
+      <div class="main-timeline">
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -126,20 +185,30 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Dr. Chiarle received the 2022 ALK-Positive Research Awards from ALK Positive and LUNGevity Foundation</h5>
-          <p class="description">
-            <a href="https://www.lungevity.org/news/media-releases/alk-positive-and-lungevity-foundation-announce-recipients-of-2022-alk-positive" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              ALK Positive and LUNGevity Foundation Announce Recipients of the 2022 ALK-Positive Research Awards, they are Trever Bivona, Roberto Chiarle, Angel Qin. To transform advanced ALK-positive lung cancer into a chronic or curable disease, ALK Positive to award $1.75 million through their research award program.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Dr. Chiarle received the 2022 ALK-Positive Research Awards from
+              ALK Positive and LUNGevity Foundation
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.lungevity.org/news/media-releases/alk-positive-and-lungevity-foundation-announce-recipients-of-2022-alk-positive"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                ALK Positive and LUNGevity Foundation Announce Recipients of the
+                2022 ALK-Positive Research Awards, they are Trever Bivona,
+                Roberto Chiarle, Angel Qin. To transform advanced ALK-positive
+                lung cancer into a chronic or curable disease, ALK Positive to
+                award $1.75 million through their research award program.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
-    
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -148,20 +217,31 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">The Boston Investment Conference selected Dr. Chiarle as its 2022 awardee</h5>
-          <p class="description">
-            <a href="https://www.lungevity.org/news/media-releases/alk-positive-and-lungevity-foundation-announce-recipients-of-2022-alk-positive" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              The Boston Investment Conference selected Dr. Chiarle as its 2022 awardee. Funds from the November 1 conference will enable him to launch the crucial human trials needed to combat neuroblastoma and save lives. His critical work will pave the way to new treatments and offer fresh hope for children with cancer and their families.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              The Boston Investment Conference selected Dr. Chiarle as its 2022
+              awardee
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.lungevity.org/news/media-releases/alk-positive-and-lungevity-foundation-announce-recipients-of-2022-alk-positive"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                The Boston Investment Conference selected Dr. Chiarle as its
+                2022 awardee. Funds from the November 1 conference will enable
+                him to launch the crucial human trials needed to combat
+                neuroblastoma and save lives. His critical work will pave the
+                way to new treatments and offer fresh hope for children with
+                cancer and their families.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
-    
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -170,20 +250,29 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Dr. Chiarle was selected from the DF/HCC Lung Cancer Program to lead the SPORE projects 1</h5>
-          <p class="description">
-            <a href="https://www.dfhcc.harvard.edu/research/research-programs/clinical-based-programs/lung-cancer/dfhcc-lung-cancer-specialized-program-of-research-excellence-spore/projects/" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              The goal of DF/HCC Lung Cancer Specialized Program of Research Excellence (SPORE)  Project 1 is to develop a therapeutic peptide vaccine against ALK in the treatment of patients with tyrosine kinase inhibitor-resistant ALK-positive lung cancer.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Dr. Chiarle was selected from the DF/HCC Lung Cancer Program to
+              lead the SPORE projects 1
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.dfhcc.harvard.edu/research/research-programs/clinical-based-programs/lung-cancer/dfhcc-lung-cancer-specialized-program-of-research-excellence-spore/projects/"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                The goal of DF/HCC Lung Cancer Specialized Program of Research
+                Excellence (SPORE) Project 1 is to develop a therapeutic peptide
+                vaccine against ALK in the treatment of patients with tyrosine
+                kinase inhibitor-resistant ALK-positive lung cancer.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -192,20 +281,28 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">The video with Roberto Chiarle and Elisa Bergaggio starring for the ALK.CAR T cell trial</h5>
-          <p class="description">
-            <a href="https://vimeo.com/761496435/4548c19d5f" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              Meet the Boston Children's pathologist leading a promising treatment for a devastating childhood cancer. See the video shared at the 2022 Boston Investment Conference.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              The video with Roberto Chiarle and Elisa Bergaggio starring for
+              the ALK.CAR T cell trial
+            </h5>
+            <p class="description">
+              <a
+                href="https://vimeo.com/761496435/4548c19d5f"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                Meet the Boston Children's pathologist leading a promising
+                treatment for a devastating childhood cancer. See the video
+                shared at the 2022 Boston Investment Conference.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -214,20 +311,29 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Dr. Chiarle won the LLS SCOR grant on ALCL lymphoma</h5>
-          <p class="description">
-            <a href="https://www.lls.org/award/translational-discovery-peripheral-t-cell-lymphomas" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              Peripheral T-cell lymphomas (PTCLs) are poorly understood and patients with PTCL are underserved by current therapies. This project aims to establish preclinical evidence for combination strategies that integrate CCR7/PI3 kinase inhibition to eradicate minimal residual disease in PTCLs.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Dr. Chiarle won the LLS SCOR grant on ALCL lymphoma
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.lls.org/award/translational-discovery-peripheral-t-cell-lymphomas"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                Peripheral T-cell lymphomas (PTCLs) are poorly understood and
+                patients with PTCL are underserved by current therapies. This
+                project aims to establish preclinical evidence for combination
+                strategies that integrate CCR7/PI3 kinase inhibition to
+                eradicate minimal residual disease in PTCLs.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -236,30 +342,43 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Our work on retrotransposon LINE1 insertion in CRISPR-based gene editing systems was published by Nature Communications</h5>
-          <p class="description">
-            <a href="https://www.nature.com/articles/s41467-022-31322-3" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              Our work systematically assessing the safty issue of CRISPR-based gene editing systems from aspect of retrotransposon LINE1 insertion was published online by Nature Communications.
+          <div class="timeline-content">
+            <h5 class="title">
+              Our work on retrotransposon LINE1 insertion in CRISPR-based gene
+              editing systems was published by Nature Communications
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.nature.com/articles/s41467-022-31322-3"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                Our work systematically assessing the safty issue of
+                CRISPR-based gene editing systems from aspect of retrotransposon
+                LINE1 insertion was published online by Nature Communications.
               </a>
-              <br>
-              Also see the corresponding reports from 
-              <a href="https://answers.childrenshospital.org/crispr-gene-editing/" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
+              <br />
+              Also see the corresponding reports from
+              <a
+                href="https://answers.childrenshospital.org/crispr-gene-editing/"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
                 BCH
               </a>
-               and 
-               <a href="https://www.azolifesciences.com/news/20220708/Study-highlights-retrotransposition-in-CRISPR-gene-therapy-clinical-trials.aspx" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
+              and
+              <a
+                href="https://www.azolifesciences.com/news/20220708/Study-highlights-retrotransposition-in-CRISPR-gene-therapy-clinical-trials.aspx"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
                 AZO Life Sciences.
-               </a>
-            </a>
-          </p>
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -268,20 +387,27 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Dr. Taek-Chin Cheong received the OFD fellowship awards</h5>
-          <p class="description">
-            <a href="https://www.childrenshospital.org/research/office-faculty-development/fellowships-opportunities" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              Lab member, Dr. Taek-Chin Cheong, received a fellowship awards sponsored by the Office of Faculty Development (OFD) and the Research Committees (BTREC and CTREC). Congratulations!
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Dr. Taek-Chin Cheong received the OFD fellowship awards
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.childrenshospital.org/research/office-faculty-development/fellowships-opportunities"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                Lab member, Dr. Taek-Chin Cheong, received a fellowship awards
+                sponsored by the Office of Faculty Development (OFD) and the
+                Research Committees (BTREC and CTREC). Congratulations!
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -290,20 +416,28 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Our work on molecular mechanism of resistance to ALK inhibitors in ALK+ ALCL was published by Blood</h5>
-          <p class="description">
-            <a href="https://ashpublications.org/blood/article-abstract/139/5/717/477348/Tyrosine-phosphatases-regulate-resistance-to-ALK" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              Our work that tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma was published online by Blood.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Our work on molecular mechanism of resistance to ALK inhibitors in
+              ALK+ ALCL was published by Blood
+            </h5>
+            <p class="description">
+              <a
+                href="https://ashpublications.org/blood/article-abstract/139/5/717/477348/Tyrosine-phosphatases-regulate-resistance-to-ALK"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                Our work that tyrosine phosphatases regulate resistance to ALK
+                inhibitors in ALK+ anaplastic large cell lymphoma was published
+                online by Blood.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -312,20 +446,25 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Lab member, Rafael, got his lovely daughter, and becomes a father now</h5>
-          <p class="description">
-            <a>
-              Lab member, Rafael, just got his very lovely girl, in June 2020. This a wonderful time for Rafael's life and family. Bless he becomes a farther now!
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Lab member, Rafael, got his lovely daughter, and becomes a father
+              now
+            </h5>
+            <p class="description">
+              <a>
+                Lab member, Rafael, just got his very lovely girl, in June 2020.
+                This a wonderful time for Rafael's life and family. Bless he
+                becomes a farther now!
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -334,20 +473,21 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Lab member, Elif, got her PhD degree</h5>
-          <p class="description">
-            <a>
-              Lab member, Elif Karaca, just passed her defense and got her PhD in January, 2019. Congratulations!
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">Lab member, Elif, got her PhD degree</h5>
+            <p class="description">
+              <a>
+                Lab member, Elif Karaca, just passed her defense and got her PhD
+                in January, 2019. Congratulations!
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -356,20 +496,29 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Our work on WASP as a tumor suppressor was published by Nature Medicine!</h5>
-          <p class="description">
-            <a href="https://www.nature.com/articles/s41591-018-0262-9" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-              Our work that Wiskott-Aldrich syndrome protein (WASP) is a tumor suppressor in T cell lymphoma was published online by Nature Medicine today.
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">
+              Our work on WASP as a tumor suppressor was published by Nature
+              Medicine!
+            </h5>
+            <p class="description">
+              <a
+                href="https://www.nature.com/articles/s41591-018-0262-9"
+                class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+              >
+                Our work that Wiskott-Aldrich syndrome protein (WASP) is a tumor
+                suppressor in T cell lymphoma was published online by Nature
+                Medicine today.
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
+        <div id="news-show-hide"></div> <!-- ultima riga delle news usata come link per la chiusura del collapse delle news extra -->
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
@@ -378,22 +527,23 @@
               </span>
             </div>
           </div>
-        <div class="timeline-content">
-          <h5 class="title">Lab member, Tao Chen, had his cute doughter</h5>
-          <p class="description">
-            <a>
-              Lab member, Tao, had his lovely daughter in November 2018. That was a really wonderful gift for Tao's life and his family. Bless them at this moment!
-            </a>
-          </p>
+          <div class="timeline-content">
+            <h5 class="title">Lab member, Tao Chen, had his cute doughter</h5>
+            <p class="description">
+              <a>
+                Lab member, Tao, had his lovely daughter in November 2018. That
+                was a really wonderful gift for Tao's life and his family. Bless
+                them at this moment!
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- end experience section-->
+        <!-- end experience section-->
 
-
-      <div class="collapse" id="collapseExample">
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+        <div class="collapse" id="collapseExample">
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -402,20 +552,24 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Rafael Blasco-Patiño, got married</h5>
-            <p class="description">
-              <a>
-                Lab member, Tao, had his lovely daughter in November 2018. That was a really wonderful gift for Tao's life and his family. Bless them at this moment!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Lab member, Rafael Blasco-Patiño, got married
+              </h5>
+              <p class="description">
+                <a>
+                  Lab member, Tao, had his lovely daughter in November 2018.
+                  That was a really wonderful gift for Tao's life and his
+                  family. Bless them at this moment!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -424,20 +578,26 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Dr. Pighi, gave a presentation on FBXO11 mutation in Lymphoma on AACR</h5>
-            <p class="description">
-              <a>
-                The work on FBXO11 in lymphoma selected as an oral presentation at the plenary session of the meeting Hematologic Malignancies: Translating Discoveries to Novel Therapies organazied by the AACR, May 6-9, 2017; Boston, MA.
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Lab member, Dr. Pighi, gave a presentation on FBXO11 mutation in
+                Lymphoma on AACR
+              </h5>
+              <p class="description">
+                <a>
+                  The work on FBXO11 in lymphoma selected as an oral
+                  presentation at the plenary session of the meeting Hematologic
+                  Malignancies: Translating Discoveries to Novel Therapies
+                  organazied by the AACR, May 6-9, 2017; Boston, MA.
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -446,20 +606,29 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Our work on PI3K δ blockade was published by Nature</h5>
-            <p class="description">
-              <a href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature21504.html" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-                Our work that PI3K δ blockade increases genomic instability in B cells was published by Nature today. A Nature News and Views, Cancer: A targeted treatment with off-target risks, written by Prof. Fruman and O'Brien from University of California.
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Our work on PI3K δ blockade was published by Nature
+              </h5>
+              <p class="description">
+                <a
+                  href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature21504.html"
+                  class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+                >
+                  Our work that PI3K δ blockade increases genomic instability in
+                  B cells was published by Nature today. A Nature News and
+                  Views, Cancer: A targeted treatment with off-target risks,
+                  written by Prof. Fruman and O'Brien from University of
+                  California.
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -468,20 +637,28 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Dr. Chiarle won a grant for a phase I clinical trial using an ALK vaccine for ALK-rearranged lung cancers</h5>
-            <p class="description">
-              <a>
-                Dr. Chiarle has been awarded a Bridge Project Extension grant to test the efficacy of a therapeutic ALK vaccine in ALK-rearranged non-small cell lung cancer patients in collaboration with Dr. Darrell Irvine (MIT-Koch Institute) and Dr. Mark Awad (DFCI). The vaccine is currently seeking IND approval from FDA (03/01/2016)
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Dr. Chiarle won a grant for a phase I clinical trial using an
+                ALK vaccine for ALK-rearranged lung cancers
+              </h5>
+              <p class="description">
+                <a>
+                  Dr. Chiarle has been awarded a Bridge Project Extension grant
+                  to test the efficacy of a therapeutic ALK vaccine in
+                  ALK-rearranged non-small cell lung cancer patients in
+                  collaboration with Dr. Darrell Irvine (MIT-Koch Institute) and
+                  Dr. Mark Awad (DFCI). The vaccine is currently seeking IND
+                  approval from FDA (03/01/2016)
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -490,20 +667,25 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Congratulations to Dr. Chiarle for receiving a NIH R01 grant</h5>
-            <p class="description">
-              <a>
-                Our lab PI, Roberto Chiarle, received a NIH R01 grant from NHLBI to investigate molecular resistance mechanism of ALK inhibitor and develop innovative therapies of ALK-rearranged cancer. Congratulations!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Congratulations to Dr. Chiarle for receiving a NIH R01 grant
+              </h5>
+              <p class="description">
+                <a>
+                  Our lab PI, Roberto Chiarle, received a NIH R01 grant from
+                  NHLBI to investigate molecular resistance mechanism of ALK
+                  inhibitor and develop innovative therapies of ALK-rearranged
+                  cancer. Congratulations!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -512,20 +694,26 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Dr. Chiarle has been elected as Member of the AACR and of the ASH</h5>
-            <p class="description">
-              <a>
-                Lab PI, Roberto Chiarle, has been elected as Member of the American Association for Cancer Research (AACR) and of the American Association of Hematology (ASH) in Feb, 2014. Congratulations!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Dr. Chiarle has been elected as Member of the AACR and of the
+                ASH
+              </h5>
+              <p class="description">
+                <a>
+                  Lab PI, Roberto Chiarle, has been elected as Member of the
+                  American Association for Cancer Research (AACR) and of the
+                  American Association of Hematology (ASH) in Feb, 2014.
+                  Congratulations!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -534,20 +722,21 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Mara, just got her PhD</h5>
-            <p class="description">
-              <a>
-                Lab member, Mara, just passed her defense and got her PhD in Jan, 2014. Congratulations!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">Lab member, Mara, just got her PhD</h5>
+              <p class="description">
+                <a>
+                  Lab member, Mara, just passed her defense and got her PhD in
+                  Jan, 2014. Congratulations!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -556,20 +745,23 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Taek-Chin, got his lovely baby</h5>
-            <p class="description">
-              <a>
-                Lab member, Taek-Chin, had his baby in January, 2014. The baby, a quite lovely girl, was born on Saturday in BIDMC. She is a definitely wonderful gift for Taek's life and his family. Bless Taek becomes a farther now!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">Lab member, Taek-Chin, got his lovely baby</h5>
+              <p class="description">
+                <a>
+                  Lab member, Taek-Chin, had his baby in January, 2014. The
+                  baby, a quite lovely girl, was born on Saturday in BIDMC. She
+                  is a definitely wonderful gift for Taek's life and his family.
+                  Bless Taek becomes a farther now!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -578,20 +770,23 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Nada, had her cute baby</h5>
-            <p class="description">
-              <a>
-                Lab member, Nada, had her lovely baby, Matilda, in December 2013. Matilda was born just before this Christmas Day and was a really wonderful gift for Nada's life and her family. Let's bless them at this moment!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">Lab member, Nada, had her cute baby</h5>
+              <p class="description">
+                <a>
+                  Lab member, Nada, had her lovely baby, Matilda, in December
+                  2013. Matilda was born just before this Christmas Day and was
+                  a really wonderful gift for Nada's life and her family. Let's
+                  bless them at this moment!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -600,20 +795,23 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Chiara Pighi, got her PhD degree</h5>
-            <p class="description">
-              <a>
-                Lab member, Chiara Pighi, just passed her defense and got her PhD in May, 2013. Congratulations!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Lab member, Chiara Pighi, got her PhD degree
+              </h5>
+              <p class="description">
+                <a>
+                  Lab member, Chiara Pighi, just passed her defense and got her
+                  PhD in May, 2013. Congratulations!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -622,20 +820,21 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Lab member, Elif, got married</h5>
-            <p class="description">
-              <a>
-                Lab member, Elif, just got married in May,2013. They went to Europe for their wedding and honeymoon. Bless the couple!
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">Lab member, Elif, got married</h5>
+              <p class="description">
+                <a>
+                  Lab member, Elif, just got married in May,2013. They went to
+                  Europe for their wedding and honeymoon. Bless the couple!
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -644,20 +843,27 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Dr. Chiarle was just awarded the Translational Research Program Pilot grant from Children's Hospital</h5>
-            <p class="description">
-              <a>
-                We were just awarded a one-year research grant from Translational Research Program of Children's hospital Boston. This grant will support our research project on ALK tumor vaccine in Neuroblastoma. The funding will begin on July 1, 2013 and will continue through June 30, 2014.
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Dr. Chiarle was just awarded the Translational Research Program
+                Pilot grant from Children's Hospital
+              </h5>
+              <p class="description">
+                <a>
+                  We were just awarded a one-year research grant from
+                  Translational Research Program of Children's hospital Boston.
+                  This grant will support our research project on ALK tumor
+                  vaccine in Neuroblastoma. The funding will begin on July 1,
+                  2013 and will continue through June 30, 2014.
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -666,20 +872,34 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Roberto Chiarle received the “Francesco De Luca” International Prize 2013 for cancer research from the prestigious Academia dei Lincei in Rome, Italy. Congratulations!</h5>
-            <p class="description">
-              <a href="http://www.lincei.it" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-                Lab PI, Roberto, was just notified that he has been selected to receive the “Francesco De Luca” International Prize 2013 for cancer research from the prestigious Academia dei Lincei in Rome, Italy. The academy is one of the world's oldest scientific academies; Galileo Galilei was among the first scientists inducted as a member of the academy. The prize will be presented to Dr. Chiarle by the President of the Italian Republic, Giorgio Napolitano, on June 21, 2013.
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Roberto Chiarle received the “Francesco De Luca” International
+                Prize 2013 for cancer research from the prestigious Academia dei
+                Lincei in Rome, Italy. Congratulations!
+              </h5>
+              <p class="description">
+                <a
+                  href="http://www.lincei.it"
+                  class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+                >
+                  Lab PI, Roberto, was just notified that he has been selected
+                  to receive the “Francesco De Luca” International Prize 2013
+                  for cancer research from the prestigious Academia dei Lincei
+                  in Rome, Italy. The academy is one of the world's oldest
+                  scientific academies; Galileo Galilei was among the first
+                  scientists inducted as a member of the academy. The prize will
+                  be presented to Dr. Chiarle by the President of the Italian
+                  Republic, Giorgio Napolitano, on June 21, 2013.
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -688,20 +908,31 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">A novel technique on genome-wide mapping of DNA double-strand breaks was recently published on Nature Methods</h5>
-            <p class="description">
-              <a href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2408.html" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-                This work was finished by collaboration of several groups respectively from Europe, MIT, UTMB and our lab. The published paper brightly presented a novel genome-wide approach to map DNA double-strand breaks (DSBs) at nucleotide resolution by a method termed BLESS (direct in situ Breaks Labeling, Enrichment on Streptavidin and next-generation Sequencing).
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                A novel technique on genome-wide mapping of DNA double-strand
+                breaks was recently published on Nature Methods
+              </h5>
+              <p class="description">
+                <a
+                  href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2408.html"
+                  class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+                >
+                  This work was finished by collaboration of several groups
+                  respectively from Europe, MIT, UTMB and our lab. The published
+                  paper brightly presented a novel genome-wide approach to map
+                  DNA double-strand breaks (DSBs) at nucleotide resolution by a
+                  method termed BLESS (direct in situ Breaks Labeling,
+                  Enrichment on Streptavidin and next-generation Sequencing).
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -710,20 +941,30 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Dr. Chiarle as a member of Immunology Ph.D. Program of Harvard Medical school</h5>
-            <p class="description">
-              <a href="http://www.hms.harvard.edu/dms/immunology/fac/ChiarleRoberto.php" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-                The purpose of the Immunology Ph.D. Program at Harvard Medical school is to provide education leading to a Ph.D. in Immunology. This Program is under the responsibility of the Committee on Immunology at Harvard. Roberto Chiarle was promoted as a member of this program.
-              </a>
-            </p>
+            <div class="timeline-content">
+              <h5 class="title">
+                Dr. Chiarle as a member of Immunology Ph.D. Program of Harvard
+                Medical school
+              </h5>
+              <p class="description">
+                <a
+                  href="http://www.hms.harvard.edu/dms/immunology/fac/ChiarleRoberto.php"
+                  class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+                >
+                  The purpose of the Immunology Ph.D. Program at Harvard Medical
+                  school is to provide education leading to a Ph.D. in
+                  Immunology. This Program is under the responsibility of the
+                  Committee on Immunology at Harvard. Roberto Chiarle was
+                  promoted as a member of this program.
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- end experience section-->
+          <!-- end experience section-->
 
-        <!-- start experience section-->
-        <div class="timeline">
-          <div class="icon"></div>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
             <div class="date-content">
               <div class="date-outer">
                 <span class="date">
@@ -732,149 +973,194 @@
                 </span>
               </div>
             </div>
-          <div class="timeline-content">
-            <h5 class="title">Dr. Chiarle as a member of BBS Ph.D. Program of Harvar Medical School</h5>
-            <p class="description">
-              <a href="http://www.hms.harvard.edu/dms/BBS/index.html" class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">
-                Roberto Chiarle was promoted as a member of the BBS (Biological and Biomedical Science) Ph.D Program of Harvar medical on June 28, 2012. To see more, click here. To see the detail about BBS Program.
-              </a>
+            <div class="timeline-content">
+              <h5 class="title">
+                Dr. Chiarle as a member of BBS Ph.D. Program of Harvar Medical
+                School
+              </h5>
+              <p class="description">
+                <a
+                  href="http://www.hms.harvard.edu/dms/BBS/index.html"
+                  class="link-dark link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"
+                >
+                  Roberto Chiarle was promoted as a member of the BBS
+                  (Biological and Biomedical Science) Ph.D Program of Harvar
+                  medical on June 28, 2012. To see more, click here. To see the
+                  detail about BBS Program.
+                </a>
+              </p>
+            </div>
+          </div>
+          <!-- end experience section-->
+        </div>
+      </div>
+
+      <div class="row h-30"></div>
+      <div class="col text-center">
+        <a id="a-more-news" href="#news-show-hide">
+          <button
+            id="btn-more-news"
+            class="btn btn-primary btn-lg"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            SEE MORE NEWS
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- STRUTTURA "CONTACT"-->
+    <div id="contact"></div>
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col">
+          <h1 class="title-paragraf" style="height: 50px">CONTACT</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">
+              ROBERTO CHIARLE, M.D.
+            </h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Professor<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              Enders 1116.1<br />
+              300 Longwood Ave<br />
+              Boston, MA 02115<br />
+              Phone:
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="tel:(617) 919-2662"
+                >(617) 919-2662</a
+              ><br />
+              Fax: (617) 730-0148<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:roberto.chiarle@childrens.harvard.edu"
+                >roberto.chiarle@childrens.harvard.edu</a
+              >
             </p>
           </div>
         </div>
-        <!-- end experience section-->
 
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Administrative Assistant<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              Enders 1170<br />
+              300 Longwood Ave<br />
+              Boston, MA 02115<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:susan.wong@childrens.harvard.edu"
+                >susan.wong@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">
+              ANTHONY CALDERONE
+            </h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Program Coordinator<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              300 Longwood Avenue<br />
+              Bader Building, BA-138<br />
+              Boston, MA 02115<br />
+              Phone:
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="tel:(617) 919-2662"
+                >(617) 355-8969</a
+              ><br />
+              Fax: (617) 730-0674<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:anthony.calderone@childrens.harvard.edu"
+                >anthony.calderone@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-
-
-
     </div>
 
+    <!-- IMMAGINI CON LINK -->
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col logo-padding">
+          <a href="https://www.childrenshospital.org/">
+            <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col logo-padding">
+          <a href="https://www.dana-farber.org/">
+            <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col logo-padding">
+          <a href="https://hms.harvard.edu/">
+            <img
+              src="img/loghi/harvard-medical-school-logo-vector.jpg"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT FINE PAGINA -->
     <div class="row h-30"></div>
-    <div class="col text-center">
-      <button id="btn-see-more" class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        <!-- Cambiare testo del bottone quando vengono fatte vedere le altre news -->
-        <span>SEE MORE NEWS</span>
-      </button>
-    </div>
-
-
-    
-  </div>
-  
-<!-- STRUTTURA "CONTACT"-->
-<div id="contact"></div>
-<div class="container text-center">
-  <div class="row h-70"></div>
-
-  <div class="row">
-    <div class="col">
-      <h1 class="title-paragraf" style="height: 50px;">CONTACT</h1>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">ROBERTO CHIARLE, M.D.</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Professor<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          Enders 1116.1<br>
-          300 Longwood Ave<br>
-          Boston, MA 02115<br>
-          Phone: <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 919-2662</a><br>
-          Fax: (617) 730-0148<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:roberto.chiarle@childrens.harvard.edu">roberto.chiarle@childrens.harvard.edu</a>
-        </p>
-      </div>
-    </div>
-        
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Administrative Assistant<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          Enders 1170<br>
-          300 Longwood Ave<br>
-          Boston, MA 02115<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:susan.wong@childrens.harvard.edu">susan.wong@childrens.harvard.edu</a>
-        </p>
+    <div class="text-center" id="end-page">
+      <div class="row">
+        <div class="col" style="color: #fff">
+          <p class="p-3">
+            Copyright © 2021 Chiarlelab in Boston Children's Hospital | Harvard
+            Medical School. All rights reserved.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">ANTHONY CALDERONE</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Program Coordinator<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          300 Longwood Avenue<br>
-          Bader Building, BA-138<br>
-          Boston, MA 02115<br>
-          Phone: <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 355-8969</a><br>
-          Fax: (617) 730-0674<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:anthony.calderone@childrens.harvard.edu">anthony.calderone@childrens.harvard.edu</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- IMMAGINI CON LINK -->
-<div class="container text-center">
-
-  <div class="row h-70"></div>
-
-  <div class="row">
-    <div class="col logo-padding">
-      <a href="https://www.childrenshospital.org/" >
-        <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid">
-      </a>
-    </div>
-        
-    <div class="col logo-padding">
-      <a href="https://www.dana-farber.org/">
-        <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid">
-      </a>
-    </div>
-
-    <div class="col logo-padding">
-      <a href="https://hms.harvard.edu/">
-        <img src="img/loghi/harvard-medical-school-logo-vector.jpg" class="img-fluid">
-      </a>
-    </div>
-  </div>
-</div>
-    
-<!-- COPYRIGHT FINE PAGINA -->
-<div class="row h-30"></div>
-<div class="text-center" id="end-page">
-  <div class="row">
-    <div class="col" style="color: #fff;">
-      <p class="p-3">Copyright © 2021 Chiarlelab in Boston Children's Hospital | Harvard Medical School. All rights reserved.</p>
-    </div>
-  </div>
-</div>
-
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scriptNews.js"></script>
+  </body>
 </html>

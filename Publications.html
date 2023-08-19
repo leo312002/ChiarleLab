@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home BOSTON -</title>
-    <link rel="icon" href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png"
+      sizes="32x32"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <link href="stylePublications.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="stylePublications.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png" /></a>
 
-<!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container">
-            
-      <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#team">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#album">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="News.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Link.html">Link</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#team">Members</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#album">Album</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="News.html">News</a></li>
-          <li class="nav-item"><a class="nav-link" href="Link.html">Link</a></li>
-
-          <!-- DROPDOWN BUTTON
+            <!-- DROPDOWN BUTTON
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Publications - News - Link
@@ -44,23 +73,59 @@
               <li><a class="dropdown-item nav-link" href="Link.html">Link</a></li>
             </ul>
           </li> -->
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <!-- DROPDOWN BUTTON -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chiarle's Lab
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item nav-link js-scroll-trigger"
+                    href="index.html"
+                    >Chiarle's Lab in Boston</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="LabTorino.html"
+                    >Chiarle's Lab in Torino</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-<!-- STRUTTURA "PUBLICATIONS" (presa da internet: https://codepen.io/MarkBoots/pen/OJOqNyB) */ -->
+    <!-- STRUTTURA "PUBLICATIONS" (presa da internet: https://codepen.io/MarkBoots/pen/OJOqNyB) */ -->
     <div class="row h-70"></div>
 
     <div class="container text-center">
       <div class="row h-30"></div>
 
       <ul class="publication-timeline">
-        <li style="--accent-color:#41516C">
+        <li style="--accent-color: #41516c">
           <div class="date">February 2022</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/34657149/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/34657149/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Tyrosine phosphatases regulate resistance to ALK inhibitors in
+              ALK+ anaplastic large cell lymphoma
             </a>
           </div>
           <div class="descr">
@@ -71,26 +136,34 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
-            <div class="date">December 2021</div>
-            <div class="title">
-              <a href="https://pubmed.ncbi.nlm.nih.gov/34625792/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                Frequent mutations of FBXO11 highlight BCL6 as a therapeutic target in Burkitt lymphoma
-              </a>
-            </div>
-            <div class="descr">
-              <!--
+        <li style="--accent-color: #1b5f8c">
+          <div class="date">December 2021</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/34625792/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Frequent mutations of FBXO11 highlight BCL6 as a therapeutic
+              target in Burkitt lymphoma
+            </a>
+          </div>
+          <div class="descr">
+            <!--
               <a href="https://pubmed.ncbi.nlm.nih.gov/34625792/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                 Pighi C, Wang Q, López C, Bernhart SH, Grande BM, Poggio T, Langellotto F, Bonello L, Dall'Olio R, Martínez-Martín S, Molinaro L, Francia di Celle P, Whitfield JR, Soucek L, Voena C, Calogero RA, Morin RD, Staudt LM, Siebert R, Zamò A, Chiarle R. Frequent mutations of FBXO11 highlight BCL6 as a therapeutic target in Burkitt lymphoma. Blood Adv. 2021 Dec 14;5(23):5239-5257. 
               </a>
-            </div>
             -->
+          </div>
         </li>
-        <li style="--accent-color:#4CADAD">
+        <li style="--accent-color: #4cadad">
           <div class="date">January 2019</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/30510251/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Wiskott-Aldrich syndrome protein (WASP) is a tumor suppressor in T cell lymphoma
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/30510251/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Wiskott-Aldrich syndrome protein (WASP) is a tumor suppressor in T
+              cell lymphoma
             </a>
           </div>
           <div class="descr">
@@ -101,11 +174,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#41516C">
+        <li style="--accent-color: #41516c">
           <div class="date">February 2017</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/28199309/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Phosphatidylinositol 3-kinase δ blockade increases genomic instability in B cells
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/28199309/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Phosphatidylinositol 3-kinase δ blockade increases genomic
+              instability in B cells
             </a>
           </div>
           <div class="descr">
@@ -116,11 +193,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
+        <li style="--accent-color: #1b5f8c">
           <div class="date">March 2016</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/26747246/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Redundant and nonredundant roles for Cdc42 and Rac1 in lymphomas developed in NPM-ALK transgenic mice
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/26747246/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Redundant and nonredundant roles for Cdc42 and Rac1 in lymphomas
+              developed in NPM-ALK transgenic mice
             </a>
           </div>
           <div class="descr">
@@ -131,11 +212,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#4CADAD">
+        <li style="--accent-color: #4cadad">
           <div class="date">March 2016</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/26956543/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Editing of mouse and human immunoglobulin genes by CRISPR-Cas9 system
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/26956543/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Editing of mouse and human immunoglobulin genes by CRISPR-Cas9
+              system
             </a>
           </div>
           <div class="descr">
@@ -146,26 +231,33 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#41516C">
-            <div class="date">December 2015</div>
-            <div class="title">
-              <a href="https://pubmed.ncbi.nlm.nih.gov/26419961/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                Efficacy of a Cancer Vaccine against ALK-Rearranged Lung Tumors
-              </a>
-            </div>
-            <div class="descr">
-              <!--
+        <li style="--accent-color: #41516c">
+          <div class="date">December 2015</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/26419961/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Efficacy of a Cancer Vaccine against ALK-Rearranged Lung Tumors
+            </a>
+          </div>
+          <div class="descr">
+            <!--
               <a href="https://pubmed.ncbi.nlm.nih.gov/26419961/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                 Voena C, Menotti M, Mastini C, Di Giacomo F, Longo DL, Castella B, Merlo ME, Ambrogio C, Wang Q, Minero VG, Poggio T, Martinengo C, D'Amico L, Panizza E, Mologni L, Cavallo F, Altruda F, Butaney M, Capelletti M, Inghirami G, Jänne PA, Chiarle R. Efficacy of a Cancer Vaccine against ALK-Rearranged Lung Tumors. Cancer Immunol Res. 2015 Dec;3(12):1333-43.
               </a>
               -->
-            </div>
+          </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
+        <li style="--accent-color: #1b5f8c">
           <div class="date">April 2015</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/25843629/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              The BRAF pseudogene functions as a competitive endogenous RNA and induces lymphoma in vivo
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/25843629/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              The BRAF pseudogene functions as a competitive endogenous RNA and
+              induces lymphoma in vivo
             </a>
           </div>
           <div class="descr">
@@ -176,11 +268,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#4CADAD">
+        <li style="--accent-color: #4cadad">
           <div class="date">November 2014</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/25456124/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Simple and rapid in vivo generation of chromosomal rearrangements using CRISPR/Cas9 technology
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/25456124/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Simple and rapid in vivo generation of chromosomal rearrangements
+              using CRISPR/Cas9 technology
             </a>
           </div>
           <div class="descr">
@@ -191,11 +287,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#41516C">
+        <li style="--accent-color: #41516c">
           <div class="date">November 2014</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/25193384/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              ALK-dependent control of hypoxia-inducible factors mediates tumor growth and metastasis
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/25193384/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              ALK-dependent control of hypoxia-inducible factors mediates tumor
+              growth and metastasis
             </a>
           </div>
           <div class="descr">
@@ -206,11 +306,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
+        <li style="--accent-color: #1b5f8c">
           <div class="date">Jenuary 2014</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/24373969/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              FuseFISH: robust detection of transcribed gene fusions in single cells
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/24373969/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              FuseFISH: robust detection of transcribed gene fusions in single
+              cells
             </a>
           </div>
           <div class="descr">
@@ -221,26 +325,34 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#4CADAD">
-            <div class="date">2013</div>
-            <div class="title">
-              <a href="https://pubmed.ncbi.nlm.nih.gov/23611285/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                Translocations in normal B cells and cancers: insights from new technical approaches
-              </a>
-            </div>
-            <div class="descr">
-              <!--
+        <li style="--accent-color: #4cadad">
+          <div class="date">2013</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/23611285/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Translocations in normal B cells and cancers: insights from new
+              technical approaches
+            </a>
+          </div>
+          <div class="descr">
+            <!--
               <a href="https://pubmed.ncbi.nlm.nih.gov/23611285/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                 Chiarle R. Translocations in normal B cells and cancers: insights from new technical approaches. Adv Immunol. 2013;117:39-71.
               </a>
               -->
-            </div>
+          </div>
         </li>
-        <li style="--accent-color:#41516C">
+        <li style="--accent-color: #41516c">
           <div class="date">January 2012</div>
           <div class="title">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3344385/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              FBXO11 targets BCL6 for degradation and is inactivated in diffuse large B-cell lymphomas
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3344385/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              FBXO11 targets BCL6 for degradation and is inactivated in diffuse
+              large B-cell lymphomas
             </a>
           </div>
           <div class="descr">
@@ -251,11 +363,16 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
+        <li style="--accent-color: #1b5f8c">
           <div class="date">December 2011</div>
           <div class="title">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3242652/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Selective Therapeutic Targeting of the Anaplastic Lymphoma Kinase With Liposomal siRNA Induces Apoptosis and Inhibits Angiogenesis in Neuroblastoma
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3242652/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Selective Therapeutic Targeting of the Anaplastic Lymphoma Kinase
+              With Liposomal siRNA Induces Apoptosis and Inhibits Angiogenesis
+              in Neuroblastoma
             </a>
           </div>
           <div class="descr">
@@ -266,11 +383,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#4CADAD">
+        <li style="--accent-color: #4cadad">
           <div class="date">Semptember 2011</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/21962511/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Genome-wide translocation sequencing reveals mechanisms of chromosome breaks and rearrangements in B cells
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/21962511/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Genome-wide translocation sequencing reveals mechanisms of
+              chromosome breaks and rearrangements in B cells
             </a>
           </div>
           <div class="descr">
@@ -281,11 +402,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#41516C">
+        <li style="--accent-color: #41516c">
           <div class="date">April 2011</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/21219174/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Mechanisms that promote and suppress chromosomal translocations in lymphocytes
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/21219174/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Mechanisms that promote and suppress chromosomal translocations in
+              lymphocytes
             </a>
           </div>
           <div class="descr">
@@ -296,26 +421,34 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
-            <div class="date">November 2008</div>
-            <div class="title">
-              <a href="https://pubmed.ncbi.nlm.nih.gov/18974134/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                The anaplastic lymphoma kinase controls cell shape and growth of anaplastic large cell lymphoma through Cdc42 activation
-              </a>
-            </div>
-            <div class="descr">
-              <!--
+        <li style="--accent-color: #1b5f8c">
+          <div class="date">November 2008</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/18974134/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              The anaplastic lymphoma kinase controls cell shape and growth of
+              anaplastic large cell lymphoma through Cdc42 activation
+            </a>
+          </div>
+          <div class="descr">
+            <!--
               <a href="https://pubmed.ncbi.nlm.nih.gov/18974134/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                 Ambrogio C, Voena C, Manazza AD, Martinengo C, Costa C, Kirchhausen T, Hirsch E, Inghirami G, Chiarle R. The anaplastic lymphoma kinase controls cell shape and growth of anaplastic large cell lymphoma through Cdc42 activation. Cancer Res. 2008 Nov 1;68(21):8899-907.
               </a>
               -->
-            </div>
+          </div>
         </li>
-        <li style="--accent-color:#41516C">
+        <li style="--accent-color: #41516c">
           <div class="date">June 2008</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/18469826/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              The anaplastic lymphoma kinase is an effective oncoantigen for lymphoma vaccination
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/18469826/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              The anaplastic lymphoma kinase is an effective oncoantigen for
+              lymphoma vaccination
             </a>
           </div>
           <div class="descr">
@@ -326,10 +459,13 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#4CADAD">
+        <li style="--accent-color: #4cadad">
           <div class="date">January 2008</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/18097461/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/18097461/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
               The anaplastic lymphoma kinase in the pathogenesis of cancer
             </a>
           </div>
@@ -341,11 +477,15 @@
             -->
           </div>
         </li>
-        <li style="--accent-color:#1B5F8C">
+        <li style="--accent-color: #1b5f8c">
           <div class="date">June 2005</div>
           <div class="title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/15895073/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Stat3 is required for ALK-mediated lymphomagenesis and provides a possible therapeutic target
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/15895073/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >
+              Stat3 is required for ALK-mediated lymphomagenesis and provides a
+              possible therapeutic target
             </a>
           </div>
           <div class="descr">
@@ -362,13 +502,17 @@
 
       <div class="row">
         <div class="col-12">
-          <a class="btn btn-primary btn-lg" href="https://pubmed.ncbi.nlm.nih.gov/?term=chiarle%20r%20[author]" role="button">Complete listing of publications</a>
+          <a
+            class="btn btn-primary btn-lg"
+            href="https://pubmed.ncbi.nlm.nih.gov/?term=chiarle%20r%20[author]"
+            role="button"
+            >Complete listing of publications</a
+          >
         </div>
       </div>
-
     </div>
 
-<!--
+    <!--
       <div class="row">
         <div class="col-2"></div>
         <div class="col">
@@ -608,122 +752,162 @@
         </div>
         <div class="col-1"></div>
       </div>
---> 
+-->
 
-<!-- STRUTTURA "CONTACT"-->
-<div id="contact"></div>
-<div class="container text-center">
-  <div class="row h-70"></div>
+    <!-- STRUTTURA "CONTACT"-->
+    <div id="contact"></div>
+    <div class="container text-center">
+      <div class="row h-70"></div>
 
-  <div class="row">
-    <div class="col">
-      <h1 class="title-paragraf" style="height: 50px;">CONTACT</h1>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">ROBERTO CHIARLE, M.D.</h4>
+      <div class="row">
+        <div class="col">
+          <h1 class="title-paragraf" style="height: 50px">CONTACT</h1>
+        </div>
       </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Professor<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          Enders 1116.1<br>
-          300 Longwood Ave<br>
-          Boston, MA 02115<br>
-          Phone: <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 919-2662</a><br>
-          Fax: (617) 730-0148<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:roberto.chiarle@childrens.harvard.edu">roberto.chiarle@childrens.harvard.edu</a>
-        </p>
+
+      <div class="row">
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">
+              ROBERTO CHIARLE, M.D.
+            </h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Professor<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              Enders 1116.1<br />
+              300 Longwood Ave<br />
+              Boston, MA 02115<br />
+              Phone:
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="tel:(617) 919-2662"
+                >(617) 919-2662</a
+              ><br />
+              Fax: (617) 730-0148<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:roberto.chiarle@childrens.harvard.edu"
+                >roberto.chiarle@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Administrative Assistant<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              Enders 1170<br />
+              300 Longwood Ave<br />
+              Boston, MA 02115<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:susan.wong@childrens.harvard.edu"
+                >susan.wong@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">
+              ANTHONY CALDERONE
+            </h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Program Coordinator<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              300 Longwood Avenue<br />
+              Bader Building, BA-138<br />
+              Boston, MA 02115<br />
+              Phone:
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="tel:(617) 919-2662"
+                >(617) 355-8969</a
+              ><br />
+              Fax: (617) 730-0674<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:anthony.calderone@childrens.harvard.edu"
+                >anthony.calderone@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-        
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Administrative Assistant<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          Enders 1170<br>
-          300 Longwood Ave<br>
-          Boston, MA 02115<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:susan.wong@childrens.harvard.edu">susan.wong@childrens.harvard.edu</a>
-        </p>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">ANTHONY CALDERONE</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Program Coordinator<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          300 Longwood Avenue<br>
-          Bader Building, BA-138<br>
-          Boston, MA 02115<br>
-          Phone: <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 355-8969</a><br>
-          Fax: (617) 730-0674<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:anthony.calderone@childrens.harvard.edu">anthony.calderone@childrens.harvard.edu</a>
-        </p>
+    <!-- IMMAGINI CON LINK -->
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col logo-padding">
+          <a href="https://www.childrenshospital.org/">
+            <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col logo-padding">
+          <a href="https://www.dana-farber.org/">
+            <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col logo-padding">
+          <a href="https://hms.harvard.edu/">
+            <img
+              src="img/loghi/harvard-medical-school-logo-vector.jpg"
+              class="img-fluid"
+            />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- IMMAGINI CON LINK -->
-<div class="container text-center">
-
-  <div class="row h-70"></div>
-
-  <div class="row">
-    <div class="col logo-padding">
-      <a href="https://www.childrenshospital.org/" >
-        <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid">
-      </a>
-    </div>
-        
-    <div class="col logo-padding">
-      <a href="https://www.dana-farber.org/">
-        <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid">
-      </a>
+    <!-- COPYRIGHT FINE PAGINA -->
+    <div class="row h-30"></div>
+    <div class="text-center" id="end-page">
+      <div class="row">
+        <div class="col" style="color: #fff">
+          <p class="p-3">
+            Copyright © 2021 Chiarlelab in Boston Children's Hospital | Harvard
+            Medical School. All rights reserved.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="col logo-padding">
-      <a href="https://hms.harvard.edu/">
-        <img src="img/loghi/harvard-medical-school-logo-vector.jpg" class="img-fluid">
-      </a>
-    </div>
-  </div>
-</div>
-    
-<!-- COPYRIGHT FINE PAGINA -->
-<div class="row h-30"></div>
-<div class="text-center" id="end-page">
-  <div class="row">
-    <div class="col" style="color: #fff;">
-      <p class="p-3">Copyright © 2021 Chiarlelab in Boston Children's Hospital | Harvard Medical School. All rights reserved.</p>
-    </div>
-  </div>
-</div>
-
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+
+    <script>
+      $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
+  </body>
 </html>

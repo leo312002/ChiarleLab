@@ -1,22 +1,24 @@
-/* COUNTER VISITE ALLA PAGINA */
+/* COUNTER VISITE ALLA PAGINA 
 const count = document.getElementById("count");
 
 incrementVisitsCount();
 
-function incrementVisitsCount() {
-  let visits;
+function incrementVisitsCount(){
+    let visits;
 
-  if (!localStorage.getItem("visits")) {
-    localStorage.setItem("visits", 1);
-  } else {
-    visits = +localStorage.getItem("visits");
+    if(!localStorage.getItem("visits")){
+        localStorage.setItem("visits", 1);
+    }else{
+
+    visits =+localStorage.getItem("visits");
     const incrementedCount = visits + 1;
 
     localStorage.setItem("visits", incrementedCount);
-  }
+    }
 
-  count.innerText = localStorage.getItem("visits");
+    count.innerText = localStorage.getItem("visits");
 }
+*/
 
 /* chiude il collapse quando viene schiacciato un item della navbar */
 

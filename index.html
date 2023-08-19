@@ -1,45 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home BOSTON -</title>
-    <link rel="icon" href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png" sizes="32x32">
+    <link
+      rel="icon"
+      href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png"
+      sizes="32x32"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    
-    <!-- Da fare: - quando schiacci un link, se la navbar e' collapse, si chiude  
-                  - mettere un video al posto del carousel 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Da fare: - mettere un video al posto del carousel 
                   - i link della navbar devono portare sopra al titolo del paragrafo con piu' margine
                   - (opzionale) quando sono in una determinata sezione il bottone, della sezione in cui mi trovo, della navbar 
-                    rimane attivo -->
+                    rimane attivo
+                  - (opzionale) fare un counter dei visitatori della pagina giornalieri e totali -->
 
-</head>
+    <!-- 18/08: - aggiunto la funzione della navbar che si chiude quando schiacci un item
+                - cercato di sistemare la gallery
+                - fatto la pagina funding
+                - fatto la pagina welcome
+                - fatto pagina former members
+                - fatto js per cambiare testo ai bottoni 
+              
+         19/08: - aggiunto il link ai bottoni con il collapse -->
+  </head>
 
-<body class="p-0">
+  <body class="p-0">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png" /></a>
 
-<!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container">
-            
-      <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a
+                class="nav-link js-scroll-trigger"
+                data-toggle="pill"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link js-scroll-trigger"
+                data-toggle="pill"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#album">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="Publications.html"
+                >Publications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="News.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="Link.html">Link</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a class="nav-link" data-toggle="pill" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Members</a></li>
-          <li class="nav-item"><a class="nav-link" href="#album">Album</a></li>
-          <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="News.html">News</a></li>
-          <li class="nav-item"><a class="nav-link" href="Link.html">Link</a></li>
-
-          <!-- DROPDOWN BUTTON
+            <!-- DROPDOWN BUTTON
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Publications - News - Link
@@ -50,81 +100,154 @@
               <li><a class="dropdown-item nav-link" href="Link.html">Link</a></li>
             </ul>
           </li>-->
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <!-- DROPDOWN BUTTON -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chiarle's Lab
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item nav-link js-scroll-trigger" href="#"
+                    >Chiarle's Lab in Boston</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="LabTorino.html"
+                    >Chiarle's Lab in Torino</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL - BUTTON -->
+    <div class="container-fluid text-center">
+      <div class="first-row">
+        <div class="row h-30"></div>
+
+        <div class="col"></div>
+        <div class="col-12" id="title-carousel">
+          <p id="title-carousel-text">CHIARLE LAB</p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#contact" style="width: 106px"
+            ><button class="btn btn-primary" id="join-us-button" type="button">
+              JOIN US
+            </button></a
+          >
+        </div>
       </div>
     </div>
-  </nav>
 
-<!-- CAROUSEL - BUTTON -->
+    <!-- CAROUSEL
   <div class="text-center first-row">
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
 
-      <div class="container-fluid text-center overlay">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col-12" id="title-carousel">
-            <p id="title-carousel-text">ROBERTO CHIARLE<br>LABORATORY</p>
-          </div>
-          <div class="col"></div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <a href="#contact" style="width: 106px;"><button class="btn btn-primary" id="join-us-button" type="button">JOIN US</button></a>
-          </div>
-        </div>
-      </div>
-
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- TROVARE VIDEO -->
-          <img src="img/Photo-Chiarle-Lab-cut-2.jpg" id="carousel-img" class="d-block w-100">
+          <img src="img/Photo-Chiarle-Lab-cut-2.jpg" id="carousel-img" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100">
         </div>
         <div class="carousel-item">
           <img src="img/slide-image-02.jpg" id="carousel-img" class="d-block w-100">
         </div>
-        <div class="carousel-item">
-          <img src="img/slide-image-03.jpg"  id="carousel-img" class="d-block w-100">
+      </div>
+    </div>
+  </div> -->
+
+    <!-- Prova carousel che non si rimpicciolisce
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+    <div class="container-fluid text-center overlay">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-12" id="title-carousel">
+          <p id="title-carousel-text">ROBERTO CHIARLE<br>LABORATORY</p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#contact" style="width: 106px;"><button class="btn btn-primary" id="join-us-button" type="button">JOIN US</button></a>
         </div>
       </div>
     </div>
-  </div>
 
-<!-- TEXT SLIDE - IMMAGINE(SLIDE) -->
-  <div class="container text-center">
-    <div class="row-dynamic">
-
-      <div class="col-12 col-lg-6">
-        <h2 id="text-slide-right">We are interested in</h2>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Photo-Chiarle-Lab-cut-2.jpg" class="d-block w-100">
       </div>
+      <div class="carousel-item">
+        <img src="img/slide-image-02.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide-image-03.jpg" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+</div> -->
 
-      <div class="col-12 col-md-auto-p0">
-        <div class="bd-example m-0 border-0">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-dynamic">
-              <div class="carousel-item active">
+    <!-- TEXT SLIDE - IMMAGINE(SLIDE) -->
+    <div class="container text-center">
+      <div class="row-dynamic">
+        <div class="col-12 col-lg-6">
+          <h2 id="text-slide-right">We are interested in</h2>
+        </div>
+
+        <div class="col-12 col-md-auto-p0">
+          <div class="bd-example m-0 border-0">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="3000"
+            >
+              <div class="carousel-dynamic">
+                <div class="carousel-item active">
                   <h2 id="dynamic-text-slide">mechanism</h2>
-              </div>
-              <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
                   <h2 id="dynamic-text-slide">therapy</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-12 col-lg-3">
+          <h2 id="text-slide-left" style="height: 50px">of cancer</h2>
+        </div>
       </div>
 
-      <div class="col-12 col-lg-3">
-        <h2 id="text-slide-left" style="height: 50px">of cancer</h2>
-      </div>
-
+      <img
+        class="img-fluid text-center"
+        id="img-slide"
+        src="img/Photo-Chiarle-Lab-cut-2.jpg"
+      />
     </div>
 
-    <img class= "img-fluid text-center" id="img-slide" src="img/Photo-Chiarle-Lab-cut-2.jpg">
-  </div>
-    
-<!-- STRUTTURA "OUR PROJECTS"-->
-  <div id="projects"></div>
+    <!-- STRUTTURA "OUR PROJECTS"-->
+    <div id="projects"></div>
     <div class="container text-center">
       <div class="row h-70"></div>
 
@@ -137,21 +260,28 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-md-3">
-          <img class="img-fluid" id="img-project" src="img/col1_305x305.jpg">
+          <img class="img-fluid" id="img-project" src="img/col1_305x305.jpg" />
         </div>
         <div class="col-md-7 mt-50-768">
           <div class="row">
             <div class="col-12">
-              <h2>ELUCIDATION OF BASIC PRINCIPLES THAT GOVERN CHROMOSOMAL TRANSLOCATION FORMATION IN NORMAL AND NEOPLASTIC CELLS</h2>
+              <h2>
+                ELUCIDATION OF BASIC PRINCIPLES THAT GOVERN CHROMOSOMAL
+                TRANSLOCATION FORMATION IN NORMAL AND NEOPLASTIC CELLS
+              </h2>
             </div>
             <div class="col-12 h-30"></div>
             <div class="col-12">
-              <p class = "justify project-text">
-                We contributed to the development of a method to comprehensively map translocations at a genome-wide level. 
-                By leveraging this method called High-Throughput Genome-wide Translocation Sequencing (HTGTS) we began a series 
-                of studies aimed at defining general rules for translocation formation, focusing on how transcription, DNA Double 
-                Strand Breaks (DBSs), tissue specificity and other nuclear or DNA repair factors can influence the type and the 
-                frequency of translocations found in human cancers.
+              <p class="justify project-text">
+                We contributed to the development of a method to comprehensively
+                map translocations at a genome-wide level. By leveraging this
+                method called High-Throughput Genome-wide Translocation
+                Sequencing (HTGTS) we began a series of studies aimed at
+                defining general rules for translocation formation, focusing on
+                how transcription, DNA Double Strand Breaks (DBSs), tissue
+                specificity and other nuclear or DNA repair factors can
+                influence the type and the frequency of translocations found in
+                human cancers.
               </p>
             </div>
           </div>
@@ -166,24 +296,37 @@
         <div class="col-1"></div>
 
         <div class="col-md-3 order-md-2">
-          <img class="img-fluid" id="img-project" src="img/col2_cut_305x251.jpg">
+          <img
+            class="img-fluid"
+            id="img-project"
+            src="img/col2_cut_305x251.jpg"
+          />
         </div>
 
         <div class="col-md-7 order-md-1">
           <div class="row mt-50-768">
             <div class="col-12">
-              <h2 class="justify-content">STUDY OF TUMORS DRIVEN BY ONCOGENIC ALTERATIONS OF THE ANAPLASTIC LYMPHOMA KINASE (ALK) GENE</h2>
+              <h2 class="justify-content">
+                STUDY OF TUMORS DRIVEN BY ONCOGENIC ALTERATIONS OF THE
+                ANAPLASTIC LYMPHOMA KINASE (ALK) GENE
+              </h2>
             </div>
             <div class="col-12 h-30"></div>
             <div class="col-12">
               <p class="justify">
-                as translocations and activation mutations that are characteristic of Anaplastic Large Cell Lymphoma (ALCL), 
-                Non-Small Cell Lung Cancers (NSCLC) and other type of solid tumors including neuroblastoma. We have extensively 
-                studied the role of ALK in lymphoma and in lung cancer by discovering multiple pathways exploited to induce 
-                cellular transformation. We are currently implementing innovative therapies such as ALK inhibitors and ALK-specific 
-                cancer immunotherapy. We developed an ALK vaccine that generates strong and specific immune responses against 
-                tumors cells that express ALK as an oncogenic driver. We are also developing ALK-specific chimeric antigen receptor 
-                (CAR) T cells to target tumors that express ALK on their surface, such as neuroblastoma.
+                as translocations and activation mutations that are
+                characteristic of Anaplastic Large Cell Lymphoma (ALCL),
+                Non-Small Cell Lung Cancers (NSCLC) and other type of solid
+                tumors including neuroblastoma. We have extensively studied the
+                role of ALK in lymphoma and in lung cancer by discovering
+                multiple pathways exploited to induce cellular transformation.
+                We are currently implementing innovative therapies such as ALK
+                inhibitors and ALK-specific cancer immunotherapy. We developed
+                an ALK vaccine that generates strong and specific immune
+                responses against tumors cells that express ALK as an oncogenic
+                driver. We are also developing ALK-specific chimeric antigen
+                receptor (CAR) T cells to target tumors that express ALK on
+                their surface, such as neuroblastoma.
               </p>
             </div>
           </div>
@@ -196,70 +339,139 @@
     <div class="container text-center">
       <div class="row h-30"></div>
 
-      <div class="row" style="align-items: center;">
+      <div class="row" style="align-items: center">
         <div class="col-1"></div>
         <div class="col-md-3">
-          <img class="img-fluid" id="img-project" src="img/col3_305x305.jpg">
+          <img class="img-fluid" id="img-project" src="img/col3_305x305.jpg" />
         </div>
         <div class="col-md-7">
           <div class="row">
             <div class="col">
-              <h2>DISCOVERY AND VALIDATE NOVEL MECHANISMS OF RESISTANCE TO TARGETED THERAPY IN LYMPHOMA AND SOLID CANCERS</h2>
+              <h2>
+                DISCOVERY AND VALIDATE NOVEL MECHANISMS OF RESISTANCE TO
+                TARGETED THERAPY IN LYMPHOMA AND SOLID CANCERS
+              </h2>
             </div>
           </div>
         </div>
         <div class="col-1"></div>
       </div>
     </div>
-  </div>
-<!-- STRUTTURA "OUR TEAM" -->
-  <div id="team"></div>
-  <div class="container text-center">
-    <div class="row h-70"></div>
 
-    <div class="row">
-      <div class="col">
-        <h1 class="title-paragraf">OUR TEAM</h1>
+    <!-- STRUTTURA "OUR TEAM" -->
+    <div id="team"></div>
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col">
+          <h1 class="title-paragraf">OUR TEAM</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="row h-70"></div>
+      <div class="row h-70"></div>
 
-    <div class="row">
-      <div class="col-12">
-
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Roberto">
-          <img src="img/membri/RChiarle165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Roberto Chiarle">
-        </a>
-        <p class="name">Roberto Chiarle</p>
-        <!-- Modal -->
-        <div class="modal fade p-0" id="Roberto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+      <div class="row">
+        <div class="col-12">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Roberto"
+          >
+            <img
+              src="img/membri/RChiarle165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Roberto Chiarle"
+            />
+          </a>
+          <p class="name">Roberto Chiarle</p>
+          <!-- Modal -->
+          <div
+            class="modal fade p-0"
+            id="Roberto"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Roberto Chiarle</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Roberto Chiarle
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/RChiarle2_0.jpg" class="img-fluid" alt="Immagine di Roberto Chiarle">
+                        <img
+                          src="img/membri/RChiarle2_0.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Roberto Chiarle"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          Roberto Chiarle received an M.D. degree from the University of Turin, Italy. Then, he earned a Board in Surgical Pathology from the University of Torino. He did his postdoc research training with Giorgio Inghirami and Michele Pagano at the New York University, where he worked on the molecular pathogenesis of B and T cell lymphomas. He was appointed as Assistant Professor in Pathology and as Attending Physician in Pathology in the University of Turin, Italy in 1999, then promoted to Associate Professor in 2006. In Italy, he started his own lab and worked on the ALK oncogene in human lymphoma, to discover new molecular mechanisms of ALK mediated cell transformation and new ALK specific therapies. From 2008 to 2010, he was Visiting Professor in Pathology in Fred W. Alt lab at the Immune Disease Institute/Children's Hospital, Boston, where he worked on chromosomal translocations and contributed to develop a new high-throughput method to clone translocations genome-wide from primary B cells. In 2012, he was appointed as Associate Professor of Pathology at Harvard Medical School and started his own lab at the Children's Hospital Boston. He won numerous grants and awards in Europe, such as the Italian National “Premio Sapio” Junior Investigator Award, the Italian National prize “Carlo Chianello” Foundation Research Award, the prestigious ERC Starting Grant from the European Research Council and the research award from the Association for International Cancer Research, UK.
+                          Roberto Chiarle received an M.D. degree from the
+                          University of Turin, Italy. Then, he earned a Board in
+                          Surgical Pathology from the University of Torino. He
+                          did his postdoc research training with Giorgio
+                          Inghirami and Michele Pagano at the New York
+                          University, where he worked on the molecular
+                          pathogenesis of B and T cell lymphomas. He was
+                          appointed as Assistant Professor in Pathology and as
+                          Attending Physician in Pathology in the University of
+                          Turin, Italy in 1999, then promoted to Associate
+                          Professor in 2006. In Italy, he started his own lab
+                          and worked on the ALK oncogene in human lymphoma, to
+                          discover new molecular mechanisms of ALK mediated cell
+                          transformation and new ALK specific therapies. From
+                          2008 to 2010, he was Visiting Professor in Pathology
+                          in Fred W. Alt lab at the Immune Disease
+                          Institute/Children's Hospital, Boston, where he worked
+                          on chromosomal translocations and contributed to
+                          develop a new high-throughput method to clone
+                          translocations genome-wide from primary B cells. In
+                          2012, he was appointed as Associate Professor of
+                          Pathology at Harvard Medical School and started his
+                          own lab at the Children's Hospital Boston. He won
+                          numerous grants and awards in Europe, such as the
+                          Italian National “Premio Sapio” Junior Investigator
+                          Award, the Italian National prize “Carlo Chianello”
+                          Foundation Research Award, the prestigious ERC
+                          Starting Grant from the European Research Council and
+                          the research award from the Association for
+                          International Cancer Research, UK.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Phone:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 919-2662</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="tel:(617) 919-2662"
+                                  >(617) 919-2662</a
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:roberto.chiarle@childrens.harvard.edu">roberto.chiarle@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:roberto.chiarle@childrens.harvard.edu"
+                                  >roberto.chiarle@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -268,46 +480,98 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="row h-30"></div>
+      <div class="row h-30"></div>
 
-    <div class="row">
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Rafael">
-          <img src="img/membri/Patino165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Rafael Blasco-Patino">
-        </a>
-        <p class="name">RAFAEL BLASCO-PATIÑO, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Rafael" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+      <div class="row">
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Rafael"
+          >
+            <img
+              src="img/membri/Patino165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Rafael Blasco-Patino"
+            />
+          </a>
+          <p class="name">RAFAEL BLASCO-PATIÑO, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Rafael"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Rafael Blasco-Patiño, PhD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Rafael Blasco-Patiño, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/Patino.jpg" class="img-fluid" alt="Immagine di Rafael Blasco-Patino">
+                        <img
+                          src="img/membri/Patino.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Rafael Blasco-Patino"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I am Spanish originally from the land of Don Quixote. I graduated in the Biomedical Branch of Biology at Complutense University of Madrid in 2006. I develop my Ph. D Studies in Mariano Barbacid's lab at the Spanish National Cancer Research Center (CNIO), obtaining my degree from Autonoma University of Madrid in 2011. During this period I was focused in the role of the Erk-Mapk pathway in K-Ras driven lung tumorigenesis. I joined Chiarle's Lab in 2012 interested in how the immune system can implement current therapies against lung cancer. I love play soccer (worldwide known as football) and I am enthusiastic supporter of the Spanish National Team and At. Madrid. I also like to travel, especially to historical places, because History is another of my big interest.
+                          I am Spanish originally from the land of Don Quixote.
+                          I graduated in the Biomedical Branch of Biology at
+                          Complutense University of Madrid in 2006. I develop my
+                          Ph. D Studies in Mariano Barbacid's lab at the Spanish
+                          National Cancer Research Center (CNIO), obtaining my
+                          degree from Autonoma University of Madrid in 2011.
+                          During this period I was focused in the role of the
+                          Erk-Mapk pathway in K-Ras driven lung tumorigenesis. I
+                          joined Chiarle's Lab in 2012 interested in how the
+                          immune system can implement current therapies against
+                          lung cancer. I love play soccer (worldwide known as
+                          football) and I am enthusiastic supporter of the
+                          Spanish National Team and At. Madrid. I also like to
+                          travel, especially to historical places, because
+                          History is another of my big interest.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Rafael.BlascoPatino@childrens.harvard.edu">Rafael.BlascoPatino@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Rafael.BlascoPatino@childrens.harvard.edu"
+                                  >Rafael.BlascoPatino@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -316,42 +580,95 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Wang">
-          <img src="img/membri/wang165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Qi Wang">
-        </a>
-        <p class="name">QI WANG, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Wang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Wang">
+            <img
+              src="img/membri/wang165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Qi Wang"
+            />
+          </a>
+          <p class="name">QI WANG, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Wang"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Qi Wang, PhD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Qi Wang, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/wang.jpg" class="img-fluid" alt="Immagine di Qi Wang">
+                        <img
+                          src="img/membri/wang.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Qi Wang"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          Qi Wang joined in Chiarle's lab as a post-doctoral research fellow in 2012. His works there are mainly dedicated to integratively computational tools development and analysis of genome-wide translocation, DNA double-strand breaks, chromosomal spatial organization, epigenetic and transcriptome data obtained from multiple high throughput platforms to explore the underlying mechanism of chromosomal translocation in celluar process. He sometimes also involved in bioinformatics support for other research projects in lab to understand the mechanisms and therapy of tumor especially in lymphoma, neuroblastoma and lung cancer. Prior to joining in Chiarle lab, Qi Wang worked at bioinformatics center of national engineering center for biochip at Shanghai of China (SBC), where he served as a team manager and were mainly responsible for bioinformatics research and software/database development. Qi Wang received his PhD from Shanghai medical school of Fudan university in 2008.
+                          Qi Wang joined in Chiarle's lab as a post-doctoral
+                          research fellow in 2012. His works there are mainly
+                          dedicated to integratively computational tools
+                          development and analysis of genome-wide translocation,
+                          DNA double-strand breaks, chromosomal spatial
+                          organization, epigenetic and transcriptome data
+                          obtained from multiple high throughput platforms to
+                          explore the underlying mechanism of chromosomal
+                          translocation in celluar process. He sometimes also
+                          involved in bioinformatics support for other research
+                          projects in lab to understand the mechanisms and
+                          therapy of tumor especially in lymphoma, neuroblastoma
+                          and lung cancer. Prior to joining in Chiarle lab, Qi
+                          Wang worked at bioinformatics center of national
+                          engineering center for biochip at Shanghai of China
+                          (SBC), where he served as a team manager and were
+                          mainly responsible for bioinformatics research and
+                          software/database development. Qi Wang received his
+                          PhD from Shanghai medical school of Fudan university
+                          in 2008.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Qi.Wang@childrens.harvard.edu">Qi.Wang@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Qi.Wang@childrens.harvard.edu"
+                                  >Qi.Wang@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -360,42 +677,89 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Cheong">
-          <img src="img/membri/cheong164x164.jpg" class="rounded-circle img-fluid" alt="Immagine di Taek-Chin Cheong">
-        </a>
-        <p class="name">TAEK-CHIN CHEONG, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Cheong" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Cheong"
+          >
+            <img
+              src="img/membri/cheong164x164.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Taek-Chin Cheong"
+            />
+          </a>
+          <p class="name">TAEK-CHIN CHEONG, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Cheong"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Taek-Chin Cheong, PhD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Taek-Chin Cheong, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/cheong.jpg" class="img-fluid" alt="Immagine di Taek-Chin Cheong">
+                        <img
+                          src="img/membri/cheong.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Taek-Chin Cheong"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I received PhD degree at Seoul National University, Korea, in 2013. My PhD project has focused on the application of dendritic cells to cancer immunotherapy using iron oxide-zinc oxide core-shell nanoparticle and on the investigation of the specific role of intracellular reactive oxygen species in the functional regulation of dendritic cells. I joined Chiarle`s lab as a post-doctoral fellow in September 2013, with an interest in mechanisms and therapy of cancers.
+                          I received PhD degree at Seoul National University,
+                          Korea, in 2013. My PhD project has focused on the
+                          application of dendritic cells to cancer immunotherapy
+                          using iron oxide-zinc oxide core-shell nanoparticle
+                          and on the investigation of the specific role of
+                          intracellular reactive oxygen species in the
+                          functional regulation of dendritic cells. I joined
+                          Chiarle`s lab as a post-doctoral fellow in September
+                          2013, with an interest in mechanisms and therapy of
+                          cancers.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Taekchin.Cheong@childrens.harvard.edu">Taekchin.Cheong@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Taekchin.Cheong@childrens.harvard.edu"
+                                  >Taekchin.Cheong@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -404,46 +768,96 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="row h-30"></div>
+      <div class="row h-30"></div>
 
-    <div class="row">
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Tao">
-          <img src="img/membri/tao165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Jianli Tao">
-        </a>
-        <p class="name">JIANLI TAO, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Tao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+      <div class="row">
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Tao">
+            <img
+              src="img/membri/tao165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Jianli Tao"
+            />
+          </a>
+          <p class="name">JIANLI TAO, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Tao"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Jianli Tao, PhD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Jianli Tao, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/tao.jpg" class="img-fluid" alt="Immagine di Jianli Tao">
+                        <img
+                          src="img/membri/tao.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Jianli Tao"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I am Jianli from Beijing, China. I received my Ph.D degree from Peking University, China in 2017. During that time, I mainly focused on the innate immune antiviral signaling pathway, especially the newly-established cGAS-cGAMP-STING dependent cytosolic DNA sensing and signaling. I joined Chiarle's Lab in Boston to extend my post-doc training in 2018. Currently I have great interests about DNA double strand breaks (DSBs), which potentially initiate chromosomal translocations and genome instability. Moreover, chromosomal translocations are key drivers of oncogenic transformation of cancer cells. High-throughput genome-wide translocation sequencing (HTGTS), a powerful technique that can generate genomic maps of chromosomal translocations, greatly helps me to understand the genomic instability in cancer.
+                          I am Jianli from Beijing, China. I received my Ph.D
+                          degree from Peking University, China in 2017. During
+                          that time, I mainly focused on the innate immune
+                          antiviral signaling pathway, especially the
+                          newly-established cGAS-cGAMP-STING dependent cytosolic
+                          DNA sensing and signaling. I joined Chiarle's Lab in
+                          Boston to extend my post-doc training in 2018.
+                          Currently I have great interests about DNA double
+                          strand breaks (DSBs), which potentially initiate
+                          chromosomal translocations and genome instability.
+                          Moreover, chromosomal translocations are key drivers
+                          of oncogenic transformation of cancer cells.
+                          High-throughput genome-wide translocation sequencing
+                          (HTGTS), a powerful technique that can generate
+                          genomic maps of chromosomal translocations, greatly
+                          helps me to understand the genomic instability in
+                          cancer.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Jianli.Tao@childrens.harvard.edu">Jianli.Tao@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Jianli.Tao@childrens.harvard.edu"
+                                  >Jianli.Tao@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -452,41 +866,98 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Elisa">
-          <img src="img/membri/Elisa167x167.jpg" class="rounded-circle img-fluid" alt="Immagine di Elisa Bergaggio">
-        </a>
-        <p class="name">ELISA BERGAGGIO, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Elisa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Elisa"
+          >
+            <img
+              src="img/membri/Elisa167x167.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Elisa Bergaggio"
+            />
+          </a>
+          <p class="name">ELISA BERGAGGIO, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Elisa"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Taek-Chin Cheong, PhD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Taek-Chin Cheong, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/Elisa.jpg" class="img-fluid" alt="Immagine di Elisa Bergaggio">
+                        <img
+                          src="img/membri/Elisa.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Elisa Bergaggio"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I graduated in Medical Biotechnology in 2015 at the University of Torino (Italy). I did my Ph.D. in Molecular Medicine at the University of Torino finding mechanisms of synthetic lethality of proteasome inhibitors in hematological malignancies in Prof. Roberto Piva's lab. I was very fascinated by cell therapy and immunology. Thus, during the last months of the Ph.D. I joined the Chiarle's lab at Boston Children's Hospital as visiting student in 2019. Here, I'm currently doing my postdoc with a fellowship supported by the American-Italian Cancer Foundation (AICF) to find new therapies for neuroblastoma, the most deadly cancer in children. In particular, my research is focused on the generation of ALK chimeric antigen receptor (CAR)-T cells to specifically target the ALK protein expressed on the surface of neuroblastoma cells. This strategy can eventually be associated with other drugs, including ALK inhibitors, to improve patient's outcome. Besides medicine research, I like to travel, dance, and try new food.
+                          I graduated in Medical Biotechnology in 2015 at the
+                          University of Torino (Italy). I did my Ph.D. in
+                          Molecular Medicine at the University of Torino finding
+                          mechanisms of synthetic lethality of proteasome
+                          inhibitors in hematological malignancies in Prof.
+                          Roberto Piva's lab. I was very fascinated by cell
+                          therapy and immunology. Thus, during the last months
+                          of the Ph.D. I joined the Chiarle's lab at Boston
+                          Children's Hospital as visiting student in 2019. Here,
+                          I'm currently doing my postdoc with a fellowship
+                          supported by the American-Italian Cancer Foundation
+                          (AICF) to find new therapies for neuroblastoma, the
+                          most deadly cancer in children. In particular, my
+                          research is focused on the generation of ALK chimeric
+                          antigen receptor (CAR)-T cells to specifically target
+                          the ALK protein expressed on the surface of
+                          neuroblastoma cells. This strategy can eventually be
+                          associated with other drugs, including ALK inhibitors,
+                          to improve patient's outcome. Besides medicine
+                          research, I like to travel, dance, and try new food.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Elisa.Bergaggio@childrens.harvard.edu">Elisa.Bergaggio@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Elisa.Bergaggio@childrens.harvard.edu"
+                                  >Elisa.Bergaggio@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -495,41 +966,93 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Marco">
-          <img src="img/membri/MarcoCampisi_BCH2_165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Marco Campisi">
-        </a>
-        <p class="name">MARCO CAMPISI, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Marco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Marco"
+          >
+            <img
+              src="img/membri/MarcoCampisi_BCH2_165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Marco Campisi"
+            />
+          </a>
+          <p class="name">MARCO CAMPISI, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Marco"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Marco Campisi, PHD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Marco Campisi, PHD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/MarcoCampisi_BCH2_0.jpg" class="img-fluid" alt="Immagine di Marco Campisi">
+                        <img
+                          src="img/membri/MarcoCampisi_BCH2_0.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Marco Campisi"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I received my undergraduate and master degrees in Biomedical Engineering from Politecnico di Torino (Polito) in Italy, followed by a Ph.D in Bioengineering for a joint project between Polito, MIT, and Dana-Farber Cancer Institute (DFCI). My current projects in collaboration with Barbie Lab (DFCI) and Chiarle Lab focus on developing physiologically relevant 3-D vascularized cancer models using microfluidic devices to study the biological interactions between endothelial cells and cancer spheroids, and the mechanisms of immune cell infiltration and cell immunotherapies into the tumor microenvironment. I am also interested in developing polymer nanoparticles as carriers for immunotherapies and cancer treatments.
+                          I received my undergraduate and master degrees in
+                          Biomedical Engineering from Politecnico di Torino
+                          (Polito) in Italy, followed by a Ph.D in
+                          Bioengineering for a joint project between Polito,
+                          MIT, and Dana-Farber Cancer Institute (DFCI). My
+                          current projects in collaboration with Barbie Lab
+                          (DFCI) and Chiarle Lab focus on developing
+                          physiologically relevant 3-D vascularized cancer
+                          models using microfluidic devices to study the
+                          biological interactions between endothelial cells and
+                          cancer spheroids, and the mechanisms of immune cell
+                          infiltration and cell immunotherapies into the tumor
+                          microenvironment. I am also interested in developing
+                          polymer nanoparticles as carriers for immunotherapies
+                          and cancer treatments.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:marco.campisi@unito.it">marco.campisi@unito.it</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:marco.campisi@unito.it"
+                                  >marco.campisi@unito.it</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -538,46 +1061,93 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="row h-30"></div>
+      <div class="row h-30"></div>
 
-    <div class="row">
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Carmen">
-          <img src="img/membri/Carmen-Mecca165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Carmen Mecca">
-        </a>
-        <p class="name">CARMEN MECCA, MD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Carmen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+      <div class="row">
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Carmen"
+          >
+            <img
+              src="img/membri/Carmen-Mecca165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Carmen Mecca"
+            />
+          </a>
+          <p class="name">CARMEN MECCA, MD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Carmen"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Carmen Mecca, MD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Carmen Mecca, MD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/Carmen-Mecca_0.jpg" class="img-fluid" alt="Immagine di Roberto Chiarle">
+                        <img
+                          src="img/membri/Carmen-Mecca_0.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Roberto Chiarle"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I grew up in Avigliano, a small town in Southern Italy. I earned my Ph.D in 2018 from the University of Perugia (Italy), with a thesis focused on the role of mTOR pathway in glioblastoma. I joined Chiarle's lab in April 2020 with a Fellowship supported by the Italian Association for Cancer Research (AIRC). I am currently working on developing innovative immunotherapy approaches against ALK+ tumors. I love hiking and rock music. I never missed a Bruce Springsteen's concert!
+                          I grew up in Avigliano, a small town in Southern
+                          Italy. I earned my Ph.D in 2018 from the University of
+                          Perugia (Italy), with a thesis focused on the role of
+                          mTOR pathway in glioblastoma. I joined Chiarle's lab
+                          in April 2020 with a Fellowship supported by the
+                          Italian Association for Cancer Research (AIRC). I am
+                          currently working on developing innovative
+                          immunotherapy approaches against ALK+ tumors. I love
+                          hiking and rock music. I never missed a Bruce
+                          Springsteen's concert!
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Carmen.Mecca@childrens.harvard.edu">Carmen.Mecca@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Carmen.Mecca@childrens.harvard.edu"
+                                  >Carmen.Mecca@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -586,42 +1156,90 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Luca">
-          <img src="img/membri/Luca170x170.jpg" class="rounded-circle img-fluid" alt="Immagine di Luca Alessandri">
-        </a>
-        <p class="name">LUCA ALESSANDRI, PHD</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Luca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Luca">
+            <img
+              src="img/membri/Luca170x170.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Luca Alessandri"
+            />
+          </a>
+          <p class="name">LUCA ALESSANDRI, PHD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Luca"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Luca Alessandri, PHD</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Luca Alessandri, PHD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/Luca.jpg" class="img-fluid" alt="Immagine di Luca Alessandri">
+                        <img
+                          src="img/membri/Luca.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Luca Alessandri"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I received my master degree in Bioinformatics from University of Tor Vergata in Rome, Italy. After an internship period in Novartis (Basel, Switzerland) I started working in the Calogero lab at University of Torino, Italy, being enrolled in the PhD program in Complex Systems for Life Science. During the three years of the PhD, I developed several tools for single cell RNA-seq analysis. After the PhD, I got a one year fellowship sponsored by GARR (Gestione Ampliamento Rete Ricerca, Italy), to develop data mining algorithms for single cell omics using neural network and machine learning approaches . Currently I'm working in Chiarle lab, studying the CH12F3 B-lymphoma cell line to analyze HTGTS data focusing on translocation events.
+                          I received my master degree in Bioinformatics from
+                          University of Tor Vergata in Rome, Italy. After an
+                          internship period in Novartis (Basel, Switzerland) I
+                          started working in the Calogero lab at University of
+                          Torino, Italy, being enrolled in the PhD program in
+                          Complex Systems for Life Science. During the three
+                          years of the PhD, I developed several tools for single
+                          cell RNA-seq analysis. After the PhD, I got a one year
+                          fellowship sponsored by GARR (Gestione Ampliamento
+                          Rete Ricerca, Italy), to develop data mining
+                          algorithms for single cell omics using neural network
+                          and machine learning approaches . Currently I'm
+                          working in Chiarle lab, studying the CH12F3 B-lymphoma
+                          cell line to analyze HTGTS data focusing on
+                          translocation events.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:alessandri.luca1991@gmail.com">alessandri.luca1991@gmail.com</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:alessandri.luca1991@gmail.com"
+                                  >alessandri.luca1991@gmail.com</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -630,42 +1248,91 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Jasna">
-          <img src="img/membri/Jasna-Metovic174x174.jpg" class="rounded-circle img-fluid" alt="Immagine di Jasna Metovic">
-        </a>
-        <p class="name">JASNA METOVIC, PHD STUDENT</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Jasna" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+        <div class="col-md pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Jasna"
+          >
+            <img
+              src="img/membri/Jasna-Metovic174x174.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Jasna Metovic"
+            />
+          </a>
+          <p class="name">JASNA METOVIC, PHD STUDENT</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Jasna"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Jasna Metovic, PHD student</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Jasna Metovic, PHD student
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/Jasna-Metovic.jpg" class="img-fluid" alt="Immagine di Jasna Metovic">
+                        <img
+                          src="img/membri/Jasna-Metovic.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Jasna Metovic"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          Jasna joined Chiarle's lab as a visiting graduate researcher (University of Turin) to investigate Anaplastic Lymphoma Kinase (ALK) receptor as a therapeutic target in Merkel cell carcinomas. Using a translational research approach, she is interested in understanding the biological and molecular concepts of carcinogenesis, progression and response to therapy of solid tumors, in particular those with neuroendocrine differentiation. She believes that asking clinically significant research questions is equally important as answering them with scientific rigor, teamwork, and creativity.
+                          Jasna joined Chiarle's lab as a visiting graduate
+                          researcher (University of Turin) to investigate
+                          Anaplastic Lymphoma Kinase (ALK) receptor as a
+                          therapeutic target in Merkel cell carcinomas. Using a
+                          translational research approach, she is interested in
+                          understanding the biological and molecular concepts of
+                          carcinogenesis, progression and response to therapy of
+                          solid tumors, in particular those with neuroendocrine
+                          differentiation. She believes that asking clinically
+                          significant research questions is equally important as
+                          answering them with scientific rigor, teamwork, and
+                          creativity.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Jasna.Metovic@childrens.harvard.edu">Jasna.Metovic@childrens.harvard.edu</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:Jasna.Metovic@childrens.harvard.edu"
+                                  >Jasna.Metovic@childrens.harvard.edu</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -674,47 +1341,96 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="row h-30"></div>
+      <div class="row h-30"></div>
 
-    <div class="row">
-      <div class="col-3"></div>
-      <div class="col-6 pt-70">
-        <!-- Button trigger modal -->
-        <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Elena">
-          <img src="img/membri/Elena165x165.jpg" class="rounded-circle img-fluid" alt="Immagine di Elena Vissio">
-        </a>
+      <div id="former-hide"></div>
+      <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 pt-70">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Elena"
+          >
+            <img
+              src="img/membri/Elena165x165.jpg"
+              class="rounded-circle img-fluid"
+              alt="Immagine di Elena Vissio"
+            />
+          </a>
           <p class="name">ELENA VISSIO, PHD STUDENT</p>
-        <!-- Modal -->
-        <div class="modal fade" id="Elena" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Scrollable modal -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Elena"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Elena Vissio, PHD student</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Elena Vissio, PHD student
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-lg-4">
-                        <img src="img/membri/Elena.jpg" class="img-fluid" alt="Immagine di Elena Vissio">
+                        <img
+                          src="img/membri/Elena.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Elena Vissio"
+                        />
                       </div>
                       <div class="col-lg-8">
                         <p class="text-modal">
-                          I graduated in Medicine and Surgery in 2017 at the University of Turin, Italy. After that, I enrolled as a Pathology resident. Alongside with the diagnostic activity, I focused on the study of prognostic and predictive markers in cancer. In 2021, I began a PhD in Turin to pursue my research interests in the cancer field. I joined Chiarle's Lab to study the mechanisms of resistance to ALK target therapies and to investigate new potential therapeutic targets to overcome such resistance.
+                          I graduated in Medicine and Surgery in 2017 at the
+                          University of Turin, Italy. After that, I enrolled as
+                          a Pathology resident. Alongside with the diagnostic
+                          activity, I focused on the study of prognostic and
+                          predictive markers in cancer. In 2021, I began a PhD
+                          in Turin to pursue my research interests in the cancer
+                          field. I joined Chiarle's Lab to study the mechanisms
+                          of resistance to ALK target therapies and to
+                          investigate new potential therapeutic targets to
+                          overcome such resistance.
                         </p>
                         <table class="table table-info">
                           <tbody>
                             <tr>
                               <th scope="row">Email:</th>
-                              <td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:elena.vissio@unito.it">elena.vissio@unito.it</a></td>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:elena.vissio@unito.it"
+                                  >elena.vissio@unito.it</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -723,55 +1439,308 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+
+    <div id="former-show"></div>
+    <div class="collapse text-center" id="collapseExample">
+      <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/Cristina Mastini-1_0.jpg"
+            class="img-fluid"
+            alt="Immagine di Cristina Mastini"
+          />
+          <p class="name">Cristina Mastini</p>
+        </div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/pagina personale Valerio-1_0.jpg"
+            class="img-fluid"
+            alt="Immagine di Valerio"
+          />
+          <p class="name">Valerio</p>
+        </div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/roberta.pulito-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Roberta Pulito"
+          />
+          <p class="name">Roberta Pulito</p>
+        </div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/Silvia_da_mandare-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Silvia Scientifico Peola"
+          />
+          <p class="name">Silvia Scientifico Peola</p>
+        </div>
+
+        <div class="col-12 col-md pt-70">
+          <img
+            src="img/ex_membri/Matteo Menotti-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Matteo Menotti"
+          />
+          <p class="name">Matteo Menotti</p>
+        </div>
+
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/teresa-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Teresa Poggio"
+          />
+          <p class="name">Teresa Poggio</p>
+        </div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/Ramesh. C. Choudhari.jpg"
+            class="img-fluid"
+            alt="Immagine di Ramesh. C. Choudhari"
+          />
+          <p class="name">Ramesh. C. Choudhari</p>
+        </div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/scalzo maria stella-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Scalzo Maria Stella"
+          />
+          <p class="name">Scalzo Maria Stella</p>
+        </div>
+
+        <div class="col-6 col-md pt-70">
+          <img
+            src="img/ex_membri/Lydia_Varesio-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Lydia Varesio"
+          />
+          <p class="name">Lydia Varesio</p>
+        </div>
+
+        <div class="col-12 col-md pt-70">
+          <img
+            src="img/ex_membri/maria.boggiomerlo-1.jpg"
+            class="img-fluid"
+            alt="Immagine di Maria Elena Boggio Merlo"
+          />
+          <p class="name">Maria Elena Boggio Merlo</p>
+        </div>
+
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <div class="row h-30"></div>
+    <div class="col text-center">
+      <a id="a-former-members" href="#former-show">
+        <button
+          id="btn-former-members"
+          class="btn btn-primary btn-lg"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          SEE FORMER MEMBERS
+        </button>
+      </a>
+    </div>
+
+    <!-- STRUTTURA "ALBUM" -->
+    <div id="album"></div>
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col">
+          <h1 class="title-paragraf" style="height: 50px">ALBUM</h1>
         </div>
       </div>
-      <div class="col-3"></div>
-    </div>
-  </div>
 
-<!-- STRUTTURA "ALBUM"-->
+      <div class="row h-30"></div>
+
+      <div class="row" style="justify-content: center">
+        <div class="row">
+          <div class="col-lg-1"></div>
+
+          <div class="col">
+            <ul class="results img-fluid">
+              <li class="result">
+                <img src="img/album/IMG_1814.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_0910.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/Serena and ELif2.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_0436.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1"></div>
+
+          <div class="col">
+            <ul class="results">
+              <li class="result">
+                <img src="img/album/IMG_0460.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_0477-1_0.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_4692.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_2403-2.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1"></div>
+
+          <div class="col">
+            <ul class="results">
+              <li class="result">
+                <img src="img/album/IMG_2250.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_2245.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/IMG_2551_2.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/Dinner 2013.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1"></div>
+
+          <div class="col">
+            <ul class="results">
+              <li class="result">
+                <img src="img/album/dinner 2013_2.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/DSCN5518-1.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/Guitar-1.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/Merry Xmas-1.jpg" alt="" />
+              </li>
+              <li class="result">
+                <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STRUTTURA "ALBUM" prova con piu' row 
 <div id="album"></div>
 <div class="container text-center">
   <div class="row h-70"></div>
-
+  
   <div class="row">
     <div class="col">
       <h1 class="title-paragraf" style="height: 50px;">ALBUM</h1>
     </div>
   </div>
 
-  <div class="row h-70"></div>
+  <div class="row h-30"></div>
 
-  <div class="row">
-    <div class="row">
-      <div class="col-lg-1"></div>
+  <div class="row" style="justify-content: center;">
+    <div class="row" style="justify-content: center;">
+      <div class="row col-md-6">
+        <div class="col-lg-1"></div>
 
-      <div class="col">
-        <ul class="results img-fluid">
+        <div class="col">
+          <ul class="results img-fluid">
 
-          <li class="result">
-            <img src="img/album/IMG_1814.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0910.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Serena and ELif2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0436.jpg" alt="">
-          </li>
-          
-        </ul>
+            <li class="result">
+              <img src="img/album/IMG_1814.jpg" alt="">
+            </li>
+            <li class="result">
+              <img src="img/album/IMG_0910.jpg" alt="">
+            </li>
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-1"></div>
       </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
 
+      <div class="row col-md-6">
+        <div class="col-lg-1"></div>
+
+        <div class="col">
+          <ul class="results img-fluid">
+
+            <li class="result">
+              <img src="img/album/Serena and ELif2.jpg" alt="">
+            </li>
+            <li class="result">
+              <img src="img/album/IMG_0436.jpg" alt="">
+            </li>
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-1"></div>
 
@@ -852,112 +1821,385 @@
 
   </div>
 
-  <div class="row h-70"></div>
-</div>
+</div>-->
 
-<!-- STRUTTURA "CONTACT"-->
-<div id="contact"></div>
+    <!-- STRUTTURA "ALBUM" Prova con tre foto per riga 
+<div id="album"></div>
 <div class="container text-center">
-  <div class="row h-30"></div>
-
-  <div class="row">
-    <div class="col">
-      <h1 class="title-paragraf" style="height: 50px;">CONTACT</h1>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">ROBERTO CHIARLE, M.D.</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Professor<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          Enders 1116.1<br>
-          300 Longwood Ave<br>
-          Boston, MA 02115<br>
-          Phone: <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 919-2662</a><br>
-          Fax: (617) 730-0148<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:roberto.chiarle@childrens.harvard.edu">roberto.chiarle@childrens.harvard.edu</a>
-        </p>
-      </div>
-    </div>
-        
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Administrative Assistant<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          Enders 1170<br>
-          300 Longwood Ave<br>
-          Boston, MA 02115<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:susan.wong@childrens.harvard.edu">susan.wong@childrens.harvard.edu</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="col pt-70">
-        <h4 class="justify-content title-text-contact">ANTHONY CALDERONE</h4>
-      </div>
-      <div class="h-30"></div>
-      <div class="col">
-        <p class="text-contact">
-          Program Coordinator<br>
-          Department of Pathology<br>
-          Children's Hospital Boston<br>
-          Harvard Medical School<br>
-          300 Longwood Avenue<br>
-          Bader Building, BA-138<br>
-          Boston, MA 02115<br>
-          Phone: <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:(617) 919-2662">(617) 355-8969</a><br>
-          Fax: (617) 730-0674<br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:anthony.calderone@childrens.harvard.edu">anthony.calderone@childrens.harvard.edu</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- IMMAGINI CON LINK -->
-<div class="container text-center">
-
   <div class="row h-70"></div>
 
   <div class="row">
-    <div class="col logo-padding">
-      <a href="https://www.childrenshospital.org/" >
-        <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid">
-      </a>
-    </div>
-        
-    <div class="col logo-padding">
-      <a href="https://www.dana-farber.org/">
-        <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid">
-      </a>
-    </div>
-
-    <div class="col logo-padding">
-      <a href="https://hms.harvard.edu/">
-        <img src="img/loghi/harvard-medical-school-logo-vector.jpg" class="img-fluid">
-      </a>
+    <div class="col">
+      <h1 class="title-paragraf" style="height: 50px;">ALBUM</h1>
     </div>
   </div>
-</div>
+
+  <div class="row h-70"></div>
+
+  <div class="row" style="justify-content: center;">
+    <div class="row">
+      <div class="col-lg-1"></div>
+
+      <div class="col">
+        <ul class="results img-fluid">
+
+          <li class="result">
+            <img src="img/album/IMG_1814.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_0910.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/Serena and ELif2.jpg" alt="">
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1"></div>
+
+      <div class="col">
+        <ul class="results">
+
+          <li class="result">
+            <img src="img/album/IMG_0436.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_0460.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_0477-1_0.jpg" alt="">
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1"></div>
+
+      <div class="col">
+        <ul class="results">
+
+          <li class="result">
+            <img src="img/album/IMG_4692.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_2403-2.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_2250.jpg" alt="">
+          </li>
     
-<!-- MAPPA -->
-<!--<div class="row h-30"></div>
+        </ul>
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-1"></div>
+
+      <div class="col">
+        <ul class="results">
+
+          <li class="result">
+            <img src="img/album/IMG_2245.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_2551_2.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/Dinner 2013.jpg" alt="">
+          </li>
+    
+        </ul>
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1"></div>
+
+      <div class="col">
+        <ul class="results">
+
+          <li class="result">
+            <img src="img/album/dinner 2013_2.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/DSCN5518-1.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/Guitar-1.jpg" alt="">
+          </li>
+    
+        </ul>
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1"></div>
+
+      <div class="col">
+        <ul class="results">
+
+          <li class="result">
+            <img src="img/album/Merry Xmas-1.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="">
+          </li>
+    
+        </ul>
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </div>
+
+  </div>
+
+</div>  -->
+
+    <!-- STRUTTURA "ALBUM" Prova una sola riga
+<div id="album"></div>
+<div class="container text-center">
+  <div class="row h-70"></div>
+
+  <div class="row">
+    <div class="col">
+      <h1 class="title-paragraf" style="height: 50px;">ALBUM</h1>
+    </div>
+  </div>
+
+  <div class="row h-70"></div>
+
+  <div class="row" style="justify-content: center;">
+    <ul class="results img-fluid">
+      <div class="col-lg-1"></div>
+
+      <div class="col-4 col-md">
+          <li class="result">
+            <img src="img/album/IMG_1814.jpg" alt="">
+          </li>
+      </div>
+      <div class="col-4 col-md">
+          <li class="result">
+            <img src="img/album/IMG_0910.jpg" alt="">
+          </li>
+      </div>
+      <div class="col-4 col-md">
+        <li class="result">
+          <img src="img/album/Serena and ELif2.jpg" alt="">
+        </li>
+      </div>
+      <div class="col-4 col-md">
+        <li class="result">
+          <img src="img/album/IMG_0436.jpg" alt="">
+        </li>
+      </div>
+
+      <div class="col">
+
+          <li class="result">
+            <img src="img/album/IMG_0460.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_0477-1_0.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_4692.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_2403-2.jpg" alt="">
+          </li>
+          
+      </div>
+
+      <div class="col">
+
+          <li class="result">
+            <img src="img/album/IMG_2250.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_2245.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/IMG_2551_2.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/Dinner 2013.jpg" alt="">
+          </li>
+    
+      </div>
+
+      <div class="col">
+
+          <li class="result">
+            <img src="img/album/dinner 2013_2.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/DSCN5518-1.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/Guitar-1.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/Merry Xmas-1.jpg" alt="">
+          </li>
+          <li class="result">
+            <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="">
+          </li>
+
+      </div>
+      
+      <div class="col-lg-1"></div>
+    </ul>
+  </div>
+
+</div>
+-->
+
+    <!-- STRUTTURA "CONTACT"-->
+    <div id="contact"></div>
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col">
+          <h1 class="title-paragraf" style="height: 50px">CONTACT</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">
+              ROBERTO CHIARLE, M.D.
+            </h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Professor<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              Enders 1116.1<br />
+              300 Longwood Ave<br />
+              Boston, MA 02115<br />
+              Phone:
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="tel:(617) 919-2662"
+                >(617) 919-2662</a
+              ><br />
+              Fax: (617) 730-0148<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:roberto.chiarle@childrens.harvard.edu"
+                >roberto.chiarle@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Administrative Assistant<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              Enders 1170<br />
+              300 Longwood Ave<br />
+              Boston, MA 02115<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:susan.wong@childrens.harvard.edu"
+                >susan.wong@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col pt-70">
+            <h4 class="justify-content title-text-contact">
+              ANTHONY CALDERONE
+            </h4>
+          </div>
+          <div class="h-30"></div>
+          <div class="col">
+            <p class="text-contact">
+              Program Coordinator<br />
+              Department of Pathology<br />
+              Children's Hospital Boston<br />
+              Harvard Medical School<br />
+              300 Longwood Avenue<br />
+              Bader Building, BA-138<br />
+              Boston, MA 02115<br />
+              Phone:
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="tel:(617) 919-2662"
+                >(617) 355-8969</a
+              ><br />
+              Fax: (617) 730-0674<br />
+              <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="mailto:anthony.calderone@childrens.harvard.edu"
+                >anthony.calderone@childrens.harvard.edu</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMMAGINI CON LINK -->
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col logo-padding">
+          <a href="https://www.childrenshospital.org/">
+            <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col logo-padding">
+          <a href="https://www.dana-farber.org/">
+            <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid" />
+          </a>
+        </div>
+
+        <div class="col logo-padding">
+          <a href="https://hms.harvard.edu/">
+            <img
+              src="img/loghi/harvard-medical-school-logo-vector.jpg"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAPPA -->
+    <!--<div class="row h-30"></div>
 
     <div class="text-center">
       <iframe class=" lazyloaded" loading="lazy" src="https://maps.google.com/maps?q=300%20Longwood%20Ave%2C%20Boston%2C%20MA%2002115&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" title="300 Longwood Ave, Boston, MA 02115" aria-label="300 Longwood Ave, Boston, MA 02115">
@@ -997,21 +2239,26 @@
     </div>
 -->
 
-<!-- COPYRIGHT FINE PAGINA -->
-<div class="row h-30"></div>
-<div class="text-center" id="end-page">
-  <div class="row">
-    <div style="color: #fff;">
-      <p class="p-3">Copyright © 2021 Chiarlelab in Boston Children's Hospital | Harvard Medical School. All rights reserved.</p>
+    <!-- COPYRIGHT FINE PAGINA -->
+    <div class="row h-30"></div>
+    <div class="text-center" id="end-page">
+      <div class="row">
+        <div style="color: #fff">
+          <p class="p-3">
+            Copyright © 2021 Chiarlelab in Boston Children's Hospital | Harvard
+            Medical School. All rights reserved.
+          </p>
+        </div>
+        <div id="count"></div>
+      </div>
     </div>
-    <div id="count"></div>
-  </div>
-</div>
 
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

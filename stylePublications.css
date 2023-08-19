@@ -1,6 +1,6 @@
-.publication-link{
-    border-style: solid; 
-    color: RGBA(var(--bs-warning-rgb),var(--bs-link-opacity,1))!important;
+.publication-link {
+  border-style: solid;
+  color: RGBA(var(--bs-warning-rgb), var(--bs-link-opacity, 1)) !important;
 }
 
 /* CSS STRUTTURA LINK (presa da internet: https://codepen.io/MarkBoots/pen/OJOqNyB) */
@@ -152,7 +152,7 @@ body {
 }
 
 @media (min-width: 770px) {
-    .publication-timeline {
+  .publication-timeline {
     grid-template-columns: 1fr var(--line-w) 1fr;
   }
   .publication-timeline::before {

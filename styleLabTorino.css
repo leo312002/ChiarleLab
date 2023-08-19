@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbar {
+  color: #000;
+}
+
 .navbar,
 .modal-open {
   padding-right: 0px !important;
@@ -19,7 +23,7 @@ body {
 }
 
 .navbar-brand {
-  width: 55px;
+  width: 200px;
   height: 60px;
   margin-left: 50px;
   margin-right: 4px;
@@ -66,12 +70,6 @@ body {
 
 .carousel-item {
   transition: transform 0.5s ease-in-out;
-}
-
-@media (max-width: 700px) {
-  .carousel-inner {
-    height: 100%;
-  }
 }
 
 .overlay {
@@ -233,12 +231,34 @@ body {
   }
 }
 
-#img-project {
-  margin-top: 40px;
+.welcome-text {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.funding-text {
+  font-size: 20px;
+}
+
+.collaboration-text {
+  font-size: 20px;
+}
+
+@media (max-width: 767.5px) {
+  .img-welcome {
+    max-width: 356px;
+    max-height: 215px;
+    margin-bottom: 30px;
+  }
+
+  .welcome-text {
+    margin-bottom: 30px;
+
+  }
 }
 
 @media (max-width: 992px) {
-  #img-project {
+  .img-welcome {
     margin-top: 0px;
   }
 }
@@ -248,7 +268,7 @@ body {
   font-family: "Amiko", Sans-serif;
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .title-paragraf {
@@ -256,6 +276,13 @@ body {
   font-family: "Amiko", Sans-serif;
   font-size: 60px;
   font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .title-paragraf-long {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -266,7 +293,7 @@ body {
 
 @media (max-width: 514px) {
   .title-paragraf-long {
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 30px;
   }
 }
@@ -359,8 +386,6 @@ body {
 .result > img {
   max-width: 100%;
   width: 100%;
-  min-height: 60%;
-  min-width: 60%;
   object-fit: cover;
   transition: all 0.2s ease;
 }
