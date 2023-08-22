@@ -16,12 +16,15 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap" rel="stylesheet">
     <link href="styleLabTorino.css" rel="stylesheet" />
   </head>
 
   <body class="p-0">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a href="#"><img class="navbar-brand" src="img/header-logo.png" /></a>
 
@@ -40,15 +43,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a
-                class="nav-link js-scroll-trigger"
-                data-toggle="pill"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
+              <a class="nav-link js-scroll-trigger" href="#">Home</a>
             </li>
-            <li class="nav-item">
+        <!--<li class="nav-item">
               <a
                 class="nav-link js-scroll-trigger"
                 data-toggle="pill"
@@ -61,7 +58,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#funding">Funding</a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#collaboration"
                 >Collaboration</a
@@ -95,7 +92,7 @@
                 Chiarle's Lab
               </a>
               <ul
-                class="dropdown-menu"
+                class="dropdown-menu dropdown-menu-lab"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
@@ -115,7 +112,7 @@
       </div>
     </nav>
 
-    <!-- CAROUSEL -->
+    <!-- CAROUSEL 
     <div class="text-center first-row">
       <div
         id="carouselExampleSlidesOnly"
@@ -147,19 +144,39 @@
           </div>
         </div>
       </div>
+    </div>-->
+
+    <!-- Title - Image -->
+    <div class="container-fluid text-center">
+      <div class="col-12">
+        <div class="lab-bg img-fluid">
+          <div class="row-title gap-3" style="align-items: center;">
+            <div class="col-md-1"></div>
+
+            <div class="col-12 col-md-5">
+              <h1 id="title-home">Chiarle Lab</h1>
+              <h1 id="title-home" style="color: #002d53;">in</h1> 
+              <h1 id="title-home">University of Torino</h1>
+            </div>
+
+            <div class="col-12 col-md-5">
+              <img
+              class="img-fluid"
+              id="img-slide"
+              src="img/slider_2.jpg"
+              style="text-align: right;"
+              />
+            </div>
+
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Welcome -->
     <div class="container text-center">
-      <div class="row h-70"></div>
-
-      <div class="row">
-        <div class="col">
-          <h1 class="title-paragraf-long">
-            Welcome to Chiarle Lab in University of Torino
-          </h1>
-        </div>
-      </div>
+      <div class="row h-30"></div>
 
       <div class="row" style="align-items: center">
         <div class="col-lg-1"></div>
@@ -221,7 +238,7 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf">RESEARCH</h1>
+          <h1 class="title-paragraf">Research</h1>
         </div>
       </div>
 
@@ -288,7 +305,7 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf">OUR TEAM</h1>
+          <h1 class="title-paragraf">Our team</h1>
         </div>
       </div>
 
@@ -304,7 +321,7 @@
           >
             <img
               src="img/membri/RChiarle165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Roberto Chiarle"
             />
           </a>
@@ -417,10 +434,8 @@
         </div>
       </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row">
-        <div class="col-md pt-70">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="justify-content: center;">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -429,7 +444,7 @@
           >
             <img
               src="img/membri/Claudia Voena146x146.png"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Claudia Voena"
             />
           </a>
@@ -523,7 +538,7 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -532,7 +547,7 @@
           >
             <img
               src="img/membri/Enrico Patrucco147x147.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Enrico Patrucco"
             />
           </a>
@@ -614,7 +629,7 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -623,7 +638,7 @@
           >
             <img
               src="img/membri/Chiara147x147.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Chiara Pighi"
             />
           </a>
@@ -703,12 +718,9 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div id="former-hide"></div> <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 pt-70">
+      
+        <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
+        <div class="col pt-5" id="former-hide">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -717,7 +729,7 @@
           >
             <img
               src="img/membri/Serena Germani147x147.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Serena Germani"
             />
           </a>
@@ -795,103 +807,102 @@
             </div>
           </div>
         </div>
-        <div class="col-3"></div>
       </div>
 
       <div id="former-show"></div>
       <div class="collapse" id="collapseExample">
-        <div class="row">
-          <div class="col-md pt-70">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="justify-content: center;">
+
+          <div class="col pt-4">
             <img
               src="img/ex_membri/Cristina Mastini-1_0.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Cristina Mastini"
             />
             <p class="name">Cristina Mastini</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/pagina personale Valerio-1_0.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Valerio"
             />
             <p class="name">Valerio</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/roberta.pulito-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Roberta Pulito"
             />
             <p class="name">Roberta Pulito</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/Silvia_da_mandare-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Silvia Scientifico Peola"
             />
             <p class="name">Silvia Scientifico Peola</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/Matteo Menotti-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Matteo Menotti"
             />
             <p class="name">Matteo Menotti</p>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/teresa-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Teresa Poggio"
             />
             <p class="name">Teresa Poggio</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/Ramesh. C. Choudhari.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Ramesh. C. Choudhari"
             />
             <p class="name">Ramesh. C. Choudhari</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/scalzo maria stella-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Scalzo Maria Stella"
             />
             <p class="name">Scalzo Maria Stella</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/Lydia_Varesio-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Lydia Varesio"
             />
             <p class="name">Lydia Varesio</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
               src="img/ex_membri/maria.boggiomerlo-1.jpg"
-              class="img-fluid"
+              class="img-fluid w-team"
               alt="Immagine di Maria Elena Boggio Merlo"
             />
             <p class="name">Maria Elena Boggio Merlo</p>
           </div>
+
         </div>
       </div>
 
@@ -920,7 +931,7 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf-long">FUNDING SOURCES</h1>
+          <h1 class="title-paragraf-long">Funding sources</h1>
         </div>
       </div>
 
@@ -1011,7 +1022,7 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf-long">COLLABORATION</h1>
+          <h1 class="title-paragraf-long">Collaboration</h1>
         </div>
       </div>
 
@@ -1029,6 +1040,49 @@
 
       <div class="row h-30"></div>
 
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col">
+          <img class="img-fluid" src="img/Collaboration_Unito-CinaNSF.jpg">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col">
+          <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#italian-version" type="button" role="tab" aria-controls="italian-version" aria-selected="true">Italian</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#english-version" type="button" role="tab" aria-controls="english-version" aria-selected="false">English</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active justify" id="italian-version" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              Lo scopo del progetto è di identificare i danni sul DNA indotti dall'enzima AID (activation-induced cytidine deaminase) durante lo sviluppo di resistenza e progressione della malattia in pazienti trattati con inibitori di PI3Kd o BTK nella leucemia linfatica cronica (LLC). I risultati così ottenuti potranno servire per disegnare strategie terapeutiche mirate più efficaci nel trattamento e nella prevenzione della trasformazione della LLC.
+              <br> <br>
+              L'unità italiana e quella cinese si uniranno per raggiungere questo obiettivo. L'unità cinese fornirà le basi molecolari per capire in che modo AID si leghi a sequenze diverse nel genoma umano. L'unità italiana sfrutterà questa nuova conoscenza per comprendere il ruolo patologico di AID nei linfomi e nelle leucemie.
+              <br> <br>
+              L'unità cinese ha già dimostrato che brevi sequenze omologhe di DNA (50bp) nel locus delle immunoglobuline non sono colpite nella stessa maniera dall'attività mutazionale di AID. Questo lascia ipotizzare che esistano fattori addizionali, tra cui diverse combinazioni di sequenze, che determinano una diversa frequenza di mutazioni indotte da AID (Yeap et al., Cell, 2015). L'unità cinese identificherà questi elementi e chiarirà in che modo essi regolino l'attività di AID. I risultati di questo studio chiariranno le modalità con cui AID agisce per generare mutazioni ad alta frequenza selettivamente nei geni delle immunoglobuline durante la maturazione degli anticorpi risparmiando sequenze omologhe nel resto del genoma prevenendo così una diffusa instabilità genomica.
+              <br> <br>
+              L'unità italiana, esperta nella patogenesi delle leucemie e dei linfomi, utilizzerà tecnologie di sequenziamento per identificare e validare le mutazioni indotte da AID durante lo sviluppo di resistenza a idelalisib o ibrutinib. Questa unità studierà inoltre il ruolo di AID nel processo di trasformazione della LLC confrontando i campioni di pazienti prima e dopo la trasformazione a seguito della terapia con idelalisib o con ibrutinib.
+            </div>
+            <div class="tab-pane fade justify" id="english-version" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              The overall aim of this project is to elucidate the mechanisms of Activation Induced Cytidine Deaminase (AID) targeting in the resistance and progression to PI3Kd or BTK inhibitors in chronic lymphocytic leukemia (CLL). The result of this study should shed light on designing therapeutic targets for precision medicine in CLL treatment and in preventing CLL transformation.
+              <br> <br>
+              The Italian and the Chinese Unit will integrate in achieving this goal. The Chinese Unit will provide the molecular basis to understand how AID targets different sequences in the human genome. The Italian Unit will exploit this new knowledge to understand the pathological role of AID in lymphoma and leukemia.
+              <br> <br>
+              The Chinese Unit previously showed that the same motifs, within a short region (about 50 bp) in the Immunoglobulin locus, are not equally targeted by AID, suggesting that they may be relatively recurrent sequence combinations flanking AID-hotspots that may play a role in targeting high or low mutations (Yeap et al., Cell, 2015). The Chinese unit will identify cis-elements that target high or low mutations and elucidate how these elements regulate AID targeting. This study should shed light on how cis-elements may contribute in targeting high frequency of mutations to the Immunoglobulin loci during antibody affinity maturation and low frequency of mutations to the rest of the genome in preventing genomic instability.
+              <br> <br>
+              The Italian Unit, who is an expert in the pathogenesis of lymphoma, will use whole exome sequencing (WES) technology to identify and validate AID-dependent mutational signatures of resistance in AID-sufficient or AID-deficient human CLL cell lines and in CLL patients who developed resistance to idelalisib or ibrutinib. This Unit will also study the contribution of AID to transformation of CLL by comparing samples before and after transformation during idelalisib or ibrutinib therapy.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
     </div>
 
     <!-- STRUTTURA "CONTACT"-->
@@ -1038,24 +1092,23 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf">CONTACT</h1>
+          <h1 class="title-paragraf mb-5">Contact</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12 col-md">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">
               ROBERTO CHIARLE, M.D.
             </h4>
           </div>
-          <div class="h-30"></div>
           <div class="col">
             <p class="text-contact">
               Associate Professor of Pathology<br />
-              Dept. Biomedical Sciences and Human Oncology<br />
               University of Torino<br />
               Via Santena 7, 10126 Torino, ITALY<br />
+              Dept. Biomedical Sciences and Human Oncology<br />
               Telefono:
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
@@ -1069,27 +1122,26 @@
                 >0116336861</a
               >
               (lab)<br />
-              Fax: +39 0116336887<br />
+              Email: 
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="mailto:roberto.chiarle@unito.it"
-                >roberto.chiarle@unito.it</a
-              >
+                >roberto.chiarle@unito.it</a><br />
+              Fax: +39 0116336887
             </p>
           </div>
         </div>
 
         <div class="col-12 col-md">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">ENRICO PATRUCCO</h4>
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">ENRICO PATRUCCO</h4>
           </div>
-          <div class="h-30"></div>
           <div class="col">
             <p class="text-contact">
               Research Fellow / Lab Manager<br />
-              Dept. Biomedical Sciences and Human Oncology<br />
               University of Torino<br />
               Via Santena 7, 10126 Torino, ITALY<br />
+              Dept. Biomedical Sciences and Human Oncology<br />
               Telefono:
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
@@ -1103,12 +1155,13 @@
                 >0116336861</a
               >
               (lab)<br />
-              Fax: +39 0116336887<br />
+              Email: 
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="mailto:enrico.patrucco@unito.it"
                 >enrico.patrucco@unito.it</a
-              >
+              ><br />
+              Fax: +39 0116336887
             </p>
           </div>
         </div>

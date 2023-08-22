@@ -13,7 +13,9 @@ body {
 }
 
 .navbar {
-  color: #000;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(9px);
+    border: 0;
 }
 
 .navbar,
@@ -23,6 +25,7 @@ body {
 }
 
 .navbar-brand {
+
   width: 200px;
   height: 60px;
   margin-left: 50px;
@@ -47,15 +50,15 @@ body {
 }
 
 .navbar-collapse {
-  justify-content: end;
+  justify-content: center;
 }
 
-.dropdown-menu[data-bs-popper] {
+.dropdown-menu-lab[data-bs-popper] {
   left: -17%;
 }
 
 @media (max-width: 1200px) {
-  .dropdown-menu[data-bs-popper] {
+  .dropdown-menu-lab[data-bs-popper] {
     left: -13%;
   }
 }
@@ -65,7 +68,7 @@ body {
 }
 
 .first-row {
-  padding-top: 76.57px;
+  padding-top: 76px;
 }
 
 .carousel-item {
@@ -82,46 +85,37 @@ body {
   text-align: center;
 }
 
-#title-carousel {
-  color: #ffb03b;
-  font-size: 65px;
-  font-family: "Amiko", Sans-serif;
-  font-weight: bold;
+.row-title {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
 }
 
-#title-carousel-text {
-  background-color: rgba(13, 110, 253, 0.7);
+.outfit-font{
+    font-family: 'Outfit', sans-serif;
+}
+
+.lab-bg{
+    background-image: url(img/lab3-bg-1050x525-op-05.jpg);
+    max-width: 100%;
+    height: auto;
+}
+
+#title-home {
+/*background-color: rgba(13, 110, 253, 0.7); */
+  color: #feae31;
+  font-size: calc(0.7rem + 3.5vw);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
   justify-content: center;
-  margin-left: 13%;
-  margin-right: 13%;
-}
-
-@media (max-width: 900px) {
-  #title-carousel {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 750px) {
-  #title-carousel {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 600px) {
-  #title-carousel {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 450px) {
-  #title-carousel {
-    font-size: 25px;
-  }
-
-  .overlay {
-    top: 25%;
-  }
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 #join-us-button {
@@ -144,58 +138,27 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+    .row-title {
+        padding-top: 60px;
+    }
+
+    #title-home {
+          font-size: calc(0rem + 9vw);
+    }
+
+    #text-slide, #dynamic-text-slide{
+        font-size: calc(0rem + 4vw);
+    }
+
+    #img-slide{
+        max-width: 90%;
+    }
+}
+
 #img-row {
   width: 455px;
   height: 400px;
-}
-
-.row-dynamic {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
-  margin-top: 70px;
-  margin-bottom: 25px;
-}
-
-@media (max-width: 992px) {
-  .row-dynamic {
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-}
-
-#text-slide-left {
-  color: #002d53;
-  font-family: "Amiko", Sans-serif;
-  font-weight: bold;
-  text-align: left;
-}
-
-#text-slide-right {
-  color: #002d53;
-  font-family: "Amiko", Sans-serif;
-  font-weight: bold;
-  text-align: right;
-}
-
-#dynamic-text-slide {
-  color: #ffb03b;
-  font-family: "Amiko", Sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.carousel-dynamic {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  max-width: 190px;
 }
 
 .col-md-auto-p0 {
@@ -264,26 +227,19 @@ body {
 }
 
 .title-paragraf-long {
-  color: #126696;
-  font-family: "Amiko", Sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.title-paragraf {
-  color: #126696;
-  font-family: "Amiko", Sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-}
-
-@media (max-width: 992px) {
-  .title-paragraf-long {
-    font-size: 45px;
-    margin-bottom: 50px;
+    color: #feae31;
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 70px;
   }
-}
+  
+  .title-paragraf {
+    color: #feae31;
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+  }
 
 @media (max-width: 768px) {
   .mt-50-768 {
@@ -293,7 +249,7 @@ body {
 
 @media (max-width: 514px) {
   .title-paragraf-long {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 30px;
   }
 }
@@ -302,6 +258,10 @@ body {
   .title-paragraf {
     font-size: 45px;
   }
+}
+
+.w-team{
+    max-width: 130px;
 }
 
 .h-70 {
@@ -322,6 +282,7 @@ body {
 
 .text-contact {
   text-align: center;
+  font-size: 15px;
 }
 
 .name {

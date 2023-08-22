@@ -16,6 +16,9 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 
     <!-- Da fare: - mettere un video al posto del carousel 
@@ -35,8 +38,9 @@
   </head>
 
   <body class="p-0">
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a href="#"><img class="navbar-brand" src="img/Logo-RC-2.png" /></a>
 
@@ -58,12 +62,11 @@
               <a
                 class="nav-link js-scroll-trigger"
                 data-toggle="pill"
-                aria-current="page"
                 href="#"
                 >Home</a
               >
             </li>
-            <li class="nav-item">
+        <!--<li class="nav-item">
               <a
                 class="nav-link js-scroll-trigger"
                 data-toggle="pill"
@@ -76,7 +79,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#album">Album</a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="Publications.html"
                 >Publications</a
@@ -88,21 +91,21 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="Link.html">Link</a>
             </li>
-
-            <!-- DROPDOWN BUTTON
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Publications - News - Link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item nav-link" href="Publications.html">Publications</a></li>
-              <li><a class="dropdown-item nav-link" href="News.html">News</a></li>
-              <li><a class="dropdown-item nav-link" href="Link.html">Link</a></li>
-            </ul>
-          </li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
+            <!-- DROPDOWN BUTTON 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Publications - News - Link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item nav-link" href="Publications.html">Publications</a></li>
+                <li><a class="dropdown-item nav-link" href="News.html">News</a></li>
+                <li><a class="dropdown-item nav-link" href="Link.html">Link</a></li>
+              </ul>
+            </li>-->
+           
             <!-- DROPDOWN BUTTON -->
             <li class="nav-item dropdown">
               <a
@@ -116,7 +119,8 @@
                 Chiarle's Lab
               </a>
               <ul
-                class="dropdown-menu"
+
+                class="dropdown-menu dropdown-menu-lab"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
@@ -136,25 +140,78 @@
       </div>
     </nav>
 
-    <!-- CAROUSEL - BUTTON -->
-    <div class="container-fluid text-center">
-      <div class="first-row">
-        <div class="row h-30"></div>
+    <!-- TITLE - BUTTON -->
 
-        <div class="col"></div>
-        <div class="col-12" id="title-carousel">
-          <p id="title-carousel-text">CHIARLE LAB</p>
+    <!-- curve background 
+    <nav class="navbar-expand-md" style="z-index: -1;">
+      <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <div class="custom-shape-divider-top-1692548450">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            </li>
+
+          </ul>
         </div>
-        <div class="col"></div>
       </div>
+    </nav> -->
 
-      <div class="row">
-        <div class="col-12">
-          <a href="#contact" style="width: 106px"
-            ><button class="btn btn-primary" id="join-us-button" type="button">
-              JOIN US
-            </button></a
-          >
+    <!-- Title - Dynamic text - Image -->
+    
+    <div class="container-fluid text-center">
+      <div class="col-12">
+        <div class="lab-bg img-fluid">
+          <div class="row-title gap-3" style="align-items: center;">
+            <div class="col-md-1"></div>
+
+            <div class="col-12 col-md-4">
+              <h1 id="title-home">Chiarle Lab</h1>
+              
+              <div class="row-dynamic">
+                <div class="col-12">
+                  <h2 id="text-slide">We are interested in</h2>
+
+                  <div class="bd-example m-0 border-0">
+                    <div
+                      id="carouselExampleSlidesOnly"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                      data-bs-interval="3000"
+                    >
+                      <div class="carousel-dynamic">
+                        <div class="carousel-item active">
+                          <h2 id="dynamic-text-slide">mechanism</h2>
+                        </div>
+                        <div class="carousel-item">
+                          <h2 id="dynamic-text-slide">therapy</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-12">
+                  <h2 id="text-slide">of cancer</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <img
+              class="img-fluid"
+              id="img-slide"
+              src="img/Photo-Chiarle-Lab-cut-2-light.jpg"
+              style="text-align: right;"
+              />
+            </div>
+
+            <div class="col-md-1"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -209,6 +266,8 @@
 
     <!-- TEXT SLIDE - IMMAGINE(SLIDE) -->
     <div class="container text-center">
+
+      <!--
       <div class="row-dynamic">
         <div class="col-12 col-lg-6">
           <h2 id="text-slide-right">We are interested in</h2>
@@ -239,11 +298,14 @@
         </div>
       </div>
 
-      <img
-        class="img-fluid text-center"
-        id="img-slide"
-        src="img/Photo-Chiarle-Lab-cut-2.jpg"
-      />
+      <div class="row">
+        <a href="#contact">
+          <button class="btn btn-primary" id="join-us-button" type="button">
+            JOIN US
+          </button></a
+        >
+      </div>-->
+
     </div>
 
     <!-- STRUTTURA "OUR PROJECTS"-->
@@ -253,14 +315,14 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf-long">OUR PROJECTS</h1>
+          <h1 class="title-paragraf-long outfit-font">Our projects</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-1"></div>
         <div class="col-md-3">
-          <img class="img-fluid" id="img-project" src="img/col1_305x305.jpg" />
+          <img class="img-fluid" id="img-project" src="img/col1_305x305-no-bg.png" />
         </div>
         <div class="col-md-7 mt-50-768">
           <div class="row">
@@ -299,7 +361,7 @@
           <img
             class="img-fluid"
             id="img-project"
-            src="img/col2_cut_305x251.jpg"
+            src="img/col2_cut_305x251-no-bg.png"
           />
         </div>
 
@@ -314,7 +376,7 @@
             <div class="col-12 h-30"></div>
             <div class="col-12">
               <p class="justify">
-                as translocations and activation mutations that are
+                As translocations and activation mutations that are
                 characteristic of Anaplastic Large Cell Lymphoma (ALCL),
                 Non-Small Cell Lung Cancers (NSCLC) and other type of solid
                 tumors including neuroblastoma. We have extensively studied the
@@ -342,7 +404,7 @@
       <div class="row" style="align-items: center">
         <div class="col-1"></div>
         <div class="col-md-3">
-          <img class="img-fluid" id="img-project" src="img/col3_305x305.jpg" />
+          <img class="img-fluid" id="img-project" src="img/col3_305x305-no-bg.png" />
         </div>
         <div class="col-md-7">
           <div class="row">
@@ -365,7 +427,7 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf">OUR TEAM</h1>
+          <h1 class="title-paragraf">Our team</h1>
         </div>
       </div>
 
@@ -381,7 +443,7 @@
           >
             <img
               src="img/membri/RChiarle165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Roberto Chiarle"
             />
           </a>
@@ -494,10 +556,8 @@
         </div>
       </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row">
-        <div class="col-md pt-70">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="justify-content: center;">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -506,7 +566,7 @@
           >
             <img
               src="img/membri/Patino165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Rafael Blasco-Patino"
             />
           </a>
@@ -593,12 +653,12 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Wang">
             <img
               src="img/membri/wang165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Qi Wang"
             />
           </a>
@@ -690,7 +750,7 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -699,7 +759,7 @@
           >
             <img
               src="img/membri/cheong164x164.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Taek-Chin Cheong"
             />
           </a>
@@ -780,17 +840,13 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row">
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Tao">
             <img
               src="img/membri/tao165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Jianli Tao"
             />
           </a>
@@ -878,7 +934,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md pt-70">
+      
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -887,7 +944,7 @@
           >
             <img
               src="img/membri/Elisa167x167.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Elisa Bergaggio"
             />
           </a>
@@ -978,7 +1035,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md pt-70">
+
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -987,7 +1045,7 @@
           >
             <img
               src="img/membri/MarcoCampisi_BCH2_165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Marco Campisi"
             />
           </a>
@@ -1073,12 +1131,8 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row">
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -1087,7 +1141,7 @@
           >
             <img
               src="img/membri/Carmen-Mecca165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Carmen Mecca"
             />
           </a>
@@ -1169,12 +1223,12 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Luca">
             <img
               src="img/membri/Luca170x170.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Luca Alessandri"
             />
           </a>
@@ -1261,7 +1315,7 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -1270,7 +1324,7 @@
           >
             <img
               src="img/membri/Jasna-Metovic174x174.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Jasna Metovic"
             />
           </a>
@@ -1353,15 +1407,9 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row h-30"></div>
-
-      <div id="former-hide"></div>
-      <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 pt-70">
+        <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
+        <div class="col pt-5" id="former-hide">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -1370,7 +1418,7 @@
           >
             <img
               src="img/membri/Elena165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Elena Vissio"
             />
           </a>
@@ -1451,140 +1499,315 @@
             </div>
           </div>
         </div>
-        <div class="col-3"></div>
+      </div>
+    
+      <div id="former-show"></div>
+      <div class="collapse text-center" id="collapseExample">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="justify-content: center;">
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Andrea2_0.png"
+              class="img-fluid"
+              alt="Immagine di Andrea Aroldi"
+            />
+            <p class="name">Andrea Aroldi, MD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Giulia Leonardi.jpg"
+              class="img-fluid"
+              alt="Immagine di Giulia Leonardi"
+            />
+            <p class="name">Giulia Leonardi, MD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/ines2.jpg"
+              class="img-fluid"
+              alt="Immagine di Ines Mota"
+            />
+            <p class="name">Ines Mota, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Elif_0.jpg"
+              class="img-fluid"
+              alt="Immagine di Elif Karaca"
+            />
+            <p class="name">Elif Karaca, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/wei-tein_1.jpg"
+              class="img-fluid"
+              alt="Immagine di Wei-Tien Tai"
+            />
+            <p class="name">Wei-Tien Tai, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Caspian Harding.jpg"
+              class="img-fluid"
+              alt="Immagine di Caspian Harding"
+            />
+            <p class="name">Caspian Harding</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Serena.jpg"
+              class="img-fluid"
+              alt="Immagine di Serena Stadler"
+            />
+            <p class="name">Serena Stadler, PhD student</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Manuel_Nuesch.png"
+              class="img-fluid"
+              alt="Immagine di Manuel Nuesch"
+            />
+            <p class="name">Manuel Nuesch</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Chiara.jpg"
+              class="img-fluid"
+              alt="Immagine di Chiara Pighi"
+            />
+            <p class="name">Chiara Pighi, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/ID_Sylvie-4.jpg"
+              class="img-fluid"
+              alt="Immagine di Sylvie Giuriato"
+            />
+            <p class="name">Sylvie Giuriato</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Domenico.png"
+              class="img-fluid"
+              alt="Immagine di Domenico Sorrentino"
+            />
+            <p class="name">Domenico Sorrentino</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Mara-1.jpg"
+              class="img-fluid"
+              alt="Immagine di Mara Compagno"
+            />
+            <p class="name">Mara Compagno, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/CVoena.jpg"
+              class="img-fluid"
+              alt="Immagine di Claudia Voena"
+            />
+            <p class="name">Claudia Voena</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Fernanda Langellotto.jpg"
+              class="img-fluid"
+              alt="Immagine di Fernanda Langellotto"
+            />
+            <p class="name">Fernanda Langellotto, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/teresa.jpg"
+              class="img-fluid"
+              alt="Immagine di Teresa Poggio"
+            />
+            <p class="name">Teresa Poggio</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Dylan-1.jpg"
+              class="img-fluid"
+              alt="Immagine di Dylan Mooijman"
+            />
+            <p class="name">Dylan Mooijman</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Emre-1.jpg"
+              class="img-fluid"
+              alt="Immagine di Emre Karayol"
+            />
+            <p class="name">Emre Karayol</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+              src="img/ex_membri/Cinzia.jpg"
+              class="img-fluid"
+              alt="Immagine di Cinzia Martinengo, PhD"
+            />
+            <p class="name">Cinzia Martinengo, PhD</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row h-30"></div>
+      <div class="col text-center">
+        <a id="a-former-members" href="#former-show">
+          <button
+            id="btn-former-members"
+            class="btn btn-primary btn-lg"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            SEE FORMER MEMBERS
+          </button>
+        </a>
       </div>
     </div>
 
-    <div id="former-show"></div>
-    <div class="collapse text-center" id="collapseExample">
-      <div class="row">
-        <div class="col-md-1"></div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/Cristina Mastini-1_0.jpg"
-            class="img-fluid"
-            alt="Immagine di Cristina Mastini"
-          />
-          <p class="name">Cristina Mastini</p>
-        </div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/pagina personale Valerio-1_0.jpg"
-            class="img-fluid"
-            alt="Immagine di Valerio"
-          />
-          <p class="name">Valerio</p>
-        </div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/roberta.pulito-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Roberta Pulito"
-          />
-          <p class="name">Roberta Pulito</p>
-        </div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/Silvia_da_mandare-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Silvia Scientifico Peola"
-          />
-          <p class="name">Silvia Scientifico Peola</p>
-        </div>
-
-        <div class="col-12 col-md pt-70">
-          <img
-            src="img/ex_membri/Matteo Menotti-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Matteo Menotti"
-          />
-          <p class="name">Matteo Menotti</p>
-        </div>
-
-        <div class="col-md-1"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-1"></div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/teresa-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Teresa Poggio"
-          />
-          <p class="name">Teresa Poggio</p>
-        </div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/Ramesh. C. Choudhari.jpg"
-            class="img-fluid"
-            alt="Immagine di Ramesh. C. Choudhari"
-          />
-          <p class="name">Ramesh. C. Choudhari</p>
-        </div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/scalzo maria stella-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Scalzo Maria Stella"
-          />
-          <p class="name">Scalzo Maria Stella</p>
-        </div>
-
-        <div class="col-6 col-md pt-70">
-          <img
-            src="img/ex_membri/Lydia_Varesio-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Lydia Varesio"
-          />
-          <p class="name">Lydia Varesio</p>
-        </div>
-
-        <div class="col-12 col-md pt-70">
-          <img
-            src="img/ex_membri/maria.boggiomerlo-1.jpg"
-            class="img-fluid"
-            alt="Immagine di Maria Elena Boggio Merlo"
-          />
-          <p class="name">Maria Elena Boggio Merlo</p>
-        </div>
-
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-
-    <div class="row h-30"></div>
-    <div class="col text-center">
-      <a id="a-former-members" href="#former-show">
-        <button
-          id="btn-former-members"
-          class="btn btn-primary btn-lg"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-        >
-          SEE FORMER MEMBERS
-        </button>
-      </a>
-    </div>
-
-    <!-- STRUTTURA "ALBUM" -->
+   <!-- STRUTTURA "ALBUM" -->
     <div id="album"></div>
     <div class="container text-center">
       <div class="row h-70"></div>
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf" style="height: 50px">ALBUM</h1>
+          <h1 class="title-paragraf">Album</h1>
+        </div>
+      </div>
+
+      <div class="row h-70"></div>
+      <div class="grid-bg">
+        <div class="row justify-content-center">
+          <div class="col-1"></div>
+
+          <div class="col-12 col-md pt-4">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1200">
+              <div class="carousel-inner">
+                <div class="carousel-item transition-01 active">
+                  <img class="w-album border-radius-10" src="img/album/IMG_1814.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01">
+                  <img class="w-album border-radius-10" src="img/album/IMG_4692.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01">
+                  <img class="w-album border-radius-10" src="img/album/IMG_2245.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01 active">
+                  <img class="w-album border-radius-10" src="img/album/Dinner 2013.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01">
+                  <img class="w-album border-radius-10" src="img/album/dinner 2013_2.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01">
+                  <img class="w-album border-radius-10" src="img/album/2012-01-10 20.14.52-1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md pt-4 border-radius-10">
+            <img class="w-album border-radius-10" src="img/album/IMG_0910.jpg" alt="" />
+          </div>
+
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-1"></div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/Serena and ELif2.jpg" alt="" />
+          </div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/IMG_0436.jpg" alt="" />
+          </div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/IMG_0460.jpg" alt="" />
+          </div>
+
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-1"></div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/IMG_0477-1_0.jpg" alt="" />
+          </div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/IMG_2403-2.jpg" alt="" />
+          </div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/IMG_2250.jpg" alt="" />
+          </div>
+
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-1"></div>
+
+          <div class="col-12 col-md pt-4">
+            <img class="w-album border-radius-10" src="img/album/IMG_2551_2.jpg" alt="" />
+          </div>
+
+          <div class="col-12 col-md pt-4 pb-4">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1200">
+              <div class="carousel-inner">
+                <div class="carousel-item transition-01 active">
+                  <img class="w-album border-radius-10" src="img/album/DSCN5518-1.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01">
+                  <img class="w-album border-radius-10" src="img/album/Guitar-1.jpg" alt="" />
+                </div>
+                <div class="carousel-item transition-01">
+                  <img class="w-album border-radius-10" src="img/album/Merry Xmas-1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- STRUTTURA "ALBUM" originale 
+    <div id="album"></div>
+    <div class="container text-center">
+      <div class="row h-70"></div>
+
+      <div class="row">
+        <div class="col">
+          <h1 class="title-paragraf" style="height: 50px">Album</h1>
         </div>
       </div>
 
@@ -1686,7 +1909,7 @@
           <div class="col-lg-1"></div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- STRUTTURA "ALBUM" prova con piu' row 
 <div id="album"></div>
@@ -2069,25 +2292,24 @@
 </div>
 -->
 
-    <!-- STRUTTURA "CONTACT"-->
+    <!-- STRUTTURA "CONTACT"-->      
     <div id="contact"></div>
     <div class="container text-center">
       <div class="row h-70"></div>
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf" style="height: 50px">CONTACT</h1>
+          <h1 class="title-paragraf mb-5">Contact</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">
               ROBERTO CHIARLE, M.D.
             </h4>
           </div>
-          <div class="h-30"></div>
           <div class="col">
             <p class="text-contact">
               Professor<br />
@@ -2114,10 +2336,9 @@
         </div>
 
         <div class="col">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">SUSAN WONG</h4>
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">SUSAN WONG</h4>
           </div>
-          <div class="h-30"></div>
           <div class="col">
             <p class="text-contact">
               Administrative Assistant<br />
@@ -2137,12 +2358,11 @@
         </div>
 
         <div class="col">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">
               ANTHONY CALDERONE
             </h4>
           </div>
-          <div class="h-30"></div>
           <div class="col">
             <p class="text-contact">
               Program Coordinator<br />
@@ -2175,6 +2395,7 @@
       <div class="row h-70"></div>
 
       <div class="row">
+        <div class="col-1"></div>
         <div class="col logo-padding">
           <a href="https://www.childrenshospital.org/">
             <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid" />
@@ -2195,6 +2416,7 @@
             />
           </a>
         </div>
+        <div class="col-1"></div>
       </div>
     </div>
 

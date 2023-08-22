@@ -43,3 +43,6 @@ btnFormerMembers.addEventListener("click", function handleClick() {
     document.getElementById("a-former-members").href = "#former-show";
   }
 });
+
+
+
