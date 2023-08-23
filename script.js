@@ -37,10 +37,8 @@ btnFormerMembers.addEventListener("click", function handleClick() {
       .includes(initialText.toLowerCase())
   ) {
     btnFormerMembers.innerHTML = "SEE FORMER MEMBERS";
-    document.getElementById("a-former-members").href = "#former-hide";
   } else {
     btnFormerMembers.textContent = initialText;
-    document.getElementById("a-former-members").href = "#former-show";
   }
 });
 
