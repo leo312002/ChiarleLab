@@ -7,10 +7,6 @@ body {
 /*  background: rgb(255,208,134);
     background: linear-gradient(250deg, rgba(255,208,134,1) 0%, rgba(255,186,132,1) 53%, rgba(116,169,201,1) 100%); */
   min-width: 380px;
-background-image:  linear-gradient(#444cf7 0.5px, transparent 1px), linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
-background-color: #e5e5f7;
-background: linear-gradient(to bottom,#444cf7 0.5px, transparent 1px, #ffffff);
-
 }
 
 .square-bg{
@@ -360,7 +356,6 @@ body {
     }
 }
 
-
 .h-70 {
   height: 70px;
 }
@@ -399,6 +394,10 @@ body {
     border-radius: 3vh;
 }
 
+.img-border-radius img{
+    border-radius: 4vh;
+}
+
 /* Zoom In #1 */
 .hover-effect img {
   -webkit-transform: scale(1);
@@ -434,9 +433,8 @@ body {
   padding-top: 70px;
 }
 
-.logo-padding {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.img-link img{
+    max-height: 50px;
 }
 
 /*  CSS STRUTTURA ALBUM (presa da internet: https://codepen.io/jh3y/pen/xxjxqOL) */

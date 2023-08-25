@@ -21,20 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 
-    <!-- Da fare: - mettere un video al posto del carousel 
+    <!-- Da fare: - sistemare la fine della sezione "collaboration"
+                  - sistemare la sezione home e research del lab di torino
                   - i link della navbar devono portare sopra al titolo del paragrafo con piu' margine
                   - (opzionale) quando sono in una determinata sezione il bottone, della sezione in cui mi trovo, della navbar 
                     rimane attivo
                   - (opzionale) fare un counter dei visitatori della pagina giornalieri e totali -->
 
-    <!-- 18/08: - aggiunto la funzione della navbar che si chiude quando schiacci un item
-                - cercato di sistemare la gallery
-                - fatto la pagina funding
-                - fatto la pagina welcome
-                - fatto pagina former members
-                - fatto js per cambiare testo ai bottoni 
-              
-         19/08: - aggiunto il link ai bottoni con il collapse -->
+    <!-- 24/08: - sistemare la pagina delle news -->
   </head>
 
   <body class="p-0">
@@ -1502,7 +1496,7 @@
       </div>
 
       <div class="collapse text-center" id="collapseExample">
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="justify-content: center;">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 img-border-radius" style="justify-content: center;">
 
           <div class="col pt-4">
             <img
@@ -1510,7 +1504,7 @@
               class="img-fluid"
               alt="Immagine di Andrea Aroldi"
             />
-            <p class="name">Andrea Aroldi, MD</p>
+            <p class="name">Andrea Aroldi</p>
           </div>
 
           <div class="col pt-4">
@@ -1519,7 +1513,7 @@
               class="img-fluid"
               alt="Immagine di Giulia Leonardi"
             />
-            <p class="name">Giulia Leonardi, MD</p>
+            <p class="name">Giulia Leonardi</p>
           </div>
 
           <div class="col pt-4">
@@ -1528,7 +1522,7 @@
               class="img-fluid"
               alt="Immagine di Ines Mota"
             />
-            <p class="name">Ines Mota, PhD</p>
+            <p class="name">Ines Mota</p>
           </div>
 
           <div class="col pt-4">
@@ -1537,7 +1531,7 @@
               class="img-fluid"
               alt="Immagine di Elif Karaca"
             />
-            <p class="name">Elif Karaca, PhD</p>
+            <p class="name">Elif Karaca</p>
           </div>
 
           <div class="col pt-4">
@@ -1546,7 +1540,7 @@
               class="img-fluid"
               alt="Immagine di Wei-Tien Tai"
             />
-            <p class="name">Wei-Tien Tai, PhD</p>
+            <p class="name">Wei-Tien Tai</p>
           </div>
 
           <div class="col pt-4">
@@ -1564,7 +1558,7 @@
               class="img-fluid"
               alt="Immagine di Serena Stadler"
             />
-            <p class="name">Serena Stadler, PhD student</p>
+            <p class="name">Serena Stadler</p>
           </div>
 
           <div class="col pt-4">
@@ -1582,7 +1576,7 @@
               class="img-fluid"
               alt="Immagine di Chiara Pighi"
             />
-            <p class="name">Chiara Pighi, PhD</p>
+            <p class="name">Chiara Pighi</p>
           </div>
 
           <div class="col pt-4">
@@ -1609,7 +1603,7 @@
               class="img-fluid"
               alt="Immagine di Mara Compagno"
             />
-            <p class="name">Mara Compagno, PhD</p>
+            <p class="name">Mara Compagno</p>
           </div>
 
           <div class="col pt-4">
@@ -1627,7 +1621,7 @@
               class="img-fluid"
               alt="Immagine di Fernanda Langellotto"
             />
-            <p class="name">Fernanda Langellotto, PhD</p>
+            <p class="name">Fernanda Langellotto</p>
           </div>
 
           <div class="col pt-4">
@@ -1663,7 +1657,7 @@
               class="img-fluid"
               alt="Immagine di Cinzia Martinengo, PhD"
             />
-            <p class="name">Cinzia Martinengo, PhD</p>
+            <p class="name">Cinzia Martinengo</p>
           </div>
 
         </div>
@@ -2391,23 +2385,22 @@
 
     <!-- IMMAGINI CON LINK -->
     <div class="container text-center">
-      <div class="row h-70"></div>
 
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col logo-padding">
+      <div class="row mt-5 img-link justify-content-md-center">
+
+        <div class="col col-lg-3">
           <a href="https://www.childrenshospital.org/">
             <img src="img/loghi/BCHlogo416x105.jpg" class="img-fluid" />
           </a>
         </div>
 
-        <div class="col logo-padding">
+        <div class="col col-lg-3">
           <a href="https://www.dana-farber.org/">
             <img src="img/loghi/img-logo-2x-new.jpg" class="img-fluid" />
           </a>
         </div>
 
-        <div class="col logo-padding">
+        <div class="col col-lg-3">
           <a href="https://hms.harvard.edu/">
             <img
               src="img/loghi/harvard-medical-school-logo-vector.jpg"
@@ -2415,7 +2408,7 @@
             />
           </a>
         </div>
-        <div class="col-1"></div>
+
       </div>
     </div>
 
@@ -2481,5 +2474,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
