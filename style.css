@@ -237,15 +237,15 @@ body {
 
 @media (max-width: 768px) {
     .row-title {
-        padding-top: 60px;
+        padding-top: 52px;
     }
 
     #title-home {
-          font-size: calc(0rem + 10vw);
+          font-size: calc(0rem + 12vw);
     }
 
     #text-slide, #dynamic-text-slide{
-        font-size: calc(0rem + 4vw);
+        font-size: calc(0rem + 5vw);
     }
 
     #img-slide{
