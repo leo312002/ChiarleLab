@@ -44,9 +44,8 @@ btnFormerMembers.addEventListener("click", function handleClick() {
 });
 
 /* Script to change opacity when you scroll the web page */
-$(document).ready(function(){
   $(window).scroll(function(){
-    if(window.innerWidth < 768){
+    if(window.innerWidth < 768){   /* Mobile */
       $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
       $('.scroll-op-first').css("opacity", 0.2)
       $('.scroll-op-second').css("opacity", 0.2)
@@ -54,18 +53,18 @@ $(document).ready(function(){
       if($(window).scrollTop() > 200){
         $('.scroll-op-first').css("opacity", 1)
       }
-      if($(window).scrollTop() > 800){
+      if($(window).scrollTop() > 900){
         $('.scroll-op-first').css("opacity", 0.2)
         $('.scroll-op-second').css("opacity", 1)
       }
-      if($(window).scrollTop() > 1300){
+      if($(window).scrollTop() > 1600){
         $('.scroll-op-second').css("opacity", 0.2)
         $('.scroll-op-third').css("opacity", 1)
       }
-      if($(window).scrollTop() > 1700){
+      if($(window).scrollTop() > 1900){
         $('.scroll-op-third').css("opacity", 0.2)
       }
-    }else if(window.innerWidth < 992){
+    }else if(window.innerWidth < 992){   /* Tablet */
       $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
       $('.scroll-op-first').css("opacity", 0.2)
       $('.scroll-op-second').css("opacity", 0.2)
@@ -84,7 +83,7 @@ $(document).ready(function(){
       if($(window).scrollTop() > 1500){
         $('.scroll-op-third').css("opacity", 0.2)
       }
-    }else{
+    }else{ /* Desktop */
       $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
       $('.scroll-op-first').css("opacity", 0.2)
       $('.scroll-op-second').css("opacity", 0.2)
@@ -105,4 +104,3 @@ $(document).ready(function(){
       }
     }
   })
-})
