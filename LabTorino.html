@@ -16,14 +16,20 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap" rel="stylesheet">
     <link href="styleLabTorino.css" rel="stylesheet" />
   </head>
 
   <body class="p-0">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a href="#"><img class="navbar-brand" src="img/header-logo.png" /></a>
+        <div class="ms-5">
+          <!--<a href="#"><img class="navbar-brand" src="img/logo_unito-no-bg.png" /></a>-->
+          <a href="#"><img class="navbar-brand" src="img/Logo-RC-no-bg.png" /></a>
+        </div>
 
         <button
           class="navbar-toggler"
@@ -40,15 +46,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a
-                class="nav-link js-scroll-trigger"
-                data-toggle="pill"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
+              <a class="nav-link js-scroll-trigger" href="#">Home</a>
             </li>
-            <li class="nav-item">
+        <!--<li class="nav-item">
               <a
                 class="nav-link js-scroll-trigger"
                 data-toggle="pill"
@@ -61,10 +61,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#funding">Funding</a>
-            </li>
+            </li>-->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#collaboration"
-                >Collaboration</a
+              <a class="nav-link js-scroll-trigger" href="#sponsor"
+                >Sponsor</a
               >
             </li>
 
@@ -95,11 +95,11 @@
                 Chiarle's Lab
               </a>
               <ul
-                class="dropdown-menu"
+                class="dropdown-menu dropdown-menu-lab"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item nav-link" href="index.html"
+                  <a class="dropdown-item nav-link" href="LabBoston.html"
                     >Chiarle's Lab in Boston</a
                   >
                 </li>
@@ -115,7 +115,7 @@
       </div>
     </nav>
 
-    <!-- CAROUSEL -->
+    <!-- CAROUSEL 
     <div class="text-center first-row">
       <div
         id="carouselExampleSlidesOnly"
@@ -147,19 +147,33 @@
           </div>
         </div>
       </div>
+    </div>-->
+
+    <!-- Title - Image -->
+    <div class="container-fluid text-center">
+      <div class="col-12">
+        <div class="lab-bg img-fluid">
+          <div class="row-title align-items-center">
+            <div class="col-md-1"></div>
+
+            <div class="col-12 col-md-5 mb-4">
+              <h1 id="title-home">Chiarle Lab</h1>
+              <!--<h1 id="text-home">@Unito</h1>-->
+              <img class="img-fluid" src="img/logo-unito-800x350-no-bg.png" style="max-width: 50%;"/>
+            </div>
+
+            <div class=" col-12 col-md-5 "> <!-- da inserire solo come classe: box -->
+              <img class="img-fluid text-end" id="img-slide" src="img/Foto-gruppo-Torino-765x450.jpg"/>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <!-- Welcome -->
-    <div class="container text-center">
-      <div class="row h-70"></div>
-
-      <div class="row">
-        <div class="col">
-          <h1 class="title-paragraf-long">
-            Welcome to Chiarle Lab in University of Torino
-          </h1>
-        </div>
-      </div>
+    <div class="container text-center mt-5 pt-5">
 
       <div class="row" style="align-items: center">
         <div class="col-lg-1"></div>
@@ -168,48 +182,31 @@
           <div class="row">
             <div class="col-12">
               <p class="justify welcome-text">
-                My laboratory in Italy is interested in the mechanisms of
-                initiation, growth and therapy of cancers. In the past years, we
-                have been working on different types of hematologic and solid
-                cancers. Most lymphomas, but also an increasing number of solid
-                tumors, are characterized by defined chromosomal translocations.
-                The products of such translocations control tumor growth and
-                confer precise biological characteristics to the tumors.
-                Ultimately, they can be targeted by specific therapies. In
-                lymphoma, translocations involving the Anaplastic Lymphoma
-                Kinase (ALK) gene are characteristic of a subset of T cell
-                lymphoma, the Anaplastic Large Cell Lymphoma (ALCL).
+                The Chiarle Lab in Torino is focused on understanding the oncogenic signaling in
+                cancers, with particular interest in targeted therapies, immunotherapies and resistance.
+                Cancers studied include Lymphoma, non-small cell lung cancer (NSCLC) and
+                neuroblastoma. Our main approach is to study the role of specific oncogenes in cancer
+                development and therapy. We have extensively studied the role of ALK in lymphoma by
+                discovering multiple pathways exploited to induce cellular transformation. By exploiting
+                cell line xenografts, patient-derived xenografts and organoids, as well as mouse models
+                for lymphoma and NSCLC, and neuroblastoma, we aim at defining relevant
+                mechanisms of ALK-mediated transformation in vivo but also to validate therapeutic
+                approaches to target ALK.
+                The ambitious but clear goal of the Chiarle Lab is to find a <span style="font-weight: 750;">cure for ALK-driven cancers.</span>
+                This approach will be eventually extended to other types of cancers.
               </p>
             </div>
           </div>
         </div>
 
         <div class="col-md-5 col-lg-4">
-          <img class="img-fluid img-welcome" src="img/col1-translocation.jpg" />
+          <img class="img-fluid img-welcome" src="img/Science-translational-medicine.png" style="max-width: 55%;" />
+          <!--<p>
+            This image of a 3D microfluidic model shows a well-formed vessel with anaplastic lymphoma kinase 
+            (ALK)-expressing lymphoma cells (green) interacting with endothelial cells (F-actin, red).
+          </p>-->
         </div>
 
-        <div class="col-lg-1"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col">
-          <p class="justify welcome-text">
-            However, recently they were found also in Non-Small Cell Lung
-            Cancers (NSCLC) and other solid tumors. We have extensively studied
-            the role of ALK in lymphoma by discovering multiple pathways
-            exploited to induce cellular transformation. By exploiting
-            xenografts and mouse models for ALCL and NSCLC, and also
-            neuroblastoma, we want to define relevant mechanisms of ALK-mediated
-            transformation in vivo but also to validate therapeutic approaches
-            to target ALK in such cancers. We are currently implementing
-            innovative therapies such as ALK inhibitors, ALK-targeted siRNA and
-            ALK-specific cancer immunotherapy. In this context, we developed a
-            vaccination protocol that generates a strong ALK-specific
-            immunization and seek to explore its potential use in clinical
-            protocols.
-          </p>
-        </div>
         <div class="col-lg-1"></div>
       </div>
     </div>
@@ -221,7 +218,7 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf">RESEARCH</h1>
+          <h1 class="title-paragraf">Research</h1>
         </div>
       </div>
 
@@ -231,50 +228,22 @@
         <div class="col-lg-1"></div>
         <div class="col">
           <p class="justify project-text">
-            My laboratory is interested in mechanisms and therapy of cancers.
-            One main focus of the lab is to elucidate the mechanisms that drive
-            transformation of lymphocytes. Most lymphomas, but also an
-            increasing number of solid tumors, are characterized by defined
-            oncogenic events, such as chromosomal translocations. One line of
-            research in the lab is dedicated to the elucidation of basic
-            principles that govern chromosomal translocation formation in normal
-            and neoplastic cells. In collaboration with other groups, we
-            developed a method to map translocations at a genome-wide level,
-            thus initiating a series of studies aimed at defining general rules
-            for translocation formation, focusing on how transcription, DNA
-            Double Strand Breaks (DBSs), tissue specificity and other nuclear or
-            DNA repair factors can influence the type and the frequency of
-            translocations found in human cancers.
-            <br /><br />
-            Among disease-defining translocation in lymphoma, the translocations
-            involving the Anaplastic Lymphoma Kinase (ALK) gene are
-            characteristic of Anaplastic Large Cell Lymphoma (ALCL), but were
-            recently found also in Non-Small Cell Lung Cancers (NSCLC) and other
-            type of solid tumors. We have extensively studied the role of ALK in
-            lymphoma by discovering multiple pathways exploited to induce
-            cellular transformation. By exploiting xenografts and mouse models
-            for ALCL and NSCLC, and also neuroblastoma, we want to define
-            relevant mechanisms of ALK-mediated transformation in vivo but also
-            to validate therapeutic approaches to target ALK in such cancers. We
-            are currently implementing innovative therapies such as ALK
-            inhibitors, ALK-targeted siRNA and ALK-specific cancer
-            immunotherapy. In this context, we developed a vaccination protocol
-            that generates a strong ALK-specific immunization and seek to
-            explore its potential use in clinical protocols.
-            <br /><br />
-            One more line of research in the lab is devoted to the discovery of
-            novel genetic lesions in lymphoma and solid tumors, by modern
-            techniques of next-generation sequencing. In particular, we recently
-            co-discovered mutations in FBXO11, a gene involved in the
-            degradation of BCL6 in human lymphomas. We aim at expanding these
-            findings to other lymphomas or solid tumors, and at generating mouse
-            models to uncover the role of such gene in normal B cell development
-            and lymphoma formation.
-            <br /><br />
-            <a
-              href="http://chiarle.tch.harvard.edu/ItalyLab/collaborations/MAECI"
-              >We also have several collaborative projects across the world.</a
-            >
+            Among disease-defining translocation in lymphoma, the translocations involving the
+            Anaplastic Lymphoma Kinase (ALK) gene are characteristic of Anaplastic Large Cell
+            Lymphoma (ALCL), but were recently found also in Non-Small Cell Lung Cancers
+            (NSCLC) and other type of solid tumors. We have extensively studied the role of ALK in
+            lymphoma by discovering multiple pathways exploited to induce cellular transformation.
+            <br>
+            Ambitiously, the ChiarleLab wants to find the <span style="font-weight: 750;">definitive cure for ALK-driven cancers</span>.
+            <br>
+            By exploiting cell line xenografts, patient-derived xenografts and organoids, as well as
+            mouse models for lymphoma and NSCLC, and neuroblastoma, our goal is to discover
+            the key mechanisms of ALK-mediated transformation and resistance to therapy while
+            developing therapeutic approaches to completely eradicate ALK-positive cancers. To
+            this end, we will combine innovative therapies such as ALK inhibitors and a portfolio of
+            ALK-specific immunotherapies, that include ALK vaccines, ALK-specific CAR T cells
+            and ALK-specific TCR T cells.
+
           </p>
         </div>
         <div class="col-lg-1"></div>
@@ -288,13 +257,17 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf">OUR TEAM</h1>
+          <h1 class="title-paragraf">Our team</h1>
         </div>
       </div>
 
-      <div class="row h-70"></div>
+      <div class="bottom-0 left-0 right-0 mt-4 mb-5 bounce">
+        <button class="border-0 mx-auto flex rounded p-2 transition-colors bg-white" style="height: 43px;">
+          <p class="mb-0" id="text-info">Click the image to see the profile ↓</p>
+        </button>
+      </div>
 
-      <div class="row">
+      <div class="row mt-4 pt-3">
         <div class="col-12">
           <!-- Button trigger modal -->
           <a
@@ -304,7 +277,7 @@
           >
             <img
               src="img/membri/RChiarle165x165.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Roberto Chiarle"
             />
           </a>
@@ -417,10 +390,8 @@
         </div>
       </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row">
-        <div class="col-md pt-70">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="justify-content: center;">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
@@ -429,11 +400,11 @@
           >
             <img
               src="img/membri/Claudia Voena146x146.png"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Claudia Voena"
             />
           </a>
-          <p class="name">CLAUDIA VOENA</p>
+          <p class="name">Claudia Voena</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -523,381 +494,470 @@
           </div>
         </div>
 
-        <div class="col-md pt-70">
+        <div class="col pt-5">
           <!-- Button trigger modal -->
           <a
             class="hover-effect"
             data-bs-toggle="modal"
-            data-bs-target="#Enrico"
+            data-bs-target="#Cristina"
           >
+            <img
+              src="img/membri/member-coming-soon-864x864.jpg"
+              class="img-fluid w-team"
+              alt="Immagine di Cristina Mastini"
+            />
+          </a>
+          <p class="name">Cristina Mastini, PhD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Cristina"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Cristina Mastini, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img
+                          src="img/membri/member-coming-soon-864x864.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Jasna Metovic"
+                        />
+                      </div>
+                      <div class="col-lg-8">
+                        <p class="text-modal">
+                          Coming soon
+                        </p>
+                        <table class="table table-info">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Email:</th>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:coming soon"
+                                  >coming soon</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col pt-5">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Marta"
+          >
+            <img
+              src="img/membri/member-coming-soon-864x864.jpg"
+              class="img-fluid w-team"
+              alt="Immagine di Marta Rubin"
+            />
+          </a>
+          <p class="name">Marta Rubin, Phd Student</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Marta"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Marta Rubin, Phd Student
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img
+                          src="img/membri/member-coming-soon-864x864.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Jasna Metovic"
+                        />
+                      </div>
+                      <div class="col-lg-8">
+                        <p class="text-modal">
+                          Coming soon
+                        </p>
+                        <table class="table table-info">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Email:</th>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:coming soon"
+                                  >coming soon</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col pt-5">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Mariapia"
+          >
+            <img
+              src="img/membri/member-coming-soon-864x864.jpg"
+              class="img-fluid w-team"
+              alt="Immagine di Alessandro Gasparetto"
+            />
+          </a>
+          <p class="name">Mariapia Russo, PhD Student</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Mariapia"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Mariapia Russo, PhD Student
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img
+                          src="img/membri/member-coming-soon-864x864.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Jasna Metovic"
+                        />
+                      </div>
+                      <div class="col-lg-8">
+                        <p class="text-modal">
+                          Coming soon
+                        </p>
+                        <table class="table table-info">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Email:</th>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:coming soon"
+                                  >coming soon</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
+        <div class="col pt-5" id="former-hide">
+          <!-- Button trigger modal -->
+          <a
+            class="hover-effect"
+            data-bs-toggle="modal"
+            data-bs-target="#Giulia"
+          >
+            <img
+              src="img/membri/member-coming-soon-864x864.jpg"
+              class="img-fluid w-team"
+              alt="Immagine di Giulia Mura"
+            />
+          </a>
+          <p class="name">Giulia Mura, PhD</p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Giulia"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <!-- Scrollable modal -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Giulia Mura, PhD
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img
+                          src="img/membri/member-coming-soon-864x864.jpg"
+                          class="img-fluid"
+                          alt="Immagine di Jasna Metovic"
+                        />
+                      </div>
+                      <div class="col-lg-8">
+                        <p class="text-modal">
+                          Coming soon
+                        </p>
+                        <table class="table table-info">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Email:</th>
+                              <td>
+                                <a
+                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                  href="mailto:coming soon"
+                                  >coming soon</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="collapse" id="collapseExample">
+
+        <div class="row mt-4 pt-5" id="former-show">
+          <div class="col">
+            <h1 class="title-paragraf">Former member</h1>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 img-border-radius mt-5 pt-2" style="justify-content: center;">
+
+          <div class="col pt-4">
             <img
               src="img/membri/Enrico Patrucco147x147.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Enrico Patrucco"
             />
-          </a>
-          <p class="name">ENRICO PATRUCCO, PhD</p>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Enrico"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-              <!-- Scrollable modal -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Enrico Patrucco, PhD
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="img/membri/Enrico Patrucco-2.jpg"
-                          class="img-fluid"
-                          alt="Immagine di Enrico Patrucco"
-                        />
-                      </div>
-                      <div class="col-lg-8">
-                        <p class="text-modal">
-                          I studied Molecular Biology and got my PhD at the
-                          University of Torino. After several years of academic
-                          research activity abroad, I returned in my hometown
-                          and joined the Chiarle's lab. I worked in several
-                          fields of study including Immunology and
-                          cardiovascular biology, and now I am interested in ALK
-                          driven cancer, using cell culture and mouse models of
-                          ALCL and NSCLC. I also follow the work of
-                          undergraduate and graduate students in the lab and
-                          help in the lab management.
-                        </p>
-                        <table class="table table-info">
-                          <tbody>
-                            <tr>
-                              <th scope="row">Email:</th>
-                              <td>
-                                <a
-                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                  href="mailto:enrico.patrucco@unito.it"
-                                  >enrico.patrucco@unito.it</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
+            <p class="name">ENRICO PATRUCCO, PhD</p>
           </div>
-        </div>
-
-        <div class="col-md pt-70">
-          <!-- Button trigger modal -->
-          <a
-            class="hover-effect"
-            data-bs-toggle="modal"
-            data-bs-target="#Chiara"
-          >
+  
+          <div class="col pt-4">
             <img
               src="img/membri/Chiara147x147.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Chiara Pighi"
             />
-          </a>
-          <p class="name">CHIARA PIGHI</p>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Chiara"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-              <!-- Scrollable modal -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Chiara Pighi, PhD
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="img/membri/Chiara.jpg"
-                          class="img-fluid"
-                          alt="Immagine di Chiara Pighi"
-                        />
-                      </div>
-                      <div class="col-lg-8">
-                        <p class="text-modal">
-                          I graduated in Molecular and Industrial Biotechniques
-                          at University of Verona, Italy, in 2009. I got my PhD
-                          in Human Oncological Pathology and Stem Cell at
-                          University of Verona in 2013, and my PhD project
-                          focused on the identification of the key signal
-                          transduction pathways in mantle cell lymphoma by an
-                          integrated approach based on cytogenetic, gene
-                          expression and phospho-proteomic data. I am working as
-                          a research fellow at Chiarle's lab in Torino.
-                        </p>
-                        <table class="table table-info">
-                          <tbody>
-                            <tr>
-                              <th scope="row">Email:</th>
-                              <td>
-                                <a
-                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                  href="mailto:pighi.chiara@gmail.com"
-                                  >pighi.chiara@gmail.com</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
+            <p class="name">CHIARA PIGHI</p>       
           </div>
-        </div>
-      </div>
-
-      <div id="former-hide"></div> <!-- ultima riga del team usata come link per la chiusura del collapse dei former member -->
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 pt-70">
-          <!-- Button trigger modal -->
-          <a
-            class="hover-effect"
-            data-bs-toggle="modal"
-            data-bs-target="#Serena"
-          >
+        
+          <div class="col pt-4">
             <img
               src="img/membri/Serena Germani147x147.jpg"
-              class="rounded-circle img-fluid"
+              class="rounded-circle img-fluid w-team"
               alt="Immagine di Serena Germani"
             />
-          </a>
-          <p class="name">SERENA GERMANI</p>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Serena"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-              <!-- Scrollable modal -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Serena Germani, M.Sc.
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="img/membri/Serena Germani Foto_2.jpg"
-                          class="img-fluid"
-                          alt="Immagine di Serena Germani"
-                        />
-                      </div>
-                      <div class="col-lg-8">
-                        <p class="text-modal">
-                          I graduated in 2018 in Biomedical Laboratory
-                          Techniques at the University of Perugia. I am now
-                          attending a Master program in Immunogenetics and
-                          Biology of Transplantation at the University of
-                          Torino. I am currently a lab technician in Prof.
-                          Chiarle's Lab where I work on histology and molecular
-                          biology procedures on human and murine samples.
-                        </p>
-                        <table class="table table-info">
-                          <tbody>
-                            <tr>
-                              <th scope="row">Email:</th>
-                              <td>
-                                <a
-                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                  href="mailto:serenagermani96@gmail.com"
-                                  >serenagermani96@gmail.com</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
+            <p class="name">SERENA GERMANI</p>
           </div>
-        </div>
-        <div class="col-3"></div>
-      </div>
 
-      <div id="former-show"></div>
-      <div class="collapse" id="collapseExample">
-        <div class="row">
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/Cristina Mastini-1_0.jpg"
-              class="img-fluid"
+              src="img/ex_membri/Cristina Mastini-1_0_145x145.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Cristina Mastini"
             />
             <p class="name">Cristina Mastini</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/pagina personale Valerio-1_0.jpg"
-              class="img-fluid"
+              src="img/ex_membri/pagina personale Valerio-1_0_148x148.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Valerio"
             />
             <p class="name">Valerio</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/roberta.pulito-1.jpg"
-              class="img-fluid"
+              src="img/ex_membri/roberta.pulito-1_147x147.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Roberta Pulito"
             />
             <p class="name">Roberta Pulito</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/Silvia_da_mandare-1.jpg"
-              class="img-fluid"
-              alt="Immagine di Silvia Scientifico Peola"
+              src="img/ex_membri/Silvia_da_mandare-1_147x147.jpg"
+              class="img-fluid rounded-circle w-former-member"
+              alt="Immagine di Silvia Peola"
             />
-            <p class="name">Silvia Scientifico Peola</p>
+            <p class="name">Silvia Peola</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/Matteo Menotti-1.jpg"
-              class="img-fluid"
+              src="img/ex_membri/Matteo Menotti-1_146x146.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Matteo Menotti"
             />
             <p class="name">Matteo Menotti</p>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/teresa-1.jpg"
-              class="img-fluid"
+              src="img/ex_membri/teresa_161x161.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Teresa Poggio"
             />
             <p class="name">Teresa Poggio</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/Ramesh. C. Choudhari.jpg"
-              class="img-fluid"
+              src="img/ex_membri/Ramesh. C. Choudhari_146x146.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Ramesh. C. Choudhari"
             />
             <p class="name">Ramesh. C. Choudhari</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/scalzo maria stella-1.jpg"
-              class="img-fluid"
+              src="img/ex_membri/scalzo maria stella-1_147x147.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Scalzo Maria Stella"
             />
             <p class="name">Scalzo Maria Stella</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/Lydia_Varesio-1.jpg"
-              class="img-fluid"
+              src="img/ex_membri/Lydia_Varesio-1_147x147.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Lydia Varesio"
             />
             <p class="name">Lydia Varesio</p>
           </div>
 
-          <div class="col-md pt-70">
+          <div class="col pt-4">
             <img
-              src="img/ex_membri/maria.boggiomerlo-1.jpg"
-              class="img-fluid"
+              src="img/ex_membri/maria.boggiomerlo-1_147x147.jpg"
+              class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Maria Elena Boggio Merlo"
             />
             <p class="name">Maria Elena Boggio Merlo</p>
           </div>
+
         </div>
       </div>
 
       <div class="row h-30"></div>
       <div class="col text-center">
-        <a id="a-former-members" href="#former-show">
+        <a id="a-former-members" href="#former">
           <button
             id="btn-former-members"
             class="btn btn-primary btn-lg"
@@ -913,110 +973,60 @@
       </div>
     </div>
 
-    <!-- Funding Sources -->
-    <div id="funding"></div>
+    <!-- Sponsor Sources -->
+    <div id="sponsor"></div>
     <div class="container text-center">
-      <div class="row h-70"></div>
 
-      <div class="row">
+      <div class="row mt-5 pt-4">
         <div class="col">
-          <h1 class="title-paragraf-long">FUNDING SOURCES</h1>
+          <h1 class="title-paragraf-long" style="margin-bottom: 40px;">Sponsor</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-1"></div>
         <div class="col">
-          <p class="justify funding-text">
-            The works in the Chiarle's lab in Italy would not have been possible
-            without the generous support and commitment from several funding
-            agencies, foundations and institutes.
-            <br />
+          <h4 class="justify-content-center sponsor-text">
             We gratefully recognize our sponsors:
-          </p>
+          </h4>
         </div>
         <div class="col-1"></div>
       </div>
+    </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row mb-5">
-        <div class="col-1"></div>
-        <div class="col">
-          <a href="http://erc.europa.eu/"
-            ><img
-              class="img-fluid"
-              width="526"
-              height="155"
-              src="img/sponsor/Funding-ERC.jpg"
-          /></a>
+    <div id="sponsor-container">
+      <div class="row">
+        <div class="logos">
+          <div class="logos-slide">
+          <a href="http://erc.europa.eu/"><img src="img/sponsor/Torino/Funding-ERC-no-bg.png"/></a>
+          <a href="http://cordis.europa.eu/fp7/home_en.html"><img src="img/sponsor/Torino/Funding-FP7-no-bg.png"/></a>
+          <a href="https://www.worldwidecancerresearch.org/"><img src="img/sponsor/Torino/Funding-AICR-no-bg.png"/></a>
+          <a href="http://www.airc.it/"><img src="img/sponsor/Torino/Funding-AIRC-no-bg.png"/></a>
+          <a href="https://www.esteri.it/mae/en/"><img src="img/sponsor/Torino/Funding-MAECI-no-bg.png"/></a>
+          </div>
+          <div class="logos-slide">
+          <a href="http://erc.europa.eu/"><img src="img/sponsor/Torino/Funding-ERC-no-bg.png"/></a>
+          <a href="http://cordis.europa.eu/fp7/home_en.html"><img src="img/sponsor/Torino/Funding-FP7-no-bg.png"/></a>
+          <a href="http://www.aicr.org.uk/"><img src="img/sponsor/Torino/Funding-AICR-no-bg.png"/></a>
+          <a href="http://www.airc.it/"><img src="img/sponsor/Torino/Funding-AIRC-no-bg.png"/></a>
+          <a href="https://www.esteri.it/mae/en/"><img src="img/sponsor/Torino/Funding-MAECI-no-bg.png"/></a>
+          </div>
         </div>
-        <div class="col-1"></div>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-1"></div>
-        <div class="col" style="text-align: center">
-          <a href="http://cordis.europa.eu/fp7/home_en.html"
-            ><img
-              class="img-fluid mb-5"
-              width="200"
-              height="150"
-              src="img/sponsor/Funding-FP7.jpg"
-          /></a>
-          <a href="http://www.aicr.org.uk/"
-            ><img
-              class="img-fluid"
-              width="315"
-              height="150"
-              src="img/sponsor/Funding-AICR.jpg"
-          /></a>
-        </div>
-        <div class="col-1"></div>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-1"></div>
-        <div class="col">
-          <a href="http://www.airc.it/"
-            ><img
-              class="img-fluid"
-              width="526"
-              height="122"
-              src="img/sponsor/Funding-AIRC.jpg"
-          /></a>
-        </div>
-        <div class="col-1"></div>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col-1"></div>
-        <div class="col">
-          <a href="https://www.esteri.it/mae/en/"
-            ><img
-              class="img-fluid"
-              width="526"
-              height="122"
-              src="img/sponsor/Funding-MAECI.jpg"
-          /></a>
-        </div>
-        <div class="col-1"></div>
       </div>
     </div>
 
     <!-- Collaboration -->
     <div id="collaboration"></div>
     <div class="container text-center">
-      <div class="row h-70"></div>
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf-long">COLLABORATION</h1>
+          <h1 class="title-paragraf-long mt-5 pt-3">International project</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-1"></div>
+        <div class="col-lg-2"></div>
         <div class="col">
           <p class="justify collaboration-text">
             International collaborative project (2018-2020) with the Shanghai
@@ -1024,94 +1034,138 @@
             e della Cooperazione Internazionale (MAECI).
           </p>
         </div>
+        <div class="col-lg-2"></div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-1"></div>
+        <div class="col">
+          <img class="img-fluid" style="max-height: 400px;" src="img/Collaboration_Unito-CinaNSF.jpg">
+        </div>
         <div class="col-lg-1"></div>
       </div>
 
-      <div class="row h-30"></div>
+      <div class="row mt-5">
+        <div class="col-1"></div>
+        <div class="col">
+          <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#italian-version" type="button" role="tab" aria-controls="italian-version" aria-selected="true">Italian</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#english-version" type="button" role="tab" aria-controls="english-version" aria-selected="false">English</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active justify" id="italian-version" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              Lo scopo del progetto è di identificare i danni sul DNA indotti dall'enzima AID (activation-induced cytidine deaminase) durante lo sviluppo di resistenza e progressione della malattia in pazienti trattati con inibitori di PI3Kd o BTK nella leucemia linfatica cronica (LLC). I risultati così ottenuti potranno servire per disegnare strategie terapeutiche mirate più efficaci nel trattamento e nella prevenzione della trasformazione della LLC.
+              <br> <br>
+              L'unità italiana e quella cinese si uniranno per raggiungere questo obiettivo. L'unità cinese fornirà le basi molecolari per capire in che modo AID si leghi a sequenze diverse nel genoma umano. L'unità italiana sfrutterà questa nuova conoscenza per comprendere il ruolo patologico di AID nei linfomi e nelle leucemie.
+              <br> <br>
+              L'unità cinese ha già dimostrato che brevi sequenze omologhe di DNA (50bp) nel locus delle immunoglobuline non sono colpite nella stessa maniera dall'attività mutazionale di AID. Questo lascia ipotizzare che esistano fattori addizionali, tra cui diverse combinazioni di sequenze, che determinano una diversa frequenza di mutazioni indotte da AID (Yeap et al., Cell, 2015). L'unità cinese identificherà questi elementi e chiarirà in che modo essi regolino l'attività di AID. I risultati di questo studio chiariranno le modalità con cui AID agisce per generare mutazioni ad alta frequenza selettivamente nei geni delle immunoglobuline durante la maturazione degli anticorpi risparmiando sequenze omologhe nel resto del genoma prevenendo così una diffusa instabilità genomica.
+              <br> <br>
+              L'unità italiana, esperta nella patogenesi delle leucemie e dei linfomi, utilizzerà tecnologie di sequenziamento per identificare e validare le mutazioni indotte da AID durante lo sviluppo di resistenza a idelalisib o ibrutinib. Questa unità studierà inoltre il ruolo di AID nel processo di trasformazione della LLC confrontando i campioni di pazienti prima e dopo la trasformazione a seguito della terapia con idelalisib o con ibrutinib.
+            </div>
+            <div class="tab-pane fade justify" id="english-version" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              The overall aim of this project is to elucidate the mechanisms of Activation Induced Cytidine Deaminase (AID) targeting in the resistance and progression to PI3Kd or BTK inhibitors in chronic lymphocytic leukemia (CLL). The result of this study should shed light on designing therapeutic targets for precision medicine in CLL treatment and in preventing CLL transformation.
+              <br> <br>
+              The Italian and the Chinese Unit will integrate in achieving this goal. The Chinese Unit will provide the molecular basis to understand how AID targets different sequences in the human genome. The Italian Unit will exploit this new knowledge to understand the pathological role of AID in lymphoma and leukemia.
+              <br> <br>
+              The Chinese Unit previously showed that the same motifs, within a short region (about 50 bp) in the Immunoglobulin locus, are not equally targeted by AID, suggesting that they may be relatively recurrent sequence combinations flanking AID-hotspots that may play a role in targeting high or low mutations (Yeap et al., Cell, 2015). The Chinese unit will identify cis-elements that target high or low mutations and elucidate how these elements regulate AID targeting. This study should shed light on how cis-elements may contribute in targeting high frequency of mutations to the Immunoglobulin loci during antibody affinity maturation and low frequency of mutations to the rest of the genome in preventing genomic instability.
+              <br> <br>
+              The Italian Unit, who is an expert in the pathogenesis of lymphoma, will use whole exome sequencing (WES) technology to identify and validate AID-dependent mutational signatures of resistance in AID-sufficient or AID-deficient human CLL cell lines and in CLL patients who developed resistance to idelalisib or ibrutinib. This Unit will also study the contribution of AID to transformation of CLL by comparing samples before and after transformation during idelalisib or ibrutinib therapy.
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12 col-md">
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">
+              Italian Team at the Department of Molecular Biotechnology and Health Sciences:
+            </h4>
+          </div>
+          <div class="col">
+            <p class="text-contact">
+              Prof. Roberto Chiarle, M.D., Professor of Pathology <br>
+              Dr. Chiara Pighi, Ph.D. Postdoctoral fellow <br>
+              Dr. Ludovica Riera, Ph.D. University Technician <br>
+              Dr. Lisa Bonello, Ph.D. University Technician <br>
+              Dr. Enrico Patrucco, Ph.D. Senior Scientist and lab manager <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md">
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">
+              Chinese Team at the Shanghai Jiao Tong University:
+            </h4>
+          </div>
+          <div class="col">
+            <p class="text-contact">
+              Prof. Long Siew Yeap, Ph.D., Principal Investigator <br>
+              Hao Qian, Ph.D. Postdoctoral Fellow <br>
+              Wang Yanyan Technician <br>
+              Zhan Chuanzhong Graduate Student <br>
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
 
     <!-- STRUTTURA "CONTACT"-->
     <div id="contact"></div>
     <div class="container text-center">
-      <div class="row h-30"></div>
 
-      <div class="row">
+      <div class="row mt-5 pt-3">
         <div class="col">
-          <h1 class="title-paragraf">CONTACT</h1>
+          <h1 class="title-paragraf mb-5">Contact</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12 col-md">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">
+          <div class="col pt-4">
+            <h4 class="justify-content title-text-contact pb-2">
               ROBERTO CHIARLE, M.D.
             </h4>
           </div>
-          <div class="h-30"></div>
           <div class="col">
             <p class="text-contact">
               Associate Professor of Pathology<br />
-              Dept. Biomedical Sciences and Human Oncology<br />
               University of Torino<br />
               Via Santena 7, 10126 Torino, ITALY<br />
+              Dept. Biomedical Sciences and Human Oncology<br />
               Telefono:
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="tel:+39 0116334573"
                 >+39 0116334573</a
-              >
-              (office) -
+              ><br />
+              Office:
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="tel:0116336861"
-                >0116336861</a
-              >
-              (lab)<br />
-              Fax: +39 0116336887<br />
+                >+39 0116336861</a
+              ><br />
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="mailto:roberto.chiarle@unito.it"
-                >roberto.chiarle@unito.it</a
-              >
+                >roberto.chiarle@unito.it</a><br />
             </p>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-12 col-md">
-          <div class="col pt-70">
-            <h4 class="justify-content title-text-contact">ENRICO PATRUCCO</h4>
-          </div>
-          <div class="h-30"></div>
-          <div class="col">
-            <p class="text-contact">
-              Research Fellow / Lab Manager<br />
-              Dept. Biomedical Sciences and Human Oncology<br />
-              University of Torino<br />
-              Via Santena 7, 10126 Torino, ITALY<br />
-              Telefono:
-              <a
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="tel:+39 0116334573"
-                >+39 0116334573</a
-              >
-              (office) -
-              <a
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="tel:0116336861"
-                >0116336861</a
-              >
-              (lab)<br />
-              Fax: +39 0116336887<br />
-              <a
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="mailto:enrico.patrucco@unito.it"
-                >enrico.patrucco@unito.it</a
-              >
-            </p>
-          </div>
-        </div>
+    <!-- MAPPA -->
+    <div class="container text-center mt-4">
+      <div class="row justify-content-center">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.396142427162!2d7.67235251152246!3d45.037182461708355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812b3d7452313%3A0x8e29969e465ff5f0!2sVia%20Santena%2C%207%2C%2010126%20Torino%20TO!5e0!3m2!1sen!2sit!4v1694165889343!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -1121,7 +1175,7 @@
       <div class="row">
         <div style="color: #fff">
           <p class="p-3">
-            Copyright © 2021 Chiarlelab in Torino. All rights reserved.
+            Copyright © 2023 Chiarlelab in Torino. All rights reserved.
           </p>
         </div>
         <div id="count"></div>
