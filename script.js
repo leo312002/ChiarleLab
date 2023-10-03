@@ -50,18 +50,18 @@ btnFormerMembers.addEventListener("click", function handleClick() {
       $('.scroll-op-first').css("opacity", 0.2)
       $('.scroll-op-second').css("opacity", 0.2)
       $('.scroll-op-third').css("opacity", 0.2)
-      if($(window).scrollTop() > 200){
+      if($(window).scrollTop() > 300){
         $('.scroll-op-first').css("opacity", 1)
       }
-      if($(window).scrollTop() > 900){
+      if($(window).scrollTop() > 950){
         $('.scroll-op-first').css("opacity", 0.2)
         $('.scroll-op-second').css("opacity", 1)
       }
-      if($(window).scrollTop() > 1600){
+      if($(window).scrollTop() > 1700){
         $('.scroll-op-second').css("opacity", 0.2)
         $('.scroll-op-third').css("opacity", 1)
       }
-      if($(window).scrollTop() > 1900){
+      if($(window).scrollTop() > 2000){
         $('.scroll-op-third').css("opacity", 0.2)
       }
     }else if(window.innerWidth < 992){   /* Tablet */
@@ -104,3 +104,16 @@ btnFormerMembers.addEventListener("click", function handleClick() {
       }
     }
   })
+
+/* hide text */
+function hideText() {
+  document.getElementById("choose-lab").innerHTML = "";
+}
+
+function showText() {
+  document.getElementById("choose-lab").innerHTML = "Which Chiarle Lab you want to visit";
+}
+
+
+
+
