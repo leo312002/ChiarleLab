@@ -177,7 +177,8 @@ body {
 
 @media (max-width: 768px){
   .img-lab-left{
-    max-width: 215px;
+    max-width: 190px;
+    margin-bottom: -75px;
   }
   
   .img-lab-right{
@@ -190,7 +191,7 @@ body {
   }
 
   #left-half{
-    height: 45vh;
+    height: 48vh;
     padding: 0;
     justify-content: center;
     display: flex;
@@ -226,13 +227,22 @@ body {
 
 @media (max-width: 435px){
   .img-lab-right {
-    max-width: 70vw;
-    margin-bottom: 100px;
+    max-width: 65vw;
+    margin-bottom: 120px;
+
   }
 
   .img-lab-left {
-    max-width: 55vw;
-    margin-bottom: -50px;
+    max-width: 50vw;
+    margin-bottom: -80px;
+  }
+
+  #left-half {
+    height: 45vh;
+  }
+
+  #choose-lab {
+    margin-top: 3vh;
   }
 }
 
@@ -475,7 +485,7 @@ body {
 }
 
 #choose-lab{
-    margin-top: 10vh;
+    margin-top: 2vh;
     color: #feae31e6;
     font-size: calc(2vw + 1rem);
     font-family: 'Outfit', sans-serif;
