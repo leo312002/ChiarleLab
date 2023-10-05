@@ -111,7 +111,7 @@ function hideText() {
 }
 
 function showText() {
-  document.getElementById("choose-lab").innerHTML = "Which Chiarle Lab you want to visit";
+  document.getElementById("choose-lab").innerHTML = "Chiarle Lab";
 }
 
 
