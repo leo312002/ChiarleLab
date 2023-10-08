@@ -108,10 +108,12 @@ btnFormerMembers.addEventListener("click", function handleClick() {
 /* hide text */
 function hideText() {
   document.getElementById("choose-lab").innerHTML = "";
+  document.querySelector('body').classList.add('animation-pause');
 }
 
 function showText() {
   document.getElementById("choose-lab").innerHTML = "Chiarle Lab";
+  document.querySelector('body').classList.remove('animation-pause');
 }
 
 

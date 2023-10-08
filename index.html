@@ -20,31 +20,94 @@
       href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap"
       rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <link href="styleIndex.css" rel="stylesheet" />
 
-    <!-- riduci la sagoma del link -->
+    <!-- riduci la sagoma del link 
+            - metti delle boubble che si muovono come sfondo
+            - rendi piu' carina la scritta "chiarle lab"-->
 
   </head>
 
-  <body class="p-0">
+  <body class="p-0 bg">
+<!--
+    <div class="bg-balls">
+        <css-doodle>
+            @grid: 1x2 / 100vmin;
+            :container {
+            perspective: 23vmin;
+            }
+            background: @m(
+            @r(200, 140), 
+            radial-gradient(
+                @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d) 15%,
+                transparent 50%
+            ) @r(100%) @r(100%) / @r(1%, 3%) @lr no-repeat
+            );
+
+            :host, .host {
+                width: 155vmin;
+                height: 155vmin;
+            }
+
+            @size: 100%;
+            @place-cell: center;
+
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            animation: scale-up 15s linear infinite;
+            transform: rotate(@r(-360deg, 360deg));
+
+            @keyframes scale-up {
+            0% {
+                opacity: 0.5;
+                transform: translate3d(0, 0, 0) rotate(0);
+            }
+            10% { 
+                opacity: 1; 
+            }
+            95% {
+                transform:
+                rotate(@r(-360deg, 360deg));
+                translate3d(0, 0, 1vmin);
+            }
+            100% {
+                opacity: 0;
+                transform: translate3d(0, 0, 1vmin);
+            }
+            }
+        </css-doodle>
+    </div>
+-->
 
     <div class="row text-center overflow-y-hidden overflow-x-hidden">
-        <div class="z-3 position-absolute" style="top: 10%; left: 50%; transform: translate(-50%, -50%);">
-            <h1 class="mb-5" id="choose-lab">Chiarle Lab</h1>
+        <div class="z-3 position-absolute order-md-2" style="top: 10%; left: 50%; transform: translate(-50%, -50%);">
+            <h1 class="mb-5" id="choose-lab">Chiarle Lab</h1><!--blob-->
         </div>
 
-        <div class="col-12 col-md-6 text-center zoom-right" id="left-half" onmouseover="hideText()" onmouseout="showText()">
+        <div class="col-12 col-md-6 text-center zoom-right order-md-1" id="left-half" onmouseover="hideText()" onmouseout="showText()">
             <a class="" style="text-decoration: none;" href="LabBoston.html">
                     <h1 id="title-lab">Boston</h1>
                     <img class="img-fluid img-lab-left" src="img/boston.webp">
             </a>
         </div>
 
-        <div class="col-12 col-md-6 text-center zoom-left" id="right-half" onmouseover="hideText()" onmouseout="showText()">
+        <div class="col-12 col-md-6 text-center zoom-left order-md-3" id="right-half" onmouseover="hideText()" onmouseout="showText()">
             <a style="text-decoration: none;" href="LabTorino.html">
                     <h1 id="title-lab" class="mb-5 text-lab-right">Torino</h1>
                     <img class="img-fluid img-lab-right" src="img/turin.webp">
             </a>
         </div>
+
+<!--
+        <div class="blob-c" style="z-index: -1;">
+            <div class="shape-blob"></div>
+            <div class="shape-blob one"></div>
+            <div class="shape-blob two"></div>
+            <div class="shape-blob three"></div>
+            <div class="shape-blob four"></div>
+            <div class="shape-blob five"></div>
+            <div class="shape-blob six"></div>
+        </div>-->
     </div>
 
 
@@ -52,9 +115,8 @@
     <div class="text-center mt-4 fixed-bottom" id="end-page">
       <div class="row">
         <div style="color: #fff">
-          <p class="p-3">
-            Copyright © 2023 Chiarlelab in Boston Children's Hospital | Harvard
-            Medical School. All rights reserved.
+          <p class="p-2 mb-0">
+            Copyright © 2023 Chiarlelab
           </p>
         </div>
         <!--<div id="count"></div>-->
@@ -66,6 +128,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script>        
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
   </body>
 </html>
