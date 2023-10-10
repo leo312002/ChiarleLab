@@ -356,7 +356,7 @@
  * https://alvarotrigo.com/blog/animated-backgrounds-css/
  */
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-/* Animations */
+/* Animations 
 @-webkit-keyframes bg-scrolling-reverse {
     100% {
       background-position: 50px 50px;
@@ -377,19 +377,19 @@
       background-position: 50px 50px;
     }
   }
-  /* Main styles */
+
   .bg {    
-    /*backdrop-filter: blur(1px);*/
+    /*backdrop-filter: blur(1px);
     height: 100vh;
     color: #999;
     font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
     text-align: center;
-    /* img size is 50x50 */
+    /* img size is 50x50 
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-    -webkit-animation: bg-scrolling-reverse 5s infinite;
-    /* Safari 4+ */
-    animation: bg-scrolling-reverse 5s infinite;
-    /* IE 10+ */
+    -webkit-animation: bg-scrolling 5s infinite;
+    /* Safari 4+ 
+    animation: bg-scrolling 5s infinite;
+    /* IE 10+ 
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 
@@ -397,4 +397,4 @@
 
   .animation-pause {
     animation-play-state: paused;
-  }
+  }*/
