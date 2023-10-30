@@ -12,10 +12,17 @@ body {
   overflow-x: hidden;
 }
 
+.nav-link{
+  font-size: 18px;
+}
+
 .navbar {
-    background-color: rgba(255, 255, 255, .7);
-    backdrop-filter: blur(9px);
-    border: 0;
+  background-color: rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(9px);
+  -moz-backdrop-filter: blur(9px);
+  -ms-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  border: 0;
 }
 
 .navbar,
@@ -173,6 +180,41 @@ body {
     --bs-btn-font-size: 1rem;
   }
 }
+
+#img-unito:hover{
+	-webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+	        animation: flip-vertical-right 0.4s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+}
+
+ @-webkit-keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
 
 @media (max-width: 600px) {
   #join-us-button {
@@ -448,11 +490,17 @@ body {
 }
 
 .logos:hover .logos-slide{
-    animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .logos-slide{
     display: inline-block;
+    -webkit-animation: 20s slide infinite linear;
+    -moz-animation: 20s slide infinite linear;
+    -ms-animation: 20s slide infinite linear;
     animation: 20s slide infinite linear;
 }
 
@@ -497,6 +545,14 @@ body {
 .tab-content>.active {
     display: block;
     margin-top: 15px;
+}
+
+.bg-card{
+  /*background-color: #0d6dfd1c;
+    box-shadow: 2px 2px;
+  background-color: #ff9b0087;*/
+  background-color: #ffffff;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important
 }
 
 .map{

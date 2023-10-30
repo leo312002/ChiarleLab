@@ -1,23 +1,3 @@
-/* COUNTER VISITE ALLA PAGINA */
-const count = document.getElementById("count");
-
-incrementVisitsCount();
-
-function incrementVisitsCount() {
-  let visits;
-
-  if (!localStorage.getItem("visits")) {
-    localStorage.setItem("visits", 1);
-  } else {
-    visits = +localStorage.getItem("visits");
-    const incrementedCount = visits + 1;
-
-    localStorage.setItem("visits", incrementedCount);
-  }
-
-  count.innerText = localStorage.getItem("visits");
-}
-
 /* chiude il collapse quando viene schiacciato un item della navbar */
 $(".js-scroll-trigger").click(function () {
   $(".navbar-collapse").collapse("hide");
@@ -43,13 +23,40 @@ btnFormerMembers.addEventListener("click", function handleClick() {
   }
 });
 
+/* chiude il collapse quando viene schiacciato un item della navbar */
+
+$('.js-scroll-trigger').click(function() {
+  $('.navbar-collapse').collapse('hide');
+});
+
+
+/* Change btn more news text on click. NON FUNZIONA, va in contrasto con li script di sopra 
+const btnMorePublication = document.getElementById('btn-more-publication');
+
+// ✅ Toggle button text on click
+btnMorePublication.addEventListener('click', function handleClick() {
+const initialText = 'SEE LESS PUBLICATION';
+
+if (
+  btnMorePublication.textContent
+    .toLowerCase()
+    .includes(initialText.toLowerCase())
+) {
+  btnMorePublication.innerHTML = "SEE MORE PUBLICATION";
+  //document.getElementById("a-more-news").href = "#news-hide";
+} else {
+  btnMorePublication.textContent = initialText;
+  //document.getElementById("a-more-news").href = "#news-show";
+}
+}); */
+
 /* Script to change opacity when you scroll the web page */
   $(window).scroll(function(){
+    $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
+    $('.scroll-op-first').css("opacity", 0.2)
+    $('.scroll-op-second').css("opacity", 0.2)
+    $('.scroll-op-third').css("opacity", 0.2)
     if(window.innerWidth < 768){   /* Mobile */
-      $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
-      $('.scroll-op-first').css("opacity", 0.2)
-      $('.scroll-op-second').css("opacity", 0.2)
-      $('.scroll-op-third').css("opacity", 0.2)
       if($(window).scrollTop() > 300){
         $('.scroll-op-first').css("opacity", 1)
       }
@@ -65,10 +72,6 @@ btnFormerMembers.addEventListener("click", function handleClick() {
         $('.scroll-op-third').css("opacity", 0.2)
       }
     }else if(window.innerWidth < 992){   /* Tablet */
-      $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
-      $('.scroll-op-first').css("opacity", 0.2)
-      $('.scroll-op-second').css("opacity", 0.2)
-      $('.scroll-op-third').css("opacity", 0.2)
       if($(window).scrollTop() > 200){
         $('.scroll-op-first').css("opacity", 1)
       }
@@ -84,18 +87,14 @@ btnFormerMembers.addEventListener("click", function handleClick() {
         $('.scroll-op-third').css("opacity", 0.2)
       }
     }else{ /* Desktop */
-      $('.scroll-op-title').css("opacity", 0.7 + $(window).scrollTop()/700)
-      $('.scroll-op-first').css("opacity", 0.2)
-      $('.scroll-op-second').css("opacity", 0.2)
-      $('.scroll-op-third').css("opacity", 0.2)
-      if($(window).scrollTop() > 300){
+      if($(window).scrollTop() > 400){
         $('.scroll-op-first').css("opacity", 1)
       }
-      if($(window).scrollTop() > 800){
+      if($(window).scrollTop() > 900){
         $('.scroll-op-first').css("opacity", 0.2)
         $('.scroll-op-second').css("opacity", 1)
       }
-      if($(window).scrollTop() > 1200){
+      if($(window).scrollTop() > 1400){
         $('.scroll-op-second').css("opacity", 0.2)
         $('.scroll-op-third').css("opacity", 1)
       }

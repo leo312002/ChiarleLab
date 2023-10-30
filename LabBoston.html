@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home BOSTON -</title>
-    <link
-      rel="icon"
-      href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png"
-      sizes="32x32" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5N64XC1CM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous" />
+    gtag('config', 'G-F5N64XC1CM');
+    </script>
+    <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap"
-      rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="stylePublications.css">
+    <title>Chiarle Lab - Boston</title>
+    <meta name="description" content="">
+    <link rel="manifest" href="">
+    <meta name="keywords" content="Chiarle Lab, ChiarleLab, Chiarle Laboratory, chiarle laboratory, laboratorio chiarle, Roberto Chiarle, Chiarle, chiarle, 
+    Laboratory, laboratory, Roberto, Chiarle Roberto, chiarle roberto, roberto chiarle, Lab, lab, chiarlelab, Torino, torino, Boston, boston,
+    children hospital, Chirldren Hospital, Harvard, harvard, Med, Medicine, medicine, ALK, alk, alkemist, Alkemist, Alkemist bio, alkemist bio, chiarle news,
+    chiarle link, chiarle publications, News, Publication, Link, Roberto Chiarle Lab News, Roberto Chiarle Lab Publication, Roberto Chiarle Lab Link, 
+    Roberto Lab News, Roberto Lab Publication, Roberto Lab Link, Chiarle Lab News, Chiarle Lab Publication, Chiarle Lab Link">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="creator" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://chiarlelab.com/LabBoston.html">
+    <meta property="og:title" content="Roberto Chiarle | Chiarle Lab in Boston Children's Hospital">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://chiarlelab.com/LabBoston.html">
+    <meta property="og:site_name" content="Chiarle Lab">
+    <meta property="og:locale" content="en-EN">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="">
+    <meta property="og:image:type" content="">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="32x32">
+    <meta name="next-size-adjust">
     
   <!-- Da fare: - mettere il cambio di pagina tra boston e torino come il bottone del cambio lingua del sito di italian tech week
                   (usa https://freefrontend.com/bootstrap-toggle-switches/ oppure https://bootsnipp.com/snippets/O56Vd)
@@ -40,6 +67,10 @@
                 - (opzionale) fare un counter dei visitatori della pagina giornalieri e totali
                 - scroll padding https://youtube.com/shorts/hk3RgcBx5Fc?si=VJISnctLZaOS2avi (telegram)
                 - sostituire max-width e min-width con width < 600px oppure wisth > 600px
+                - cambia colore sfondo team per creare sezioni ben definite
+                - cambia stile testo dei nomi del team (metti qualcosa come quello di chiara o paganolab)
+                - controlla le immagini degli sponsor se funzionano bene su tutti i browser (su safari sembra non andare bene 
+                  https://www.google.com/search?q=animation+css+safari+slide&sca_esv=572573644&sxsrf=AM9HkKlYYxSCzBJCPaT0gqOoKK3CZ2mzAA%3A1697059620714&ei=JBMnZfKWK4HXxc8PqcuwgAc&ved=0ahUKEwjyuOve9-6BAxWBa_EDHaklDHAQ4dUDCBA&uact=5&oq=animation+css+safari+slide&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmFuaW1hdGlvbiBjc3Mgc2FmYXJpIHNsaWRlMgQQIxgnSPUFUKsEWKsEcAF4AZABAJgBW6ABW6oBATG4AQPIAQD4AQHCAgoQABhHGNYEGLAD4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp#ip=1)
 
         Boston: - aggiustare opacita' scroll down project
                 - sistemare la sezione publication (provare questo design https://bestjquery.com/tutorial/timeline/demo44/ + prova a mettere 
@@ -50,11 +81,14 @@
         Torino: - sistemare la sezione home e research
                 - effetto opaco mentre scrolli
                 - rifare la sezione collaboration (togliere l'immagine e creare qualcosa di piu' bello)
-                - international project: https://fantom-project.eu/universita-di-torino/, http://alkatras.erialcl.net/members/
+                - international projects: https://fantom-project.eu/universita-di-torino/, http://alkatras.erialcl.net/members/
+                - metti un'animazione quando passi sopra le card di international projects
 
     -->
 
-    <!-- 08/09: -->
+    <!-- cose fatte:  - box per le immagini
+                      - animation img-unito
+                      - bg animato schermata iniziale -->
 
   </head>
 
@@ -97,12 +131,10 @@
               <a class="nav-link js-scroll-trigger" href="#album">Album</a>
             </li>-->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="Publications.html"
-                >Publications</a
-              >
+              <a class="nav-link js-scroll-trigger" href="News.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="News.html">News</a>
+              <a class="nav-link js-scroll-trigger" href="Album.html">Album</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="Link.html">Link</a>
@@ -249,12 +281,12 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-6 "><!-- da inserire solo come classe: box -->
-              <img
+            <div class="col-12 col-md-6 box">
+              <!--<img
                 class="img-fluid"
                 id="img-slide"
                 src="img/Photo-Chiarle-Lab-cut-2-light.jpg"
-                style="text-align: right" />
+                style="text-align: right" />-->
             </div>
 
             <div class="col-md-1"></div>
@@ -555,96 +587,6 @@
 
       <div
         class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
-        <div class="col pt-5">
-          <!-- Button trigger modal -->
-          <a
-            class="hover-effect"
-            data-bs-toggle="modal"
-            data-bs-target="#Rafael">
-            <img
-              src="img/membri/Patino165x165.jpg"
-              class="rounded-circle img-fluid w-team"
-              alt="Immagine di Rafael Blasco-Patino" />
-          </a>
-          <p class="name">RAFAEL BLASCO-PATIÑO, PHD</p>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Rafael"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-              <!-- Scrollable modal -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Rafael Blasco-Patiño, PhD
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="img/membri/Patino.jpg"
-                          class="img-fluid"
-                          alt="Immagine di Rafael Blasco-Patino" />
-                      </div>
-                      <div class="col-lg-8">
-                        <p class="text-modal">
-                          I am Spanish originally from the land of Don Quixote.
-                          I graduated in the Biomedical Branch of Biology at
-                          Complutense University of Madrid in 2006. I develop my
-                          Ph. D Studies in Mariano Barbacid's lab at the Spanish
-                          National Cancer Research Center (CNIO), obtaining my
-                          degree from Autonoma University of Madrid in 2011.
-                          During this period I was focused in the role of the
-                          Erk-Mapk pathway in K-Ras driven lung tumorigenesis. I
-                          joined Chiarle's Lab in 2012 interested in how the
-                          immune system can implement current therapies against
-                          lung cancer. I love play soccer (worldwide known as
-                          football) and I am enthusiastic supporter of the
-                          Spanish National Team and At. Madrid. I also like to
-                          travel, especially to historical places, because
-                          History is another of my big interest.
-                        </p>
-                        <table class="table table-info">
-                          <tbody>
-                            <tr>
-                              <th scope="row">Email:</th>
-                              <td>
-                                <a
-                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                  href="mailto:Rafael.BlascoPatino@childrens.harvard.edu"
-                                  >Rafael.BlascoPatino@childrens.harvard.edu</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="col pt-5">
           <!-- Button trigger modal -->
           <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Wang">
@@ -1273,178 +1215,6 @@
           <a
             class="hover-effect"
             data-bs-toggle="modal"
-            data-bs-target="#Jasna">
-            <img
-              src="img/membri/Jasna-Metovic174x174.jpg"
-              class="rounded-circle img-fluid w-team"
-              alt="Immagine di Jasna Metovic" />
-          </a>
-          <p class="name">JASNA METOVIC, PHD STUDENT</p>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Jasna"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-              <!-- Scrollable modal -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Jasna Metovic, PHD student
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="img/membri/Jasna-Metovic.jpg"
-                          class="img-fluid"
-                          alt="Immagine di Jasna Metovic" />
-                      </div>
-                      <div class="col-lg-8">
-                        <p class="text-modal">
-                          Jasna joined Chiarle's lab as a visiting graduate
-                          researcher (University of Turin) to investigate
-                          Anaplastic Lymphoma Kinase (ALK) receptor as a
-                          therapeutic target in Merkel cell carcinomas. Using a
-                          translational research approach, she is interested in
-                          understanding the biological and molecular concepts of
-                          carcinogenesis, progression and response to therapy of
-                          solid tumors, in particular those with neuroendocrine
-                          differentiation. She believes that asking clinically
-                          significant research questions is equally important as
-                          answering them with scientific rigor, teamwork, and
-                          creativity.
-                        </p>
-                        <table class="table table-info">
-                          <tbody>
-                            <tr>
-                              <th scope="row">Email:</th>
-                              <td>
-                                <a
-                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                  href="mailto:Jasna.Metovic@childrens.harvard.edu"
-                                  >Jasna.Metovic@childrens.harvard.edu</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col pt-5">
-          <!-- Button trigger modal -->
-          <a
-            class="hover-effect"
-            data-bs-toggle="modal"
-            data-bs-target="#Elena">
-            <img
-              src="img/membri/Elena165x165.jpg"
-              class="rounded-circle img-fluid w-team"
-              alt="Immagine di Elena Vissio" />
-          </a>
-          <p class="name">ELENA VISSIO, PHD STUDENT</p>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Elena"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-              <!-- Scrollable modal -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Elena Vissio, PHD student
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="img/membri/Elena.jpg"
-                          class="img-fluid"
-                          alt="Immagine di Elena Vissio" />
-                      </div>
-                      <div class="col-lg-8">
-                        <p class="text-modal">
-                          I graduated in Medicine and Surgery in 2017 at the
-                          University of Turin, Italy. After that, I enrolled as
-                          a Pathology resident. Alongside with the diagnostic
-                          activity, I focused on the study of prognostic and
-                          predictive markers in cancer. In 2021, I began a PhD
-                          in Turin to pursue my research interests in the cancer
-                          field. I joined Chiarle's Lab to study the mechanisms
-                          of resistance to ALK target therapies and to
-                          investigate new potential therapeutic targets to
-                          overcome such resistance.
-                        </p>
-                        <table class="table table-info">
-                          <tbody>
-                            <tr>
-                              <th scope="row">Email:</th>
-                              <td>
-                                <a
-                                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                  href="mailto:elena.vissio@unito.it"
-                                  >elena.vissio@unito.it</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col pt-5">
-          <!-- Button trigger modal -->
-          <a
-            class="hover-effect"
-            data-bs-toggle="modal"
             data-bs-target="#Gabriele">
             <img
               src="img/membri/member-coming-soon-864x864.jpg"
@@ -1676,6 +1446,30 @@
           style="justify-content: center">
           <div class="col pt-4">
             <img
+            src="img/membri/Patino165x165.jpg"
+            class="rounded-circle img-fluid w-team"
+            alt="Immagine di Rafael Blasco-Patino" />
+            <p class="name">Rafael Blasco-Patiño, PhD</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
+            src="img/membri/Jasna-Metovic174x174.jpg"
+            class="rounded-circle img-fluid w-team"
+            alt="Immagine di Jasna Metovic" />
+            <p class="name">Jasna Metovic, PhD STUDENT</p>
+          </div>
+  
+          <div class="col pt-4">
+            <img
+            src="img/membri/Elena165x165.jpg"
+            class="rounded-circle img-fluid w-team"
+            alt="Immagine di Elena Vissio" />
+            <p class="name">Elena Vissio, PhD STUDENT</p>
+          </div>
+
+          <div class="col pt-4">
+            <img
               src="img/ex_membri/Andrea2_0_165x165.png"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Andrea Aroldi" />
@@ -1820,7 +1614,7 @@
         </div>
       </div>
 
-      <div class="col text-center mt-4">
+      <div class="col text-center mt-5">
         <a id="a-former-members" href="#former-show">
           <button
             id="btn-former-members"
@@ -1836,720 +1630,173 @@
       </div>
     </div>
 
-        <!-- Sponsor Sources -->
-        <div id="sponsor"></div>
-        <div class="container text-center">
-    
-          <div class="row mt-5 pt-4">
-            <div class="col">
-              <h1 class="title-paragraf-long" style="margin-bottom: 40px;">Sponsor</h1>
-            </div>
-          </div>
-    
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col">
-              <h4 class="justify-content-center sponsor-text">
-                We gratefully recognize our sponsors:
-              </h4>
-            </div>
-            <div class="col-1"></div>
-          </div>
-        </div>
-    
-        <div id="sponsor-container">
-          <div class="row">
-            <div class="logos">
-              <div class="logos-slide">
-                <a href="https://www.v.org/"><img src="img/sponsor/Boston/VFDN.png"></a>
-                <a href="https://www.cancer.gov/"><img src="img/sponsor/Boston/National_Cancer_Institute_logo.svg.png"></a>
-                <a href="https://www.lungevity.org/"><img src="img/sponsor/Boston/LUNGevity_Foundation_Logo.jpg"/></a>
-                <a href=""><img src="img/sponsor/Boston/bridge-art-blue.jpg"/></a>
-                <a href="https://www.childrenshospital.org/"><img src="img/sponsor/Boston/bch-logo-452-78.png"/></a>
-                <a href="https://www.alkpositive.org/"><img src="img/sponsor/Boston/alkPositive.png"></a>
-                <a href="https://www.airc.it/"><img src="img/sponsor/Boston/airc-logo.jpg"></a>
-                <a href="https://www.americanitaliancancer.org/"><img src="img/sponsor/Boston/AIC_logo on mammogram bus.jpg"/></a>
-              </div>
-              <div class="logos-slide">
-                <a href="https://www.v.org/"><img src="img/sponsor/Boston/VFDN.png"></a>
-                <a href="https://www.cancer.gov/"><img src="img/sponsor/Boston/National_Cancer_Institute_logo.svg.png"></a>
-                <a href="https://www.lungevity.org/"><img src="img/sponsor/Boston/LUNGevity_Foundation_Logo.jpg"/></a>
-                <a href=""><img src="img/sponsor/Boston/bridge-art-blue.jpg"/></a>
-                <a href="https://www.childrenshospital.org/"><img src="img/sponsor/Boston/bch-logo-452-78.png"/></a>
-                <a href="https://www.alkpositive.org/"><img src="img/sponsor/Boston/alkPositive.png"></a>
-                <a href="https://www.airc.it/"><img src="img/sponsor/Boston/airc-logo.jpg"></a>
-                <a href="https://www.americanitaliancancer.org/"><img src="img/sponsor/Boston/AIC_logo on mammogram bus.jpg"/></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    <!-- STRUTTURA "ALBUM" -->
-    <div id="album"></div>
+    <div id="publicazioni"></div>
     <div class="container text-center">
-      <div class="row h-70"></div>
-
-      <div class="row">
+      <div class="row mt-5 pt-4 mb-5">
         <div class="col">
-          <h1 class="title-paragraf">Album</h1>
+          <a href="Publications.html"><h1 class="title-paragraf-long" style="margin-bottom: 40px;">Click to see our publication</h1></a>
         </div>
       </div>
 
-      <div class="row h-70"></div>
-      <div class="grid-bg">
-        <div class="row justify-content-center">
-          <div class="col-1"></div>
-
-          <div class="col-12 col-md pt-4">
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide carousel-fade"
-              data-bs-ride="carousel"
-              data-bs-interval="1200">
-              <div class="carousel-inner">
-                <div class="carousel-item transition-01 active">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/IMG_1814.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/IMG_4692-light.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/IMG_2245-light.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01 active">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/Dinner 2013-light.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/dinner 2013_2-light.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/2012-01-10 20.14.52-1-light.jpg"
-                    alt="" />
-                </div>
-              </div>
-            </div>
+      <!-- Struttura publication originale -->
+      <ul class="publication-timeline"><!-- publication-effect, non funziona perche' rimane fisso al suo posto-->
+        <li style="--accent-color: #41516c">
+          <div class="date">September 2023</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/37682219/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >SHP2: A Pleiotropic Target at the Interface of Cancer and Its Microenvironment
+            </a>
           </div>
+          <div class="descr">
+            
+          <!-- <a href="https://pubmed.ncbi.nlm.nih.gov/37682219/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            Karaca Atabay E, Mecca C, Wang Q, Ambrogio C, Mota I, Prokoph N, Mura G, Martinengo C, Patrucco E, Leonardi G, Hossa J, Pich A, Mologni L, Gambacorti-Passerini C, Brugières L, Geoerger B, Turner SD, Voena C, Cheong TC, Chiarle R. Tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma. Blood. 2022 Feb 3;139(5):717-731.
+            </a> -->
 
-          <div class="col-12 col-md pt-4 border-radius-10">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_0910.jpg"
-              alt="" />
           </div>
-
-          <div class="col-1"></div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-1"></div>
-
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/Serena and ELif2.jpg"
-              alt="" />
+        </li>
+        <li style="--accent-color: #1b5f8c">
+          <div class="date">July 2023</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/37430060/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer
+            </a>
           </div>
+          <div class="descr">
+            
+          <!--   <a href="https://pubmed.ncbi.nlm.nih.gov/37430060/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                Pighi C, Wang Q, López C, Bernhart SH, Grande BM, Poggio T, Langellotto F, Bonello L, Dall'Olio R, Martínez-Martín S, Molinaro L, Francia di Celle P, Whitfield JR, Soucek L, Voena C, Calogero RA, Morin RD, Staudt LM, Siebert R, Zamò A, Chiarle R. Frequent mutations of FBXO11 highlight BCL6 as a therapeutic target in Burkitt lymphoma. Blood Adv. 2021 Dec 14;5(23):5239-5257. 
+              </a> -->
 
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_0436.jpg"
-              alt="" />
           </div>
-
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_0460.jpg"
-              alt="" />
+        </li>
+        <li style="--accent-color: #4cadad">
+          <div class="date">June 2023</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/37379367/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >Targeting CCR7-PI3Kγ overcomes resistance to tyrosine kinase inhibitors in ALK-rearranged lymphoma
+            </a>
           </div>
+          <div class="descr">
+            
+          <!-- <a href="https://pubmed.ncbi.nlm.nih.gov/37379367/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+              Menotti M, Ambrogio C, Cheong TC, Pighi C, Mota I, Cassel SH, Compagno M, Wang Q, Dall'Olio R, Minero VG, Poggio T, Sharma GG, Patrucco E, Mastini C, Choudhari R, Pich A, Zamo A, Piva R, Giliani S, Mologni L, Collings CK, Kadoch C, Gambacorti-Passerini C, Notarangelo LD, Anton IM, Voena C, Chiarle R. Wiskott-Aldrich syndrome protein (WASP) is a tumor suppressor in T cell lymphoma. Nat Med. 2019 Jan;25(1):130-140.
+            </a> -->
 
-          <div class="col-1"></div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-1"></div>
-
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_0477-1_0.jpg"
-              alt="" />
           </div>
-
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_2403-2.jpg"
-              alt="" />
+        </li>
+        <li style="--accent-color: #41516c">
+          <div class="date">June 2023</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/37198482/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >ERα-associated translocations underlie oncogene amplifications in breast cancer
+            </a>
           </div>
+          <div class="descr">
+            
+          <!-- <a href="https://pubmed.ncbi.nlm.nih.gov/37198482/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+            Karaca Atabay E, Mecca C, Wang Q, Ambrogio C, Mota I, Prokoph N, Mura G, Martinengo C, Patrucco E, Leonardi G, Hossa J, Pich A, Mologni L, Gambacorti-Passerini C, Brugières L, Geoerger B, Turner SD, Voena C, Cheong TC, Chiarle R. Tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma. Blood. 2022 Feb 3;139(5):717-731.
+            </a> -->
 
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_2250-light.jpg"
-              alt="" />
           </div>
-
-          <div class="col-1"></div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-1"></div>
-
-          <div class="col-12 col-md pt-4">
-            <img
-              class="w-album border-radius-10"
-              src="img/album/IMG_2551_2.jpg"
-              alt="" />
+        </li>
+        <li style="--accent-color: #1b5f8c">
+          <div class="date">March 2023</div>
+          <div class="title">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/36961908/"
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            >DNA repair mechanisms that promote insertion-deletion events during immunoglobulin gene diversification
+            </a>
           </div>
+          <div class="descr">
+            
+          <!--   <a href="https://pubmed.ncbi.nlm.nih.gov/36961908/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                Pighi C, Wang Q, López C, Bernhart SH, Grande BM, Poggio T, Langellotto F, Bonello L, Dall'Olio R, Martínez-Martín S, Molinaro L, Francia di Celle P, Whitfield JR, Soucek L, Voena C, Calogero RA, Morin RD, Staudt LM, Siebert R, Zamò A, Chiarle R. Frequent mutations of FBXO11 highlight BCL6 as a therapeutic target in Burkitt lymphoma. Blood Adv. 2021 Dec 14;5(23):5239-5257. 
+              </a> -->
 
-          <div class="col-12 col-md pt-4 pb-4">
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide carousel-fade"
-              data-bs-ride="carousel"
-              data-bs-interval="1200">
-              <div class="carousel-inner">
-                <div class="carousel-item transition-01 active">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/DSCN5518-1.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/Guitar-1.jpg"
-                    alt="" />
-                </div>
-                <div class="carousel-item transition-01">
-                  <img
-                    class="w-album border-radius-10"
-                    src="img/album/Merry Xmas-1.jpg"
-                    alt="" />
-                </div>
-              </div>
-            </div>
           </div>
+        </li>
+        <li style="--accent-color: #1b5f8c; height: 0px;">
+          <div class="date">March 2023</div>
+          <div class="title">
+          </div>
+        </li>
+      </ul>
 
-          <div class="col-1"></div>
+        <div class="row mt-5 pt-3">
+          <div class="col-12">
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://pubmed.ncbi.nlm.nih.gov/?term=chiarle%20r%20[author]"
+              role="button"
+              target="_blank"
+              >Complete listing of publications</a
+            >
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- STRUTTURA "ALBUM" originale 
-    <div id="album"></div>
+    <!-- Sponsor Sources -->
+    <div id="sponsor"></div>
     <div class="container text-center">
-      <div class="row h-70"></div>
 
+      <div class="row mt-5 pt-4">
+        <div class="col">
+          <h1 class="title-paragraf-long" style="margin-bottom: 40px;">Our sponsors</h1>
+        </div>
+      </div>
+      <!--
       <div class="row">
+        <div class="col-1"></div>
         <div class="col">
-          <h1 class="title-paragraf" style="height: 50px">Album</h1>
+          <h4 class="justify-content-center sponsor-text">
+            We gratefully recognize our sponsors:
+          </h4>
         </div>
-      </div>
+        <div class="col-1"></div>
+      </div>-->
+    </div>
 
-      <div class="row h-30"></div>
-
-      <div class="row" style="justify-content: center">
-        <div class="row">
-          <div class="col-lg-1"></div>
-
-          <div class="col">
-            <ul class="results img-fluid">
-              <li class="result">
-                <img src="img/album/IMG_1814.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_0910.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/Serena and ELif2.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_0436.jpg" alt="" />
-              </li>
-            </ul>
+    <div id="sponsor-container">
+      <div class="row">
+        <div class="logos">
+          <div class="logos-slide">
+            <a href="https://www.v.org/"><img src="img/sponsor/Boston/VFDN.png"></a>
+            <a href="https://www.cancer.gov/"><img src="img/sponsor/Boston/National_Cancer_Institute_logo.svg.png"></a>
+            <a href="https://www.lungevity.org/"><img src="img/sponsor/Boston/LUNGevity_Foundation_Logo.jpg"/></a>
+            <a href=""><img src="img/sponsor/Boston/bridge-art-blue.jpg"/></a>
+            <a href="https://www.childrenshospital.org/"><img src="img/sponsor/Boston/bch-logo-452-78.png"/></a>
+            <a href="https://www.alkpositive.org/"><img src="img/sponsor/Boston/alkPositive.png"></a>
+            <a href="https://www.airc.it/"><img src="img/sponsor/Boston/airc-logo.jpg"></a>
+            <a href="https://www.americanitaliancancer.org/"><img src="img/sponsor/Boston/AIC_logo on mammogram bus.jpg"/></a>
           </div>
-
-          <div class="col-lg-1"></div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-1"></div>
-
-          <div class="col">
-            <ul class="results">
-              <li class="result">
-                <img src="img/album/IMG_0460.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_0477-1_0.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_4692.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_2403-2.jpg" alt="" />
-              </li>
-            </ul>
+          <div class="logos-slide">
+            <a href="https://www.v.org/"><img src="img/sponsor/Boston/VFDN.png"></a>
+            <a href="https://www.cancer.gov/"><img src="img/sponsor/Boston/National_Cancer_Institute_logo.svg.png"></a>
+            <a href="https://www.lungevity.org/"><img src="img/sponsor/Boston/LUNGevity_Foundation_Logo.jpg"/></a>
+            <a href=""><img src="img/sponsor/Boston/bridge-art-blue.jpg"/></a>
+            <a href="https://www.childrenshospital.org/"><img src="img/sponsor/Boston/bch-logo-452-78.png"/></a>
+            <a href="https://www.alkpositive.org/"><img src="img/sponsor/Boston/alkPositive.png"></a>
+            <a href="https://www.airc.it/"><img src="img/sponsor/Boston/airc-logo.jpg"></a>
+            <a href="https://www.americanitaliancancer.org/"><img src="img/sponsor/Boston/AIC_logo on mammogram bus.jpg"/></a>
           </div>
-
-          <div class="col-lg-1"></div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-1"></div>
-
-          <div class="col">
-            <ul class="results">
-              <li class="result">
-                <img src="img/album/IMG_2250.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_2245.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/IMG_2551_2.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/Dinner 2013.jpg" alt="" />
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-1"></div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-1"></div>
-
-          <div class="col">
-            <ul class="results">
-              <li class="result">
-                <img src="img/album/dinner 2013_2.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/DSCN5518-1.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/Guitar-1.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/Merry Xmas-1.jpg" alt="" />
-              </li>
-              <li class="result">
-                <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="" />
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-1"></div>
         </div>
       </div>
-    </div>-->
-
-    <!-- STRUTTURA "ALBUM" prova con piu' row 
-<div id="album"></div>
-<div class="container text-center">
-  <div class="row h-70"></div>
-  
-  <div class="row">
-    <div class="col">
-      <h1 class="title-paragraf" style="height: 50px;">ALBUM</h1>
     </div>
-  </div>
-
-  <div class="row h-30"></div>
-
-  <div class="row" style="justify-content: center;">
-    <div class="row" style="justify-content: center;">
-      <div class="row col-md-6">
-        <div class="col-lg-1"></div>
-
-        <div class="col">
-          <ul class="results img-fluid">
-
-            <li class="result">
-              <img src="img/album/IMG_1814.jpg" alt="">
-            </li>
-            <li class="result">
-              <img src="img/album/IMG_0910.jpg" alt="">
-            </li>
-            
-          </ul>
-        </div>
-        
-        <div class="col-lg-1"></div>
-      </div>
-
-      <div class="row col-md-6">
-        <div class="col-lg-1"></div>
-
-        <div class="col">
-          <ul class="results img-fluid">
-
-            <li class="result">
-              <img src="img/album/Serena and ELif2.jpg" alt="">
-            </li>
-            <li class="result">
-              <img src="img/album/IMG_0436.jpg" alt="">
-            </li>
-            
-          </ul>
-        </div>
-        
-        <div class="col-lg-1"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/IMG_0460.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0477-1_0.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_4692.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2403-2.jpg" alt="">
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/IMG_2250.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2245.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2551_2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Dinner 2013.jpg" alt="">
-          </li>
-    
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-    
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/dinner 2013_2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/DSCN5518-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Guitar-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Merry Xmas-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="">
-          </li>
-    
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-  </div>
-
-</div>-->
-
-    <!-- STRUTTURA "ALBUM" Prova con tre foto per riga 
-<div id="album"></div>
-<div class="container text-center">
-  <div class="row h-70"></div>
-
-  <div class="row">
-    <div class="col">
-      <h1 class="title-paragraf" style="height: 50px;">ALBUM</h1>
-    </div>
-  </div>
-
-  <div class="row h-70"></div>
-
-  <div class="row" style="justify-content: center;">
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results img-fluid">
-
-          <li class="result">
-            <img src="img/album/IMG_1814.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0910.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Serena and ELif2.jpg" alt="">
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/IMG_0436.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0460.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0477-1_0.jpg" alt="">
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/IMG_4692.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2403-2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2250.jpg" alt="">
-          </li>
-    
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-    
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/IMG_2245.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2551_2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Dinner 2013.jpg" alt="">
-          </li>
-    
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/dinner 2013_2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/DSCN5518-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Guitar-1.jpg" alt="">
-          </li>
-    
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-1"></div>
-
-      <div class="col">
-        <ul class="results">
-
-          <li class="result">
-            <img src="img/album/Merry Xmas-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="">
-          </li>
-    
-        </ul>
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </div>
-
-  </div>
-
-</div>  -->
-
-    <!-- STRUTTURA "ALBUM" Prova una sola riga
-<div id="album"></div>
-<div class="container text-center">
-  <div class="row h-70"></div>
-
-  <div class="row">
-    <div class="col">
-      <h1 class="title-paragraf" style="height: 50px;">ALBUM</h1>
-    </div>
-  </div>
-
-  <div class="row h-70"></div>
-
-  <div class="row" style="justify-content: center;">
-    <ul class="results img-fluid">
-      <div class="col-lg-1"></div>
-
-      <div class="col-4 col-md">
-          <li class="result">
-            <img src="img/album/IMG_1814.jpg" alt="">
-          </li>
-      </div>
-      <div class="col-4 col-md">
-          <li class="result">
-            <img src="img/album/IMG_0910.jpg" alt="">
-          </li>
-      </div>
-      <div class="col-4 col-md">
-        <li class="result">
-          <img src="img/album/Serena and ELif2.jpg" alt="">
-        </li>
-      </div>
-      <div class="col-4 col-md">
-        <li class="result">
-          <img src="img/album/IMG_0436.jpg" alt="">
-        </li>
-      </div>
-
-      <div class="col">
-
-          <li class="result">
-            <img src="img/album/IMG_0460.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_0477-1_0.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_4692.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2403-2.jpg" alt="">
-          </li>
-          
-      </div>
-
-      <div class="col">
-
-          <li class="result">
-            <img src="img/album/IMG_2250.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2245.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/IMG_2551_2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Dinner 2013.jpg" alt="">
-          </li>
-    
-      </div>
-
-      <div class="col">
-
-          <li class="result">
-            <img src="img/album/dinner 2013_2.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/DSCN5518-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Guitar-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/Merry Xmas-1.jpg" alt="">
-          </li>
-          <li class="result">
-            <img src="img/album/2012-01-10 20.14.52-1.jpg" alt="">
-          </li>
-
-      </div>
-      
-      <div class="col-lg-1"></div>
-    </ul>
-  </div>
-
-</div>
--->
 
     <!-- STRUTTURA "CONTACT"-->
     <div id="contact"></div>
-    <div class="container text-center mt-5 pt-5">
+    <div class="container text-center mt-4 pt-5">
       <div class="row">
         <div class="col">
           <h1 class="title-paragraf mb-5">Contact</h1>
@@ -2689,7 +1936,7 @@
             Medical School. All rights reserved.
           </p>
         </div>
-        <div id="count"></div>
+        <!--<div id="count"></div>-->
       </div>
     </div>
 

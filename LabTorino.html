@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home BOSTON -</title>
-    <link
-      rel="icon"
-      href="https://chiarlelab.com/wp-content/uploads/2021/07/cropped-png-32x32.png"
-      sizes="32x32"
-    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5N64XC1CM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap" rel="stylesheet">
-    <link href="styleLabTorino.css" rel="stylesheet" />
+    gtag('config', 'G-F5N64XC1CM');
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lunasima&family=Outfit:wght@100;700&display=swap"/>
+    <link rel="stylesheet" href="styleLabTorino.css"/>
+    <title>Chiarle Lab - Torino</title>
+    <meta name="description" content="">
+    <link rel="manifest" href="">
+    <meta name="keywords" content="Chiarle Lab, ChiarleLab, Chiarle Laboratory, chiarle laboratory, laboratorio chiarle, Roberto Chiarle, Chiarle, chiarle, 
+    Laboratory, laboratory, Roberto, Chiarle Roberto, chiarle roberto, roberto chiarle, Lab, lab, chiarlelab, Torino, torino, Boston, boston,
+    children hospital, Chirldren Hospital, Harvard, harvard, Med, Medicine, medicine, ALK, alk, alkemist, Alkemist, Alkemist bio, alkemist bio, chiarle news,
+    chiarle link, chiarle publications, News, Publication, Link, Roberto Chiarle Lab News, Roberto Chiarle Lab Publication, Roberto Chiarle Lab Link, 
+    Roberto Lab News, Roberto Lab Publication, Roberto Lab Link, Chiarle Lab News, Chiarle Lab Publication, Chiarle Lab Link">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="creator" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://chiarlelab.com/LabTorino.html">
+    <meta property="og:title" content="Roberto Chiarle | Chiarle Lab in Torino">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://chiarlelab.com/LabTorino.html">
+    <meta property="og:site_name" content="Chiarle Lab">
+    <meta property="og:locale" content="en-EN">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="">
+    <meta property="og:image:type" content="">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="32x32">
+    <meta name="next-size-adjust">
   </head>
 
   <body class="p-0">
@@ -159,11 +186,11 @@
             <div class="col-12 col-md-5 mb-4">
               <h1 id="title-home">Chiarle Lab</h1>
               <!--<h1 id="text-home">@Unito</h1>-->
-              <img class="img-fluid" src="img/logo-unito-800x350-no-bg.png" style="max-width: 50%;"/>
+              <img class="img-fluid" id="img-unito" src="img/logo-unito-800x350-no-bg.png" style="max-width: 50%;" alt="Immagine logo Università di Torino"/>
             </div>
 
-            <div class=" col-12 col-md-5 "> <!-- da inserire solo come classe: box -->
-              <img class="img-fluid text-end" id="img-slide" src="img/Foto-gruppo-Torino-765x450.jpg"/>
+            <div class="col-12 col-md-5 box">
+              <!--<img class="img-fluid text-end" id="img-slide" src="img/Foto-gruppo-Torino-765x450.jpg"/>-->
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -973,16 +1000,25 @@
       </div>
     </div>
 
+    <div id="publicazioni"></div>
+    <div class="container text-center">
+      <div class="row mt-5 pt-4">
+        <div class="col">
+          <a href="Publications.html"><h1 class="title-paragraf-long" style="margin-bottom: 40px;">Click to see our publication</h1></a>
+        </div>
+      </div>
+    </div>
+
     <!-- Sponsor Sources -->
     <div id="sponsor"></div>
     <div class="container text-center">
 
       <div class="row mt-5 pt-4">
         <div class="col">
-          <h1 class="title-paragraf-long" style="margin-bottom: 40px;">Sponsor</h1>
+          <h1 class="title-paragraf-long" style="margin-bottom: 40px;">Our sponsor</h1>
         </div>
       </div>
-
+<!--
       <div class="row">
         <div class="col-1"></div>
         <div class="col">
@@ -991,7 +1027,7 @@
           </h4>
         </div>
         <div class="col-1"></div>
-      </div>
+      </div>-->
     </div>
 
     <div id="sponsor-container">
@@ -1021,10 +1057,263 @@
 
       <div class="row">
         <div class="col">
-          <h1 class="title-paragraf-long mt-5 pt-3">International project</h1>
+          <h1 class="title-paragraf-long mt-5 pt-3">International projects</h1>
         </div>
       </div>
 
+      <div class="row row-cols-md-2 gap-5 px-lg-5 mx-4 justify-content-center">
+        
+        <div class="col-12 col-md card bg-card" style="width: 18rem;">
+          <img class="img-fluid mt-3 mb-3" style="max-height: 400px;" src="img/loghi/alkatras_logo.png" alt="Immagine logo Alkatras">
+          <div class="card-body">
+            <p class="card-text">International collaborative project with Alkatras</p>
+              <!-- Button trigger modal -->
+            <a data-bs-toggle="modal" data-bs-target="#Alkatras"  class="btn btn-primary">Read more</a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade p-0"
+              id="Alkatras"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <!-- Scrollable modal -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      International collaborative project with Alkatras
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12">
+                          <img
+                            src="img/loghi/alkatras_logo.png"
+                            class="img-fluid"
+                            style="max-width: 70%;"
+                            alt="Immagine di Collaborazione Alkatras"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md card bg-card" style="width: 18rem;">
+          <img class="img-fluid mt-5 mb-5" style="max-height: 400px;" src="img/loghi/fantom_logo.png" alt="Immagine logo Fantom">
+          <div class="card-body">
+            <p class="card-text">International collaborative project with Fantom</p>
+              <!-- Button trigger modal -->
+            <a data-bs-toggle="modal" data-bs-target="#Fantom"  class="btn btn-primary">Read more</a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade p-0"
+              id="Fantom"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <!-- Scrollable modal -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      International collaborative project with Fantom
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12">
+                          <img
+                            src="img/loghi/fantom_logo.png"
+                            class="img-fluid"
+                            style="max-width: 70%;"
+                            alt="Immagine di Collaborazione Fantom"
+                          />
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md card bg-card" style="width: 18rem;">
+          <img class="img-fluid mt-2" style="max-height: 400px;" src="img/Collaboration_Unito-CinaNSF.jpg">
+          <div class="card-body">
+            <p class="card-text">International collaborative project (2018-2020) with the Shanghai
+              Jiao Tong University supported by the Ministero degli Affari Esteri
+              e della Cooperazione Internazionale (MAECI).</p>
+              <!-- Button trigger modal -->
+            <a data-bs-toggle="modal" data-bs-target="#Shanghai"  class="btn btn-primary">Read more</a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade p-0"
+              id="Shanghai"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <!-- Scrollable modal -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      International collaborative project (2018-2020) with the Shanghai
+                      Jiao Tong University
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12">
+                          <img
+                            src="img/Collaboration_Unito-CinaNSF.jpg"
+                            class="img-fluid"
+                            style="max-width: 70%;"
+                            alt="Immagine di Collaborazione Shanghai"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col">
+                              <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#italian-version" type="button" role="tab" aria-controls="italian-version" aria-selected="true">Italian</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#english-version" type="button" role="tab" aria-controls="english-version" aria-selected="false">English</button>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active justify" id="italian-version" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                  Lo scopo del progetto è di identificare i danni sul DNA indotti dall'enzima AID (activation-induced cytidine deaminase) durante lo sviluppo di resistenza e progressione della malattia in pazienti trattati con inibitori di PI3Kd o BTK nella leucemia linfatica cronica (LLC). I risultati così ottenuti potranno servire per disegnare strategie terapeutiche mirate più efficaci nel trattamento e nella prevenzione della trasformazione della LLC.
+                                  <br> <br>
+                                  L'unità italiana e quella cinese si uniranno per raggiungere questo obiettivo. L'unità cinese fornirà le basi molecolari per capire in che modo AID si leghi a sequenze diverse nel genoma umano. L'unità italiana sfrutterà questa nuova conoscenza per comprendere il ruolo patologico di AID nei linfomi e nelle leucemie.
+                                  <br> <br>
+                                  L'unità cinese ha già dimostrato che brevi sequenze omologhe di DNA (50bp) nel locus delle immunoglobuline non sono colpite nella stessa maniera dall'attività mutazionale di AID. Questo lascia ipotizzare che esistano fattori addizionali, tra cui diverse combinazioni di sequenze, che determinano una diversa frequenza di mutazioni indotte da AID (Yeap et al., Cell, 2015). L'unità cinese identificherà questi elementi e chiarirà in che modo essi regolino l'attività di AID. I risultati di questo studio chiariranno le modalità con cui AID agisce per generare mutazioni ad alta frequenza selettivamente nei geni delle immunoglobuline durante la maturazione degli anticorpi risparmiando sequenze omologhe nel resto del genoma prevenendo così una diffusa instabilità genomica.
+                                  <br> <br>
+                                  L'unità italiana, esperta nella patogenesi delle leucemie e dei linfomi, utilizzerà tecnologie di sequenziamento per identificare e validare le mutazioni indotte da AID durante lo sviluppo di resistenza a idelalisib o ibrutinib. Questa unità studierà inoltre il ruolo di AID nel processo di trasformazione della LLC confrontando i campioni di pazienti prima e dopo la trasformazione a seguito della terapia con idelalisib o con ibrutinib.
+                                </div>
+                                <div class="tab-pane fade justify" id="english-version" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                  The overall aim of this project is to elucidate the mechanisms of Activation Induced Cytidine Deaminase (AID) targeting in the resistance and progression to PI3Kd or BTK inhibitors in chronic lymphocytic leukemia (CLL). The result of this study should shed light on designing therapeutic targets for precision medicine in CLL treatment and in preventing CLL transformation.
+                                  <br> <br>
+                                  The Italian and the Chinese Unit will integrate in achieving this goal. The Chinese Unit will provide the molecular basis to understand how AID targets different sequences in the human genome. The Italian Unit will exploit this new knowledge to understand the pathological role of AID in lymphoma and leukemia.
+                                  <br> <br>
+                                  The Chinese Unit previously showed that the same motifs, within a short region (about 50 bp) in the Immunoglobulin locus, are not equally targeted by AID, suggesting that they may be relatively recurrent sequence combinations flanking AID-hotspots that may play a role in targeting high or low mutations (Yeap et al., Cell, 2015). The Chinese unit will identify cis-elements that target high or low mutations and elucidate how these elements regulate AID targeting. This study should shed light on how cis-elements may contribute in targeting high frequency of mutations to the Immunoglobulin loci during antibody affinity maturation and low frequency of mutations to the rest of the genome in preventing genomic instability.
+                                  <br> <br>
+                                  The Italian Unit, who is an expert in the pathogenesis of lymphoma, will use whole exome sequencing (WES) technology to identify and validate AID-dependent mutational signatures of resistance in AID-sufficient or AID-deficient human CLL cell lines and in CLL patients who developed resistance to idelalisib or ibrutinib. This Unit will also study the contribution of AID to transformation of CLL by comparing samples before and after transformation during idelalisib or ibrutinib therapy.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-1"></div>
+                          </div>
+
+                          <div class="row mt-5">
+                            <div class="col-12 col-md">
+                              <div class="col pt-4">
+                                <h4 class="justify-content title-text-contact pb-2">
+                                  Italian Team at the Department of Molecular Biotechnology and Health Sciences:
+                                </h4>
+                              </div>
+                              <div class="col">
+                                <p class="text-contact">
+                                  Prof. Roberto Chiarle, M.D. Professor of Pathology <br>
+                                  Dr. Chiara Pighi, Ph.D. Postdoctoral fellow <br>
+                                  Dr. Ludovica Riera, Ph.D. University Technician <br>
+                                  Dr. Lisa Bonello, Ph.D. University Technician <br>
+                                  Dr. Enrico Patrucco, Ph.D. Senior Scientist and lab manager <br>
+                                </p>
+                              </div>
+                            </div>
+                    
+                            <div class="col-12 col-md">
+                              <div class="col pt-4">
+                                <h4 class="justify-content title-text-contact pb-2">
+                                  Chinese Team at the Shanghai Jiao Tong University:
+                                </h4>
+                              </div>
+                              <div class="col">
+                                <p class="text-contact">
+                                  Prof. Long Siew Yeap, Ph.D. Principal Investigator <br>
+                                  Hao Qian, Ph.D. Postdoctoral Fellow <br>
+                                  Wang Yanyan Technician <br>
+                                  Zhan Chuanzhong Graduate Student <br>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col">
@@ -1113,7 +1402,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div>-->
 
     </div>
 
@@ -1136,21 +1425,21 @@
           </div>
           <div class="col">
             <p class="text-contact">
-              Associate Professor of Pathology<br />
+              Professor of Pathology<br />
               University of Torino<br />
-              Via Santena 7, 10126 Torino, ITALY<br />
-              Dept. Biomedical Sciences and Human Oncology<br />
-              Telefono:
+              Piazza Nizza 44Bis, 10126 Torino, ITALY<br />
+              Dept. of Molecular Biotechnology and Health Sciences<br />
+              Phone:
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="tel:+39 0116334573"
-                >+39 0116334573</a
+                href="tel:+39 0116706568"
+                >+39 0116706568</a
               ><br />
               Office:
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="tel:0116336861"
-                >+39 0116336861</a
+                href="tel:+39 011 6708444"
+                >+39 011 6708444</a
               ><br />
               <a
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
@@ -1165,7 +1454,7 @@
     <!-- MAPPA -->
     <div class="container text-center mt-4">
       <div class="row justify-content-center">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.396142427162!2d7.67235251152246!3d45.037182461708355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812b3d7452313%3A0x8e29969e465ff5f0!2sVia%20Santena%2C%207%2C%2010126%20Torino%20TO!5e0!3m2!1sen!2sit!4v1694165889343!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.6769213569123!2d7.671583811523288!3d45.051777660741465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d463252ddf5%3A0x171ec5d6ba356cda!2sPiazza%20Nizza%2C%2044%2C%2010126%20Torino%20TO!5e0!3m2!1sen!2sit!4v1697976296276!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -1178,7 +1467,7 @@
             Copyright © 2023 Chiarlelab in Torino. All rights reserved.
           </p>
         </div>
-        <div id="count"></div>
+        <!--<div id="count"></div>-->
       </div>
     </div>
 

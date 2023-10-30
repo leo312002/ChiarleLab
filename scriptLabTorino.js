@@ -17,8 +17,7 @@ function incrementVisitsCount(){
     }
 
     count.innerText = localStorage.getItem("visits");
-}
-*/
+} */
 
 /* chiude il collapse quando viene schiacciato un item della navbar */
 
