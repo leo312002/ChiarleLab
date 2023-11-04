@@ -276,6 +276,30 @@ body {
   box-sizing: border-box;
 }
 
+@-webkit-keyframes slide{
+  from{
+    -webkit-transform: translateX(0);
+  }
+  to{
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-moz-keyframes slide{
+  from{
+    -moz-transform: translateX(0);
+  }
+  to{
+    -moz-transform: translateX(-100%);
+  }
+}
+@-ms-keyframes slide{
+  from{
+    -ms-transform: translateX(0);
+  }
+  to{
+    -ms-transform: translateX(-100%);
+  }
+}
 @keyframes slide{
   from{
       transform: translateX(0);
@@ -502,17 +526,17 @@ body {
 
 .title-paragraf-long {
   color: #feae31;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 70px;
 }
 
 .title-paragraf {
   color: #feae31;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

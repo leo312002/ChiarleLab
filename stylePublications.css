@@ -111,7 +111,53 @@ body {
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 
-/* title descr */
+.publication-timeline li .rivista {
+  font-size: 18px;
+  font-weight: 500;
+  color: RGBA(var(--bs-success-rgb),var(--bs-link-opacity,1))!important;
+}
+
+/* title rivista */
+.publication-timeline li .title,
+.publication-timeline li .rivista {
+  background: var(--bgColor);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+.publication-timeline li .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+.publication-timeline li .rivista {
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+
+/* shadows */
+.publication-timeline li .title::before,
+.publication-timeline li .rivista::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+.publication-timeline li .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+.publication-timeline li .rivista::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+/* title descr 
 .publication-timeline li .title,
 .publication-timeline li .descr {
   background: var(--bgColor);
@@ -127,9 +173,9 @@ body {
 .publication-timeline li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
-}
+}*/
 
-/* shadows */
+/* shadows 
 .publication-timeline li .title::before,
 .publication-timeline li .descr::before {
   content: "";
@@ -149,7 +195,7 @@ body {
 .publication-timeline li .descr::before {
   z-index: -1;
   bottom: 0.25rem;
-}
+}*/
 
 @media (min-width: 770px) {
   .publication-timeline {
