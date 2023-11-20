@@ -316,6 +316,25 @@ body {
     max-width: 130px;
 }
 
+.max-w{
+  max-width: 65%;
+}
+@media (max-width: 1400px){
+  .max-w{
+    max-width: 85%;
+  }
+}
+@media (max-width: 1200px){
+  .max-w{
+    max-width: 80%;
+  }
+}
+@media (max-width: 992px){
+  .max-w{
+    max-width: 100%;
+  }
+}
+
 .h-70 {
   height: 70px;
 }
@@ -394,12 +413,28 @@ body {
 }
 
 .name {
+  /*
   padding-top: 15px;
   font-family: "Amiko", Sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #002d53;
+  color: #002d53;*/
+  color: #111111;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+.name-title{
+  color: #aaaaaa;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Zoom In #1 */

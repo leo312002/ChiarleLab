@@ -447,19 +447,20 @@ body {
 
 @media (max-width: 768px) {
     .row-title {
-        padding-top: 52px;
+      padding-top: 52px;
     }
 
     #title-home {
-          font-size: calc(0rem + 12vw);
+      font-size: calc(0rem + 12vw);
+      margin-bottom: 20px;
     }
 
     #text-slide, #dynamic-text-slide{
-        font-size: calc(0rem + 5vw);
+      font-size: calc(0rem + 5vw);
     }
 
     #img-slide{
-        max-width: 90%;
+      max-width: 90%;
     }
 }
 
@@ -569,11 +570,29 @@ body {
 .w-album{
     max-width: 100%;
 }
-
 @media(max-width:768px){
-    .w-album{
-        max-width: 85%;
-    }
+  .w-album{
+      max-width: 85%;
+  }
+}
+
+.max-w{
+  max-width: 65%;
+}
+@media (max-width: 1400px){
+  .max-w{
+    max-width: 85%;
+  }
+}
+@media (max-width: 1200px){
+  .max-w{
+    max-width: 80%;
+  }
+}
+@media (max-width: 992px){
+  .max-w{
+    max-width: 100%;
+  }
 }
 
 .h-70 {
@@ -598,12 +617,28 @@ body {
 }
 
 .name {
+  /*
   padding-top: 15px;
   font-family: "Amiko", Sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #002d53;
+  color: #002d53;*/
+  color: #111111;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+.name-title{
+  color: #aaaaaa;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .grid-bg{
@@ -818,7 +853,7 @@ body {
 }
 
 .map{
-    width: 800px; 
+    width: 600px; 
     height: 325px; 
     border: 0; 
 }
@@ -836,4 +871,141 @@ body {
   padding-top: 125px;
 }
 
+.marquee-container {
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay::before, .overlay::after {
+  background: linear-gradient(to right, var(--gradient-color));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+}
+.overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+}
+
+.child {
+  transform: var(--transform);
+}.marquee-container {
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay::before, .overlay::after {
+  background: linear-gradient(to right, var(--gradient-color));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+}
+.overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+}
+
+.child {
+  transform: var(--transform);
+}
 

@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lunasima&family=Outfit:wght@100;200;300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lunasima&family=Outfit:wght@100;200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="stylePublications.css">
     <title>Chiarle Lab - Boston</title>
@@ -76,6 +76,7 @@
                 - provare a riscrivere il codice animation della sezoine sponsor
                 - crea qualche animazione
                 - il paragrafo del team rifallo con le nuove foto rettangolari e uno stile di testo piu' formale
+                - migliorare la velocita' di caricemnto del sito e la qualita' (immagini piu' leggere, ...)
 
         Boston: - aggiustare opacita' scroll down project
                 - sistemare la sezione publication (provare questo design https://bestjquery.com/tutorial/timeline/demo44/ + prova a mettere 
@@ -487,7 +488,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Roberto Chiarle" />
           </a>
-          <p class="name">Roberto Chiarle</p>
+          <p class="name mb-0">Roberto Chiarle</p>
+          <p class="name-title"></p>
           <!-- Modal -->
           <div
             class="modal fade p-0"
@@ -584,8 +586,7 @@
         </div>
       </div>
 
-      <div
-        class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
         <div class="col pt-5">
           <!-- Button trigger modal -->
           <a class="hover-effect" data-bs-toggle="modal" data-bs-target="#Wang">
@@ -594,7 +595,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Qi Wang" />
           </a>
-          <p class="name">QI WANG, PHD</p>
+          <p class="name mb-0">QI WANG</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -689,7 +691,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Taek-Chin Cheong" />
           </a>
-          <p class="name">TAEK-CHIN CHEONG, PHD</p>
+          <p class="name mb-0">TAEK-CHIN CHEONG</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -771,7 +774,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Jianli Tao" />
           </a>
-          <p class="name">JIANLI TAO, PHD</p>
+          <p class="name mb-0">JIANLI TAO</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -863,7 +867,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Elisa Bergaggio" />
           </a>
-          <p class="name">ELISA BERGAGGIO, PHD</p>
+          <p class="name mb-0">ELISA BERGAGGIO</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -958,7 +963,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Marco Campisi" />
           </a>
-          <p class="name">MARCO CAMPISI, PHD</p>
+          <p class="name mb-0">MARCO CAMPISI</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -1048,7 +1054,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Carmen Mecca" />
           </a>
-          <p class="name">CARMEN MECCA, MD</p>
+          <p class="name mb-0">CARMEN MECCA</p>
+          <p class="name-title">MD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -1130,7 +1137,8 @@
               class="rounded-circle img-fluid w-team"
               alt="Immagine di Luca Alessandri" />
           </a>
-          <p class="name">LUCA ALESSANDRI, PHD</p>
+          <p class="name mb-0">LUCA ALESSANDRI</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -1220,7 +1228,8 @@
               class="img-fluid w-team"
               alt="Immagine di Gabriele Saccu" />
           </a>
-          <p class="name">GABRIELE SACCU, PHD</p>
+          <p class="name mb-0">GABRIELE SACCU</p>
+          <p class="name-title">PHD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -1294,7 +1303,8 @@
               class="img-fluid w-team"
               alt="Immagine di Alessandro Gasparetto" />
           </a>
-          <p class="name">ALESSANDRO GASPARETTO, MD</p>
+          <p class="name mb-0">ALESSANDRO GASPARETTO</p>
+          <p class="name-title">MD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -1369,7 +1379,8 @@
               class="img-fluid w-team"
               alt="Immagine di Simone Piane" />
           </a>
-          <p class="name">SIMONE PIANE, MD</p>
+          <p class="name mb-0">SIMONE PIANE</p>
+          <p class="name-title">MD</p>
           <!-- Modal -->
           <div
             class="modal fade"
@@ -1448,7 +1459,8 @@
             src="img/membri/Patino165x165.jpg"
             class="rounded-circle img-fluid w-team"
             alt="Immagine di Rafael Blasco-Patino" />
-            <p class="name">Rafael Blasco-Patiño, PhD</p>
+            <p class="name mb-0">Rafael Blasco-Patiño</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1456,7 +1468,8 @@
             src="img/membri/Jasna-Metovic174x174.jpg"
             class="rounded-circle img-fluid w-team"
             alt="Immagine di Jasna Metovic" />
-            <p class="name">Jasna Metovic, PhD STUDENT</p>
+            <p class="name mb-0">Jasna Metovic</p>
+            <p class="name-title">PhD STUDENT</p>
           </div>
   
           <div class="col pt-4">
@@ -1464,7 +1477,8 @@
             src="img/membri/Elena165x165.jpg"
             class="rounded-circle img-fluid w-team"
             alt="Immagine di Elena Vissio" />
-            <p class="name">Elena Vissio, PhD STUDENT</p>
+            <p class="name mb-0">Elena Vissio</p>
+            <p class="name-title">PhD STUDENT</p>
           </div>
 
           <div class="col pt-4">
@@ -1472,7 +1486,8 @@
               src="img/ex_membri/Andrea2_0_165x165.png"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Andrea Aroldi" />
-            <p class="name">Andrea Aroldi, MD</p>
+            <p class="name mb-0">Andrea Aroldi</p>
+            <p class="name-title">MD</p>
           </div>
 
           <div class="col pt-4">
@@ -1480,7 +1495,8 @@
               src="img/ex_membri/Giulia Leonardi_164x164.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Giulia Leonardi" />
-            <p class="name">Giulia Leonardi, MD, PhD</p>
+            <p class="name mb-0">Giulia Leonardi</p>
+            <p class="name-title">MD, PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1488,7 +1504,8 @@
               src="img/ex_membri/ines2_164x164.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Ines Mota" />
-            <p class="name">Ines Mota, PhD</p>
+            <p class="name mb-0">Ines Mota</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1496,7 +1513,8 @@
               src="img/ex_membri/Elif_0_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Elif Karaca" />
-            <p class="name">Elif Karaca, PhD</p>
+            <p class="name mb-0">Elif Karaca</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1504,7 +1522,8 @@
               src="img/ex_membri/wei-tein_1_167x167.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Wei-Tien Tai" />
-            <p class="name">Wei-Tien Tai, PhD</p>
+            <p class="name mb-0">Wei-Tien Tai</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1512,7 +1531,8 @@
               src="img/ex_membri/Caspian Harding_166x166.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Caspian Harding" />
-            <p class="name">Caspian Harding</p>
+            <p class="name mb-0">Caspian Harding</p>
+            <p class="name-title"></p>
           </div>
 
           <div class="col pt-4">
@@ -1520,7 +1540,8 @@
               src="img/ex_membri/Serena_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Serena Stadler" />
-            <p class="name">Serena Stadler, PhD</p>
+            <p class="name mb-0">Serena Stadler</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1528,7 +1549,8 @@
               src="img/ex_membri/Manuel_Nuesch_165x165.png"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Manuel Nuesch" />
-            <p class="name">Manuel Nuesch</p>
+            <p class="name mb-0">Manuel Nuesch</p>
+            <p class="name-title"></p>
           </div>
 
           <div class="col pt-4">
@@ -1536,7 +1558,8 @@
               src="img/ex_membri/Chiara_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Chiara Pighi" />
-            <p class="name">Chiara Pighi, PhD</p>
+            <p class="name mb-0">Chiara Pighi</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1544,7 +1567,8 @@
               src="img/ex_membri/ID_Sylvie-4_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Sylvie Giuriato" />
-            <p class="name">Sylvie Giuriato, PhD</p>
+            <p class="name mb-0">Sylvie Giuriato</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1552,7 +1576,8 @@
               src="img/ex_membri/Domenico_167x167.png"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Domenico Sorrentino" />
-            <p class="name">Domenico Sorrentino, PhD</p>
+            <p class="name mb-0">Domenico Sorrentino</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1560,7 +1585,8 @@
               src="img/ex_membri/Mara-1_167x167.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Mara Compagno" />
-            <p class="name">Mara Compagno, PhD</p>
+            <p class="name mb-0">Mara Compagno</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1568,7 +1594,8 @@
               src="img/ex_membri/CVoena_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Claudia Voena" />
-            <p class="name">Claudia Voena, PhD</p>
+            <p class="name mb-0">Claudia Voena</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1576,7 +1603,8 @@
               src="img/ex_membri/Fernanda Langellotto_166x166.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Fernanda Langellotto" />
-            <p class="name">Fernanda Langellotto, PhD</p>
+            <p class="name mb-0">Fernanda Langellotto</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1584,7 +1612,8 @@
               src="img/ex_membri/teresa_161x161.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Teresa Poggio" />
-            <p class="name">Teresa Poggio, PhD</p>
+            <p class="name mb-0">Teresa Poggio</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1592,7 +1621,8 @@
               src="img/ex_membri/Dylan-1_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Dylan Mooijman" />
-            <p class="name">Dylan Mooijman, PhD</p>
+            <p class="name mb-0">Dylan Mooijman</p>
+            <p class="name-title">PhD</p>
           </div>
 
           <div class="col pt-4">
@@ -1600,7 +1630,8 @@
               src="img/ex_membri/Emre-1_166x166.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Emre Karayol" />
-            <p class="name">Emre Karayol, MD</p>
+            <p class="name mb-0">Emre Karayol</p>
+            <p class="name-title">MD</p>
           </div>
 
           <div class="col pt-4">
@@ -1608,7 +1639,8 @@
               src="img/ex_membri/Cinzia_165x165.jpg"
               class="img-fluid rounded-circle w-former-member"
               alt="Immagine di Cinzia Martinengo, PhD" />
-            <p class="name">Cinzia Martinengo, PhD</p>
+            <p class="name mb-0">Cinzia Martinengo</p>
+            <p class="name-title">PhD</p>
           </div>
         </div>
       </div>
@@ -1637,102 +1669,76 @@
         </div>
       </div>
 
-      <!-- Struttura publication originale -->
-      <ul class="publication-timeline"><!-- publication-effect, non funziona perche' rimane fisso al suo posto-->
-        <li style="--accent-color: #41516c">
-          <div class="date">November 2023</div>
-          <div class="title">
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/37872865/"
-              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >Exploiting signaling rewiring in cancer cells with co-existing oncogenic drivers
-            </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-timeline">
+              
+      
+              <div class="timeline">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content first-pub-year">
+                  <h3 class="title pb-3">November</h3>
+                  <div class="description">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/37872865/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                      Exploiting signaling rewiring in cancer cells with co-existing oncogenic drivers
+                    </a>
+                    <div class="rivista">
+                      Mol Oncol.
+                    </div>
+                    <img class="img-fluid md-flex pt-2 px-md-5 max-w" src="img/Publication/mol213547-toc-0001-m.jpg"/>
+                  </div>
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="title">September</h3>
+                  <p class="description">
+                    <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/37682219/"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                    >SHP2: A Pleiotropic Target at the Interface of Cancer and Its Microenvironment
+                      </a>
+                    <div class="rivista ">
+                      Cancer Discov
+                    </div>
+                  </p>
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="title pb-3">July</h3>
+                  <p class="description">
+                    <a
+                      href="https://pubmed.ncbi.nlm.nih.gov/37430060/"
+                      class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer
+                      </a>
+                      <div class="rivista">
+                        Nat Cancer
+                      </div>
+                      <img class="img-fluid md-flex pt-2 px-md-5 max-w" src="img/Publication/nature-cancer.png"/>
+                  </p>
+                </div>
+
+                <div class="timeline-content">
+                  <h3 class="title">June</h3>
+                  <p class="description">
+                    <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/37379367/"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                    >Targeting CCR7-PI3Kγ overcomes resistance to tyrosine kinase inhibitors in ALK-rearranged lymphoma
+                    </a>
+                    <div class="rivista">
+                      Sci Transl Med
+                    </div>
+                    <img class="img-fluid md-flex pt-2 px-md-5 max-w" src="img/Publication/Science-translational-medicine.png"/>
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div class="rivista">
-            <!--<div class="img-fluid mb-2">
-              <img src="img/Publication/mol213547-toc-0001-m.jpg" style="max-height: 175px;"/>
-            </div>-->
-            Mol Oncol.
-          </div>
-          <!--<div class="descr">
-           <a href="https://pubmed.ncbi.nlm.nih.gov/37872865/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-            Karaca Atabay E, Mecca C, Wang Q, Ambrogio C, Mota I, Prokoph N, Mura G, Martinengo C, Patrucco E, Leonardi G, Hossa J, Pich A, Mologni L, Gambacorti-Passerini C, Brugières L, Geoerger B, Turner SD, Voena C, Cheong TC, Chiarle R. Tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma. Blood. 2022 Feb 3;139(5):717-731.
-            </a> 
-          </div>-->
-        </li>
-        <li style="--accent-color: #1b5f8c">
-          <div class="date">September 2023</div>
-          <div class="title">
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/37682219/"
-              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >SHP2: A Pleiotropic Target at the Interface of Cancer and Its Microenvironment
-            </a>
-          </div>
-          <div class="rivista ">
-            Cancer Discov
-          </div>
-          <!--<div class="descr">
-           <a href="https://pubmed.ncbi.nlm.nih.gov/37682219/" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-            Karaca Atabay E, Mecca C, Wang Q, Ambrogio C, Mota I, Prokoph N, Mura G, Martinengo C, Patrucco E, Leonardi G, Hossa J, Pich A, Mologni L, Gambacorti-Passerini C, Brugières L, Geoerger B, Turner SD, Voena C, Cheong TC, Chiarle R. Tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma. Blood. 2022 Feb 3;139(5):717-731.
-            </a> 
-          </div>-->
-        </li>
-        <li style="--accent-color: #41516c">
-          <div class="date">July 2023</div>
-          <div class="title">
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/37430060/"
-              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-            >ALK peptide vaccination restores the immunogenicity of ALK-rearranged non-small cell lung cancer
-            </a>
-          </div>
-          <div class="rivista">
-            Nat Cancer
-          </div>
-          <!--<div class="descr">
-             <a href="https://pubmed.ncbi.nlm.nih.gov/37430060/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                Pighi C, Wang Q, López C, Bernhart SH, Grande BM, Poggio T, Langellotto F, Bonello L, Dall'Olio R, Martínez-Martín S, Molinaro L, Francia di Celle P, Whitfield JR, Soucek L, Voena C, Calogero RA, Morin RD, Staudt LM, Siebert R, Zamò A, Chiarle R. Frequent mutations of FBXO11 highlight BCL6 as a therapeutic target in Burkitt lymphoma. Blood Adv. 2021 Dec 14;5(23):5239-5257. 
-              </a> 
-          </div>-->
-        </li>
-        <li style="--accent-color: #1b5f8c">
-          <div class="date">June 2023</div>
-          <div class="title">
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/37379367/"
-              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-            >Targeting CCR7-PI3Kγ overcomes resistance to tyrosine kinase inhibitors in ALK-rearranged lymphoma
-            </a>
-          </div>
-          <div class="rivista">
-            Sci Transl Med
-          </div>
-          <!--<div class="descr">
-           <a href="https://pubmed.ncbi.nlm.nih.gov/37379367/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-              Menotti M, Ambrogio C, Cheong TC, Pighi C, Mota I, Cassel SH, Compagno M, Wang Q, Dall'Olio R, Minero VG, Poggio T, Sharma GG, Patrucco E, Mastini C, Choudhari R, Pich A, Zamo A, Piva R, Giliani S, Mologni L, Collings CK, Kadoch C, Gambacorti-Passerini C, Notarangelo LD, Anton IM, Voena C, Chiarle R. Wiskott-Aldrich syndrome protein (WASP) is a tumor suppressor in T cell lymphoma. Nat Med. 2019 Jan;25(1):130-140.
-            </a> 
-          </div>-->
-        </li>
-        <li style="--accent-color: #41516c">
-          <div class="date">June 2023</div>
-          <div class="title">
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/37198482/"
-              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >ERα-associated translocations underlie oncogene amplifications in breast cancer
-            </a>
-          </div>
-          <div class="rivista">
-            Nature
-          </div>
-          <div class="descr">
-          <!-- <a href="https://pubmed.ncbi.nlm.nih.gov/37198482/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-            Karaca Atabay E, Mecca C, Wang Q, Ambrogio C, Mota I, Prokoph N, Mura G, Martinengo C, Patrucco E, Leonardi G, Hossa J, Pich A, Mologni L, Gambacorti-Passerini C, Brugières L, Geoerger B, Turner SD, Voena C, Cheong TC, Chiarle R. Tyrosine phosphatases regulate resistance to ALK inhibitors in ALK+ anaplastic large cell lymphoma. Blood. 2022 Feb 3;139(5):717-731.
-            </a> -->
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div> 
 
         <div class="row mt-5 pt-3">
           <div class="col-12">
@@ -1891,7 +1897,7 @@
       </div>
     </div>
 
-    <!-- IMMAGINI CON LINK -->
+    <!-- IMMAGINI CON LINK 
     <div class="container text-center">
       <div class="row mt-5 img-link justify-content-md-center">
         <div class="col col-lg-3">
@@ -1914,7 +1920,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- MAPPA -->
     <div class="container text-center mt-4">
