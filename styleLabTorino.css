@@ -56,6 +56,9 @@ body {
 
 .navbar-collapse {
   justify-content: center;
+  /* elementi navbar "centrati" rispetto alla pagina e non rispetto al proprio blocco*/
+  justify-content: start;
+  margin-left: 17%;
 }
 
 .dropdown-menu-lab[data-bs-popper] {
