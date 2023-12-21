@@ -498,6 +498,9 @@ body {
   #text-slide, #dynamic-text-slide {
     font-size: calc(0rem + 5vw);
   }
+  .img-title {
+    max-width: 50%;
+  }
 }
 
 #img-row {
